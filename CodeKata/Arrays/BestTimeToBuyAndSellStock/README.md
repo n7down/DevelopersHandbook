@@ -15,3 +15,10 @@ Input: [7, 6, 4, 3, 1]
 Output: 0
 ```
 In this case, no transaction is done, i.e. max profit = 0.
+
+## Prerequisites
+- [.Net Core 2](https://www.microsoft.com/net/download/)
+
+## Getting Started 
+1. Clone this directory
+2. Run `dotnet test` from inside the directory

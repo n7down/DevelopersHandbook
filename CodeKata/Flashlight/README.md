@@ -5,6 +5,6 @@ Given a group of people with one flight light. These people need to cross a brid
 ## Prerequisites
 - [.Net Core 2](https://www.microsoft.com/net/download/)
 
-## Getting Started
-1. Clone this project
-2. Run `dotnet test` from inside this directory
+## Getting Started 
+1. Clone this directory
+2. Run `dotnet test` from inside the directory

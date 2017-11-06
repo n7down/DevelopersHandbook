@@ -19,3 +19,10 @@ _:x_ in the start, the path, and the end of the maze, like the following:
  [1  :x 1]
  [1  :x :x]]
 ```
+
+## Prerequisites
+- [.Net Core 2](https://www.microsoft.com/net/download/)
+
+## Getting Started 
+1. Clone this directory
+2. Run `dotnet test` from inside the directory

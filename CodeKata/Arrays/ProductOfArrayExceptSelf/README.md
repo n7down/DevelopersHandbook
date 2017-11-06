@@ -7,3 +7,10 @@ For example, given `[1,2,3,4]`, return `[24,12,8,6]`.
 
 Follow up:
 Could you solve it with constant space complexity? (Note: The output array *does not* count as extra space for the purpose of space complexity analysis.)
+
+## Prerequisites
+- [.Net Core 2](https://www.microsoft.com/net/download/)
+
+## Getting Started 
+1. Clone this directory
+2. Run `dotnet test` from inside the directory
