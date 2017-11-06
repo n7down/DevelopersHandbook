@@ -1,0 +1,8 @@
+c:\Users\josad\Exile\Source\CodeKata\BestTimeToBuyAndSellStock\BuyAndSell\bin\Debug\netstandard2.0\BuyAndSell.deps.json
+c:\Users\josad\Exile\Source\CodeKata\BestTimeToBuyAndSellStock\BuyAndSell\bin\Debug\netstandard2.0\BuyAndSell.dll
+c:\Users\josad\Exile\Source\CodeKata\BestTimeToBuyAndSellStock\BuyAndSell\bin\Debug\netstandard2.0\BuyAndSell.pdb
+c:\Users\josad\Exile\Source\CodeKata\BestTimeToBuyAndSellStock\BuyAndSell\obj\Debug\netstandard2.0\BuyAndSell.csproj.CoreCompileInputs.cache
+c:\Users\josad\Exile\Source\CodeKata\BestTimeToBuyAndSellStock\BuyAndSell\obj\Debug\netstandard2.0\BuyAndSell.AssemblyInfoInputs.cache
+c:\Users\josad\Exile\Source\CodeKata\BestTimeToBuyAndSellStock\BuyAndSell\obj\Debug\netstandard2.0\BuyAndSell.AssemblyInfo.cs
+c:\Users\josad\Exile\Source\CodeKata\BestTimeToBuyAndSellStock\BuyAndSell\obj\Debug\netstandard2.0\BuyAndSell.dll
+c:\Users\josad\Exile\Source\CodeKata\BestTimeToBuyAndSellStock\BuyAndSell\obj\Debug\netstandard2.0\BuyAndSell.pdb

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<test-run id="0" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="2" portable-engine-version="3.3.0.0" start-time="2017-02-22 21:05:19Z" end-time="2017-02-22 21:05:19Z" duration="0.168000">
+  <test-suite type="Assembly" id="1004" name="Potter.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" fullname="Potter.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" runstate="Runnable" testcasecount="2" result="Passed" start-time="2017-02-22 21:05:19Z" end-time="2017-02-22 21:05:19Z" duration="0.070555" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="2">
+    <settings>
+      <setting name="WorkDirectory" value="C:\Users\josad\Exile\Source\CodeKata\PotterKata\test\Potter.Tests" />
+    </settings>
+    <test-suite type="TestSuite" id="1005" name="Potter" fullname="Potter" runstate="Runnable" testcasecount="2" result="Passed" start-time="2017-02-22 21:05:19Z" end-time="2017-02-22 21:05:19Z" duration="0.064134" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="2">
+      <test-suite type="TestSuite" id="1006" name="Tests" fullname="Potter.Tests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2017-02-22 21:05:19Z" end-time="2017-02-22 21:05:19Z" duration="0.063909" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="2">
+        <test-suite type="TestFixture" id="1000" name="PotterTests" fullname="Potter.Tests.PotterTests" classname="Potter.Tests.PotterTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2017-02-22 21:05:19Z" end-time="2017-02-22 21:05:19Z" duration="0.061732" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="2">
+          <test-suite type="ParameterizedMethod" id="1003" name="Check_book_prices_with_no_discounts" fullname="Potter.Tests.PotterTests.Check_book_prices_with_no_discounts" classname="Potter.Tests.PotterTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2017-02-22 21:05:19Z" end-time="2017-02-22 21:05:19Z" duration="0.059381" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="2">
+            <test-case id="1001" name="Check_book_prices_with_no_discounts(System.Int32[],8)" fullname="Potter.Tests.PotterTests.Check_book_prices_with_no_discounts(System.Int32[],8)" methodname="Check_book_prices_with_no_discounts" classname="Potter.Tests.PotterTests" runstate="Runnable" seed="919662756" result="Passed" start-time="2017-02-22 21:05:19Z" end-time="2017-02-22 21:05:19Z" duration="0.031187" asserts="1" />
+            <test-case id="1002" name="Check_book_prices_with_no_discounts(System.Int32[],16)" fullname="Potter.Tests.PotterTests.Check_book_prices_with_no_discounts(System.Int32[],16)" methodname="Check_book_prices_with_no_discounts" classname="Potter.Tests.PotterTests" runstate="Runnable" seed="952268260" result="Passed" start-time="2017-02-22 21:05:19Z" end-time="2017-02-22 21:05:19Z" duration="0.000057" asserts="1" />
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

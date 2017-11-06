@@ -1,0 +1,15 @@
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum.Tests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum.Tests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netstandard15.dll
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum.Tests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netstandard15.dll
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum.Tests\bin\Debug\netcoreapp2.0\TwoSum.Tests.deps.json
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum.Tests\bin\Debug\netcoreapp2.0\TwoSum.Tests.runtimeconfig.json
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum.Tests\bin\Debug\netcoreapp2.0\TwoSum.Tests.runtimeconfig.dev.json
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum.Tests\bin\Debug\netcoreapp2.0\TwoSum.Tests.dll
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum.Tests\bin\Debug\netcoreapp2.0\TwoSum.Tests.pdb
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum.Tests\bin\Debug\netcoreapp2.0\TwoSum.dll
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum.Tests\bin\Debug\netcoreapp2.0\TwoSum.pdb
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum.Tests\obj\Debug\netcoreapp2.0\TwoSum.Tests.csproj.CoreCompileInputs.cache
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum.Tests\obj\Debug\netcoreapp2.0\TwoSum.Tests.AssemblyInfoInputs.cache
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum.Tests\obj\Debug\netcoreapp2.0\TwoSum.Tests.AssemblyInfo.cs
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum.Tests\obj\Debug\netcoreapp2.0\TwoSum.Tests.dll
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum.Tests\obj\Debug\netcoreapp2.0\TwoSum.Tests.pdb

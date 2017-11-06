@@ -1,0 +1,8 @@
+C:\Users\josad\Exile\Source\CodeKata\SubstringOfIdenticalCharacters\Substring\bin\Debug\netstandard2.0\Substring.deps.json
+C:\Users\josad\Exile\Source\CodeKata\SubstringOfIdenticalCharacters\Substring\bin\Debug\netstandard2.0\Substring.dll
+C:\Users\josad\Exile\Source\CodeKata\SubstringOfIdenticalCharacters\Substring\bin\Debug\netstandard2.0\Substring.pdb
+C:\Users\josad\Exile\Source\CodeKata\SubstringOfIdenticalCharacters\Substring\obj\Debug\netstandard2.0\Substring.csproj.CoreCompileInputs.cache
+C:\Users\josad\Exile\Source\CodeKata\SubstringOfIdenticalCharacters\Substring\obj\Debug\netstandard2.0\Substring.AssemblyInfoInputs.cache
+C:\Users\josad\Exile\Source\CodeKata\SubstringOfIdenticalCharacters\Substring\obj\Debug\netstandard2.0\Substring.AssemblyInfo.cs
+C:\Users\josad\Exile\Source\CodeKata\SubstringOfIdenticalCharacters\Substring\obj\Debug\netstandard2.0\Substring.dll
+C:\Users\josad\Exile\Source\CodeKata\SubstringOfIdenticalCharacters\Substring\obj\Debug\netstandard2.0\Substring.pdb

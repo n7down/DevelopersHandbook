@@ -1,0 +1,8 @@
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum\bin\Debug\netstandard2.0\TwoSum.deps.json
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum\bin\Debug\netstandard2.0\TwoSum.dll
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum\bin\Debug\netstandard2.0\TwoSum.pdb
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum\obj\Debug\netstandard2.0\TwoSum.csproj.CoreCompileInputs.cache
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum\obj\Debug\netstandard2.0\TwoSum.AssemblyInfoInputs.cache
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum\obj\Debug\netstandard2.0\TwoSum.AssemblyInfo.cs
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum\obj\Debug\netstandard2.0\TwoSum.dll
+c:\Users\josad\Exile\Source\CodeKata\TwoSum\TwoSum\obj\Debug\netstandard2.0\TwoSum.pdb

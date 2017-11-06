@@ -1,0 +1,8 @@
+c:\Users\josad\Exile\Source\CodeKata\ProductOfArrayExceptSelf\ProductOfArrayExceptSelf\bin\Debug\netstandard2.0\ProductOfArrayExceptSelf.deps.json
+c:\Users\josad\Exile\Source\CodeKata\ProductOfArrayExceptSelf\ProductOfArrayExceptSelf\bin\Debug\netstandard2.0\ProductOfArrayExceptSelf.dll
+c:\Users\josad\Exile\Source\CodeKata\ProductOfArrayExceptSelf\ProductOfArrayExceptSelf\bin\Debug\netstandard2.0\ProductOfArrayExceptSelf.pdb
+c:\Users\josad\Exile\Source\CodeKata\ProductOfArrayExceptSelf\ProductOfArrayExceptSelf\obj\Debug\netstandard2.0\ProductOfArrayExceptSelf.csproj.CoreCompileInputs.cache
+c:\Users\josad\Exile\Source\CodeKata\ProductOfArrayExceptSelf\ProductOfArrayExceptSelf\obj\Debug\netstandard2.0\ProductOfArrayExceptSelf.AssemblyInfoInputs.cache
+c:\Users\josad\Exile\Source\CodeKata\ProductOfArrayExceptSelf\ProductOfArrayExceptSelf\obj\Debug\netstandard2.0\ProductOfArrayExceptSelf.AssemblyInfo.cs
+c:\Users\josad\Exile\Source\CodeKata\ProductOfArrayExceptSelf\ProductOfArrayExceptSelf\obj\Debug\netstandard2.0\ProductOfArrayExceptSelf.dll
+c:\Users\josad\Exile\Source\CodeKata\ProductOfArrayExceptSelf\ProductOfArrayExceptSelf\obj\Debug\netstandard2.0\ProductOfArrayExceptSelf.pdb

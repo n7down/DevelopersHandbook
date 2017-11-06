@@ -1,10 +1,13 @@
 # Technical Invterview Review
 This repository is designed to organize all of the nessesary material and resources to prepare for a successful technical interview.
 
-# Big-O
+## Big-O
 - [bigocheatsheet](http://bigocheatsheet.com/)
 
 ## Algorithms
+### General Tips
+### Arrays
+#### Code Kata
 - [x] [Two Sum](https://leetcode.com/problems/two-sum/)
 - [ ] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
 - [x] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)
@@ -15,6 +18,10 @@ This repository is designed to organize all of the nessesary material and resour
 - [ ] [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)
 - [ ] [3Sum](https://leetcode.com/problems/3sum/description/)
 - [ ] [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/)
+
+## C-Sharp
+
+## Git
 
 ## Cracking the Code Interview
 
