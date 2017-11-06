@@ -15,8 +15,8 @@ Data Structure|Time Complexity| | | | | | | |Space Complexity
 ---|---|---|---|---|---|---|---|---|---
  |Average| | | |Worst| | | |Worst
  |Access|Serach|Insertion|Deletion|Access|Search|Insertion|Deletion| 
-Array|Θ(1)|Θ(n)|Θ(n)|Θ(n)|Θ(1)|Θ(n)|Θ(n)|Θ(n)|Θ(n)
-Stack|Θ(n)|Θ(n)|Θ(1)|Θ(1)|O(n)|O(n)|O(1)|O(1)|O(n)
+[Array](https://en.wikipedia.org/wiki/Array_data_structure)|Θ(1)|Θ(n)|Θ(n)|Θ(n)|Θ(1)|Θ(n)|Θ(n)|Θ(n)|Θ(n)
+[Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))|Θ(n)|Θ(n)|Θ(1)|Θ(1)|O(n)|O(n)|O(1)|O(1)|O(n)
 Queue|Θ(n)|Θ(n)|Θ(1)|Θ(1)|O(n)|O(n)|O(1)|O(1)|O(n)
 Singly-Linked List|Θ(n)|Θ(n)|Θ(1)|Θ(1)|O(n)|O(n)|O(1)|O(1)|O(n)
 Doubly-Linked List|Θ(n)|Θ(n)|Θ(1)|Θ(1)|O(n)|O(n)|O(1)|O(1)|O(n)
@@ -47,8 +47,6 @@ Bucket Sort|Ω(n+k)|Θ(n+k)|O(n^2)|O(n)
 Radix Sort|Ω(nk)|Θ(nk)|O(nk)|O(n+k)
 Counting Sort|Ω(n+k)|Θ(n+k)|O(n+k)|O(k)
 Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
-
-- [bigocheatsheet](http://bigocheatsheet.com/)
 
 # Algorithms
 ## General Tips
@@ -83,3 +81,6 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [donnemartin/interactive-coding-challenges](https://github.com/donnemartin/interactive-coding-challenges#arrays-and-strings)
 - [jwasham/computer-science-flash-cards](https://github.com/jwasham/computer-science-flash-cards)
 - [k88hudson/git-flight-rules](https://github.com/k88hudson/git-flight-rules)
+
+# Notes
+- [bigocheatsheet](http://bigocheatsheet.com/)
