@@ -5,6 +5,16 @@ This repository is designed to organize all of the nessesary material and resour
 - [bigocheatsheet](http://bigocheatsheet.com/)
 
 ## Algorithms
+- [x] [Two Sum](https://leetcode.com/problems/two-sum/)
+- [ ] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
+- [x] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)
+- [ ] [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/)
+- [ ] [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/)
+- [ ] [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/description/)
+- [ ] [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)
+- [ ] [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)
+- [ ] [3Sum](https://leetcode.com/problems/3sum/description/)
+- [ ] [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/)
 
 ## Cracking the Code Interview
 
