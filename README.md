@@ -13,8 +13,8 @@ This repository is designed to organize all of the nessesary material and resour
 ## Common Data Structure Operations
 Data Structure|Time Complexity| | | | | | | |Space Complexity
 ---|---|---|---|---|---|---|---|---|---
- |Average| | | |Worst| | | |Worst
- |Access|Serach|Insertion|Deletion|Access|Search|Insertion|Deletion| 
+*|Average|*|*|*|Worst|*|*|*|Worst
+*|Access|Serach|Insertion|Deletion|Access|Search|Insertion|Deletion|*
 [Array](https://en.wikipedia.org/wiki/Array_data_structure)|Θ(1)|Θ(n)|Θ(n)|Θ(n)|Θ(1)|Θ(n)|Θ(n)|Θ(n)|Θ(n)
 [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))|Θ(n)|Θ(n)|Θ(1)|Θ(1)|O(n)|O(n)|O(1)|O(1)|O(n)
 Queue|Θ(n)|Θ(n)|Θ(1)|Θ(1)|O(n)|O(n)|O(1)|O(1)|O(n)
@@ -33,7 +33,7 @@ KD Tree|Θ(log(n))|Θ(log(n))|Θ(log(n))|Θ(log(n))|O(n)|O(n)|O(n)|O(n)|O(n)
 ## Array Sorting Algorithms
 Algorithm|Time Complexity| | |Space Complexity
 ---|---|---|---|---
- |Best|Average|Worst|Worst
+*|Best|Average|Worst|Worst
 Quicksort|Ω(n log(n))|Θ(n log(n))|O(n^2)|O(log(n))
 Mergesort|Ω(n log(n))|Θ(n log(n))|O(n log(n))|O(n)
 Timsort	Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
