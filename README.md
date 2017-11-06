@@ -15,9 +15,9 @@ This repository is designed to organize all of the nessesary material and resour
 ## Arrays
 ### Code Kata
 - [x] [Two Sum](https://leetcode.com/problems/two-sum/) - [solution](CodeKata/Algorithms/Arrays/TwoSum/README.md)
-- [ ] [Best Time to Buy and Sell Stock] (https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) - [solution](CodeKata/Algorithms/Arrays/BestTimeToBuyAndSellStock/README.md)
+- [ ] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) - [solution](CodeKata/Algorithms/Arrays/BestTimeToBuyAndSellStock/README.md)
 - [x] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) - [solution](CodeKata/Algorithms/Arrays/ContainDuplicate/README.md)
-- [ ] [Product of Array Except Self] (https://leetcode.com/problems/product-of-array-except-self/description/) - [solution](CodeKata/Algorithms/Arrays/ProductOfArrayExceptSelf/README.md)
+- [ ] [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/) - [solution](CodeKata/Algorithms/Arrays/ProductOfArrayExceptSelf/README.md)
 - [ ] [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/)
 - [ ] [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/description/)
 - [ ] [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)
