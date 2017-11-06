@@ -10,3 +10,10 @@ Given nums = [2, 7, 11, 15], target = 9,
 Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 ```
+
+## Prerequisites
+- [.Net Core 2](https://www.microsoft.com/net/download/)
+
+## Getting Started 
+1. Clone this directory
+2. Run `dotnet test` from inside the directory
