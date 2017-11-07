@@ -9,9 +9,6 @@ namespace Substring
     {
         public static int[] FindLongestSubstring(string s)
         {
-            int begin = 0;
-            int end = 0;
-
             if(string.IsNullOrEmpty(s))
             {
                 throw new ArgumentException("array is empty or null");
@@ -23,31 +20,9 @@ namespace Substring
                 return new int[] { a, 1, 0, 0 };
             }
 
-            // Dictionary<char, int> map = new Dictionary<char, int>();
-            // foreach(char c in s.ToCharArray())
-            // {
-            //     if(map.ContainsKey(c))
-            //     {
-            //         int v = map[c];
-            //         map[c] = v++;   
-            //     }
-            //     else
-            //     {
-            //         map.Add(c, 0);
-            //     }
-            // }
-
-            // for() { /* initialize the hash map here */ }
-            // while(end<s.size()){
-            //     if(map[s[end++]]-- ?){  /* modify counter here */ }
-            //     while(/* counter condition */){ 
-            //         /* update d here if finding minimum*/
-            //         //increase begin to make it invalid/valid again
-            //         if(map[s[begin++]]++ ?){ /*modify counter here*/ }
-            //     }  
-            //     /* update d here if finding maximum*/
-            // }
             List<string> l = new List<string>();
+            int begin = 0;
+            int end = 0;
 
             int beginAscii = (int) s[begin];
             while(end < s.Length)
