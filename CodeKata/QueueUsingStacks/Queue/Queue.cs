@@ -15,10 +15,16 @@ namespace Queue
         }
 
         public void Enqueue(char c)
-        {}
+        {
+            s0.Push(c);
+        }
 
         public char Dequeue()
         {
+            if(s1.Count == 0)
+            {
+                
+            }
             return '0';
         }
 
@@ -29,12 +35,20 @@ namespace Queue
 
         public bool Contains(char c)
         {
+            if(s0.Contains(c))
+            {
+                return true;
+            }
+            if(s1.Contains(c))
+            {
+                return true;
+            }
             return false;
         }
 
         public int Size()
         {
-            return 0;
+            return s0.Count + s1.Count;
         }
     }
 }
