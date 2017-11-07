@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Substring
 {
     public class Substring
     {
-        public static int[] FindSubstring(string s)
+        public static int[] FindLongestSubstring(string s)
         {
             int begin = 0;
             int end = 0;
@@ -18,22 +19,23 @@ namespace Substring
 
             if(s.Length == 1)
             {
-                throw new ArgumentException("array only contains one element");
+                int a = (int) s[0];
+                return new int[] { a, 1, 0, 0 };
             }
 
-            Dictionary<char, int> map = new Dictionary<char, int>();
-            foreach(char c in s.ToCharArray())
-            {
-                if(map.ContainsKey(c))
-                {
-                    int v = map[c];
-                    map[c] = v++;   
-                }
-                else
-                {
-                    map.Add(c, 0);
-                }
-            }
+            // Dictionary<char, int> map = new Dictionary<char, int>();
+            // foreach(char c in s.ToCharArray())
+            // {
+            //     if(map.ContainsKey(c))
+            //     {
+            //         int v = map[c];
+            //         map[c] = v++;   
+            //     }
+            //     else
+            //     {
+            //         map.Add(c, 0);
+            //     }
+            // }
 
             // for() { /* initialize the hash map here */ }
             // while(end<s.size()){
@@ -45,19 +47,38 @@ namespace Substring
             //     }  
             //     /* update d here if finding maximum*/
             // }
+            List<string> l = new List<string>();
 
-            int ascii = (int) s[end];
+            int beginAscii = (int) s[begin];
             while(end < s.Length)
             {
-                if(ascii == s[end])
+                int endAscii = (int) s[end];
+                if(beginAscii == endAscii)
                 {
+                    end++;
                 }
-                
-                end++;
+                else
+                {
+                    string ss = s.Substring(begin, (end - 1) - begin + 1);
+                    l.Add(ss);
+                    begin = end;
+                    beginAscii = (int) s[begin];
+                    end++;
+                }
+
+                if(end == s.Length)
+                {
+                    string ss = s.Substring(begin, (end - 1) - begin + 1);
+                    l.Add(ss);
+                }
             }
 
-            int d = end - begin;
-            return new int[] { ascii, d, begin, end };
+            string lss = l.OrderByDescending(r => r.Length).First();
+            int ascii = (int) lss[0];
+            int d = lss.Length;
+            int b = s.IndexOf(lss);
+            int e = b + d;
+            return new int[] { ascii, d, b, e - 1 };
         }
     }
 }
