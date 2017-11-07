@@ -32,7 +32,7 @@ namespace ProductOfArrayExceptSelf.Tests
         [InlineData(new int[] { 0 }, new int[] { 0 })]
         [InlineData(new int[] { 1, 2 }, new int[] { 2, 1 })]
         [InlineData(new int[] { 1, 2, 3 }, new int[] { 6, 3, 2 })]
-        [InlineData(new int[] {1, 2, 3, 4}, new int[] {24, 12, 8, 6})]
+        [InlineData(new int[] { 1, 2, 3, 4 }, new int[] { 24, 12, 8, 6 })]
         public void Given_ValidArray_Expect_ArrayWhereEveryElementIsProductOfAllElementsExceptSelf(int[] i, int[] e)
         {
             int[] a = ProductOfArrayExceptSelf.FindProductExceptSelf(i);
