@@ -17,6 +17,7 @@ namespace ProductOfArrayExceptSelf.Tests
         }
 
         [Theory]
+        [InlineData(new int[] { 1, 2 }, new int[] { 2, 1 })]
         [InlineData(new int[] {1, 2, 3, 4}, new int[] {24, 12, 8, 6})]
         public void Given_ValidArray_Expect_ArrayWhereEveryElementIsProductOfAllElementsExceptSelf(int[] i, int[] e)
         {
