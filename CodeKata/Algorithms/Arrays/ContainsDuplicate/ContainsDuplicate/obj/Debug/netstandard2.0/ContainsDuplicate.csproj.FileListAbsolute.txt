@@ -1,8 +1,0 @@
-c:\Users\josad\Exile\Source\CodeKata\ContainsDuplicate\ContainsDuplicate\bin\Debug\netstandard2.0\ContainsDuplicate.deps.json
-c:\Users\josad\Exile\Source\CodeKata\ContainsDuplicate\ContainsDuplicate\bin\Debug\netstandard2.0\ContainsDuplicate.dll
-c:\Users\josad\Exile\Source\CodeKata\ContainsDuplicate\ContainsDuplicate\bin\Debug\netstandard2.0\ContainsDuplicate.pdb
-c:\Users\josad\Exile\Source\CodeKata\ContainsDuplicate\ContainsDuplicate\obj\Debug\netstandard2.0\ContainsDuplicate.csproj.CoreCompileInputs.cache
-c:\Users\josad\Exile\Source\CodeKata\ContainsDuplicate\ContainsDuplicate\obj\Debug\netstandard2.0\ContainsDuplicate.AssemblyInfoInputs.cache
-c:\Users\josad\Exile\Source\CodeKata\ContainsDuplicate\ContainsDuplicate\obj\Debug\netstandard2.0\ContainsDuplicate.AssemblyInfo.cs
-c:\Users\josad\Exile\Source\CodeKata\ContainsDuplicate\ContainsDuplicate\obj\Debug\netstandard2.0\ContainsDuplicate.dll
-c:\Users\josad\Exile\Source\CodeKata\ContainsDuplicate\ContainsDuplicate\obj\Debug\netstandard2.0\ContainsDuplicate.pdb
