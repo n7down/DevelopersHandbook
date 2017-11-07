@@ -22,3 +22,10 @@ For example, how much does this basket of books cost?
 (answer: 51.20 EUR)
 
 Full Description at [codingdojo](http://codingdojo.org/kata/Potter/).
+
+## Prerequisites
+- [.Net Core 2](https://www.microsoft.com/net/download/)
+
+## Getting Started 
+1. Clone this directory
+2. Run `dotnet test` from inside the directory
