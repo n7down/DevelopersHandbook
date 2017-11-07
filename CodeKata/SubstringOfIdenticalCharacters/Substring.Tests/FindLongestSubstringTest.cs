@@ -13,8 +13,8 @@ namespace Substring.Tests
         [InlineData("1111aa994bbbb1111AAAAAFF?<mmMaaaaaaaaaaaaaaaaaaaaaaaaabf", new int[] {97, 25, 29, 53})]
         public void Given_StringWithCharacters_Expect_ArrayWithDataAboutSubstring(string s, int[] e)
         {
-            int[] r = Substring.FindLongestSubstring(s);
-            Assert.True(Enumerable.SequenceEqual(r, e), "results: [" + r[0] + ", " + r[1] + ", " + r[2] + ", " + r[3] + "]");
+            int[] a = Substring.FindLongestSubstring(s);
+            Assert.True(Enumerable.SequenceEqual(a, e), "actual: [" + a[0] + ", " + a[1] + ", " + a[2] + ", " + a[3] + "]");
         }
 
         [Theory]
