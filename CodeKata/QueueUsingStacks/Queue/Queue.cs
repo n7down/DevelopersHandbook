@@ -8,6 +8,18 @@ namespace Queue
         Stack s0;
         Stack s1;
 
+        private void MoveElements()
+        {
+            if(s1.Count == 0)
+            {
+                while(s0.Count != 0)
+                {
+                    char c = (char) s0.Pop();
+                    s1.Push(c);
+                }
+            }
+        }
+
         public Queue()
         {
             s0 = new Stack();
@@ -21,16 +33,22 @@ namespace Queue
 
         public char Dequeue()
         {
-            if(s1.Count == 0)
+            MoveElements();
+            if(s1.Count != 0)
             {
-                
+                return (char) s1.Pop();
             }
-            return '0';
+            return '\0';
         }
 
         public char Peek()
         {
-            return '0';
+            MoveElements();
+            if(s1.Count != 0)
+            {
+                return (char) s1.Peek();
+            }
+            return '\0';
         }
 
         public bool Contains(char c)

@@ -47,7 +47,7 @@ namespace Queue.Tests
         public void Given_EmptyQueue_Expect_EmptyDequeueElements()
         {
             Queue q = new Queue();
-            Assert.True(q.Dequeue() == ' ');
+            Assert.True(q.Dequeue() == '\0');
         }
 
         [Fact]
@@ -58,15 +58,15 @@ namespace Queue.Tests
             q.Enqueue('j');
             Assert.True(q.Peek() == 't');
             Assert.True(q.Dequeue() == 't');
-            Assert.True(q.Peek() == 'e');
-            Assert.True(q.Dequeue() == 'e');
+            Assert.True(q.Peek() == 'j');
+            Assert.True(q.Dequeue() == 'j');
         }
 
         [Fact]
         public void Given_EmptyQueue_Expect_EmptyPeekElements()
         {
             Queue q = new Queue();
-            Assert.True(q.Peek() == ' ');
+            Assert.True(q.Peek() == '\0');
         }
     }
 }
