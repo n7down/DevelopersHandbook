@@ -9,7 +9,7 @@ namespace Substring
         public static int[] FindSubstring(string s)
         {
             int begin = 0;
-            int end = 1;
+            int end = 0;
 
             if(string.IsNullOrEmpty(s))
             {
@@ -56,7 +56,7 @@ namespace Substring
                 end++;
             }
 
-            int d = begin - end;
+            int d = end - begin;
             return new int[] { ascii, d, begin, end };
         }
     }
