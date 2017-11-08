@@ -31,8 +31,5 @@ namespace Potter.Tests
             Potter potter = new Potter(bookArray);
             Assert.That(potter.Price, Is.EqualTo(expectedPrice));
         }
-        
-        public static void Main(string[] args)
-        {}
     }
 }
