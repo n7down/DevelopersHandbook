@@ -36,7 +36,7 @@ namespace ProductOfArrayExceptSelf.Tests
         public void Given_ValidArray_Expect_ArrayWhereEveryElementIsProductOfAllElementsExceptSelf(int[] i, int[] e)
         {
             int[] a = ProductOfArrayExceptSelf.FindProductExceptSelf(i);
-            Assert.True(Enumerable.SequenceEqual(a, e), "Actual: " + PrintArray(i));
+            Assert.True(Enumerable.SequenceEqual(a, e), "Actual: " + PrintArray(a));
         }
     }
 }

@@ -22,9 +22,20 @@ namespace ProductOfArrayExceptSelf
             }
 
             int[] r = new int[i.Length];
-            int l = i.Length;
+            for(int a = 0; a < i.Length; a++)
+            {
+                int sum = 1;
+                for(int b = 0; b < i.Length; b++)
+                {
+                    if(a != b)
+                    {
+                        sum *= i[b];
+                    }
+                }
+                r[a] = sum;
+            }
 
-            return new int[] { 0 };
+            return r;
         }
     }
 }
