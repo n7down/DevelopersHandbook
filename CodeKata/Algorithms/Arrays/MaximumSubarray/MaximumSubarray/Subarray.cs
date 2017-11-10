@@ -45,17 +45,14 @@ namespace MaximumSubarray
             if(EveryElementInArrayIsPositive(i))
             {
                 // find the sum of the array
-                List<int> pl = new List<int>();
-                foreach(int a in i)
-                {
-                    pl.Add(a);
-                }
-                return pl.Sum();
+                return i.ToList().Sum();
             }
             // check if the array is negitive
             if(EveryElementInArrayIsNegitive(i))
             {
                 // find the smallest number
+                List<int> pl = i.OrderByDescending(p => p).ToList();
+                return pl[0];
             }
 
             List<int> l = new List<int>();
