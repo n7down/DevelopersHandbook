@@ -10,11 +10,11 @@ namespace MaximumSubarray.Tests
         [InlineData(new int[] {5}, 5)]
         [InlineData(new int[] {-1, 2}, 2)]
         [InlineData(new int[] {2, -1}, 2)]
-        [InlineData(new int[] { -2, -3, 1 }, -2)]
+        [InlineData(new int[] {-2, -3, 1}, -2)]
 
         // maximum subarray problem - https://en.wikipedia.org/wiki/Maximum_subarray_problem
         // contiguous subarray [4,-1,2,1]
-        [InlineData(new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 }, 6)]
+        [InlineData(new int[] {-2, 1, -3, 4, -1, 2, 1, -5, 4}, 6)]
         public void Given_ValidArray_Expect_LargestSum(int[] i, int e)
         {
             int a = Subarray.FindLargestSumOfContiguousSubarray(i);
@@ -30,8 +30,8 @@ namespace MaximumSubarray.Tests
         }
 
         [Theory]
-        [InlineData(new int[] { -2, -1, -3 }, -1)]
-        [InlineData(new int[] { -1, -2, -3, -6, -13 }, -1)]
+        [InlineData(new int[] {-2, -1, -3}, -1)]
+        [InlineData(new int[] {-1, -2, -3, -6, -13}, -1)]
         public void Given_ArrayWithNegitiveValues_Expect_NumberInArrayWithSmallestMagnitude(int[] i, int e)
         {
             int a = Subarray.FindLargestSumOfContiguousSubarray(i);
@@ -39,8 +39,8 @@ namespace MaximumSubarray.Tests
         }
 
         [Theory]
-        [InlineData(new int[] { 1, 2, 6 }, 9)]
-        [InlineData(new int[] { 2, 6 }, 8)]
+        [InlineData(new int[] {1, 2, 6}, 9)]
+        [InlineData(new int[] {2, 6}, 8)]
         public void Given_ArrayWithPositiveValues_Expect_NumberInArrayWithSmallestMagnitude(int[] i, int e)
         {
             int a = Subarray.FindLargestSumOfContiguousSubarray(i);
