@@ -62,9 +62,17 @@ namespace MaximumSubarray
             int end = 0;
 
             // find all of the contiguous subarray sums
-            while(begin < i.Length)
+            for(int j = 0; j < i.Length; j++)
             {
-                
+                int sum = 0;
+                for(int k = j; k < i.Length; k++)
+                {
+                    for(int l = j; l <= k; l++)
+                    {
+                        sum += i[l];
+                    }
+                }
+                css.Add(sum);
             }
             return css.Max();
         }
