@@ -8,9 +8,9 @@ namespace MaximumSubarray.Tests
         [Theory]
         [InlineData(new int[] {0}, 0)]
         [InlineData(new int[] {5}, 5)]
-        [InlineData(new int[] {-1, 2}, 1)]
+        [InlineData(new int[] {-1, 2}, 2)]
         [InlineData(new int[] {2, -1}, 2)]
-        [InlineData(new int[] { -2, -3, 1 }, -1)]
+        [InlineData(new int[] { -2, -3, 1 }, -2)]
 
         // maximum subarray problem - https://en.wikipedia.org/wiki/Maximum_subarray_problem
         // contiguous subarray [4,-1,2,1]

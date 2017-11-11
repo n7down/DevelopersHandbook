@@ -55,23 +55,33 @@ namespace MaximumSubarray
                 return pl[0];
             }
 
-            List<int> l = new List<int>();
-            foreach(int a in i)
+            // List<int> l = new List<int>();
+            // foreach(int a in i)
+            // {
+            //     if(l.Count == 0)
+            //     {
+            //         l.Add(a);
+            //     }
+            //     else
+            //     {
+            //         int lastElement = l[l.Count - 1];
+            //         if(lastElement >= a)
+            //         {
+            //             l.Add(a);
+            //         }
+            //     }
+            // }
+            // return l.Sum();
+            
+            // dictionary with sum and subarray
+            Dictionary<int, int[]> d = new Dictionary<int, int[]>();
+
+            // find all of the contiguous subarrays and sum and put it in the dictionary
+            for(int a = 0; a < i.Length; a++)
             {
-                if(l.Count == 0)
-                {
-                    l.Add(a);
-                }
-                else
-                {
-                    int lastElement = l[l.Count - 1];
-                    if(lastElement >= a)
-                    {
-                        l.Add(a);
-                    }
-                }
+                
             }
-            return l.Sum();
+            return 0;
         }
     }
 }
