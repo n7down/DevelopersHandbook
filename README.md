@@ -36,20 +36,48 @@ Algorithm|Time Complexity| | |Space Complexity
 *|Best|Average|Worst|Worst
 Quicksort|Ω(n log(n))|Θ(n log(n))|O(n^2)|O(log(n))
 Mergesort|Ω(n log(n))|Θ(n log(n))|O(n log(n))|O(n)
-Timsort	Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
+Timsort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 Heapsort|Ω(n log(n))|Θ(n log(n))|O(n log(n))|O(1)
 Bubble Sort|Ω(n)|Θ(n^2)|O(n^2)|O(1)
 Insertion|Ω(n)|Θ(n^2)|O(n^2)|O(1)
 Selection Sort|Ω(n^2)|Θ(n^2)|O(n^2)|O(1)
 Tree Sort|Ω(n log(n))|Θ(n log(n))|O(n^2)|O(n)
-Shell Sort|Ω(n log(n))|Θ(n(log(n))^2)	O(n(log(n))^2)	O(1)
+Shell Sort|Ω(n log(n))|Θ(n(log(n))^2)|O(n(log(n))^2)|O(1)
 Bucket Sort|Ω(n+k)|Θ(n+k)|O(n^2)|O(n)
 Radix Sort|Ω(nk)|Θ(nk)|O(nk)|O(n+k)
 Counting Sort|Ω(n+k)|Θ(n+k)|O(n+k)|O(k)
 Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 
+# Data Structures
+- [ ]Stack
+- [ ] Queue
+- [ ] Singly-Linked List
+- [ ] Doubly-Linked List
+- [ ] Skip List
+- [ ] Hash Table
+- [ ] Binary Search Tree
+- [ ] Cartesian Tree
+- [ ] B-Tree
+- [ ] Red-Black Tree
+- [ ] Splay Tree
+- [  AVL Tree
+- [ ] KD Tree
+
 # Algorithms
 ## General Tips
+- [ ] Quicksort
+- [ ] Mergesort
+- [ ] Timsort
+- [ ] Heapsort
+- [ ] Bubble Sort
+- [ ] Insertion
+- [ ] Selection Sort
+- [ ] Tree Sort
+- [ ] Shell Sort
+- [ ] Bucket Sort
+- [ ] Radix Sort
+- [ ] Counting Sort
+- [ ] Cubesort
 ## Misc
 Understand the substring template with the following: [template #1](https://discuss.leetcode.com/topic/30941/here-is-a-10-line-template-that-can-solve-most-substring-problems/2) and [template #2](https://discuss.leetcode.com/topic/71662/sliding-window-algorithm-template-to-solve-all-the-leetcode-substring-search-problem)
 ## Arrays
