@@ -11,9 +11,6 @@ namespace MaximumSubarray.Tests
         [InlineData(new int[] {-1, 2}, 2)]
         [InlineData(new int[] {2, -1}, 2)]
         [InlineData(new int[] {-2, -3, 1}, 1)]
-
-        // maximum subarray problem - https://en.wikipedia.org/wiki/Maximum_subarray_problem
-        // contiguous subarray [4,-1,2,1]
         [InlineData(new int[] {-2, 1,  -3, 4, -1, 2, 1, -5, 4}, 6)]
         public void Given_ValidArray_Expect_LargestSum(int[] i, int e)
         {
