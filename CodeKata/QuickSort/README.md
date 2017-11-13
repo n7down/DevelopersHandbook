@@ -24,7 +24,9 @@ quickSort(arr[], low, high)
 }
 ```
 ![quick-sort](Images/QuickSort2.png?raw=true "Quick Sort")
+
 Partition Algorithm
+
 There can be many ways to do partition, following pseudo code adopts the method given in CLRS book. The logic is simple, we start from the leftmost element and keep track of index of smaller (or equal to) elements as i. While traversing, if we find a smaller element, we swap current element with arr[i]. Otherwise we ignore current element.
 ```
 /* low  --> Starting index,  high  --> Ending index */
