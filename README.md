@@ -1,4 +1,4 @@
-# Technical Invterview Review
+# Technical Interview Review
 This repository is designed to organize all of the nessesary material and resources to prepare for a successful technical interview.
 
 # Table of Contents
