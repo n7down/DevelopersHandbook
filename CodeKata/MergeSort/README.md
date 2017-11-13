@@ -1,29 +1,21 @@
 # Merge Sort
-Like Merge Sort, QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways.
-
-Always pick first element as pivot.
-Always pick last element as pivot (implemented below)
-Pick a random element as pivot.
-Pick median as pivot.
-The key process in quickSort is partition(). Target of partitions is, given an array and an element x of array as pivot, put x at its correct position in sorted array and put all smaller elements (smaller than x) before x, and put all greater elements (greater than x) after x. All this should be done in linear time.
-
-Pseudo Code for recursive QuickSort function :
+Like QuickSort, Merge Sort is a Divide and Conquer algorithm. It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r) is key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one. See following C implementation for details.
 
 ```
-/* low  --> Starting index,  high  --> Ending index */
-quickSort(arr[], low, high)
-{
-    if (low < high)
-    {
-        /* pi is partitioning index, arr[p] is now
-           at right place */
-        pi = partition(arr, low, high);
-
-        quickSort(arr, low, pi - 1);  // Before pi
-        quickSort(arr, pi + 1, high); // After pi
-    }
-}
+MergeSort(arr[], l,  r)
+If r > l
+     1. Find the middle point to divide the array into two halves:  
+             middle m = (l+r)/2
+     2. Call mergeSort for first half:   
+             Call mergeSort(arr, l, m)
+     3. Call mergeSort for second half:
+             Call mergeSort(arr, m+1, r)
+     4. Merge the two halves sorted in step 2 and 3:
+             Call merge(arr, l, m, r)
 ```
+
+The following diagram from wikipedia shows the complete merge sort process for an example array {38, 27, 43, 3, 9, 82, 10}. If we take a closer look at the diagram, we can see that the array is recursively divided in two halves till the size becomes 1. Once the size becomes 1, the merge processes comes into action and starts merging arrays back till the complete array is merged.
+
 Here is an visual example using { 38, 27, 43, 3, 9, 82, 10 }
 
 ![merge-sort](https://i.stack.imgur.com/lF95K.png)

@@ -3,9 +3,10 @@ using Xunit;
 
 namespace MergeSort.Tests
 {
-    public class UnitTest1
+    public class SortTests
     {
-        [Fact]
+        [Theory]
+        [InlineData()]
         public void Test1()
         {
 
