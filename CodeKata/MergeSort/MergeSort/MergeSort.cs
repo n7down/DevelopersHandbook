@@ -4,7 +4,7 @@ namespace MergeSort
 {
     public class MergeSort
     {
-        public int[] Sort(int[] i)
+        public static int[] Sort(int[] i)
         {
             return new int[] {};
         }
