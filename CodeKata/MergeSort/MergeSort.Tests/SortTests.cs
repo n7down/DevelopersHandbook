@@ -23,7 +23,6 @@ namespace MergeSort.Tests
         [Theory]
         [InlineData(new int[] { 1 }, new int[] { 1 })]
         [InlineData(new int[] { 2, 1, 3 }, new int[] { 1, 2, 3 })]
-        [InlineData(new int[] { 38, 27, 43, 3, 9, 82, 10 }, new int[] { 3, 9, 10, 27, 38, 43, 82 })]
         public void Given_UnsortedOddNumberElementsArray_Expect_SortedArray(int[] i, int[] e)
         {
             int[] a = MergeSort.Sort(i);

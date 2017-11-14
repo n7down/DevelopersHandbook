@@ -21,15 +21,15 @@ namespace MergeSort
             int[] result;
             if(i[r] > i[l])
             {
-                int[] la = Sort(i, l, m);
-                int[] ra = Sort(i, m + 1, r);
-                result = Merge(la, m, ra);
+                int[] ls = Sort(i, l, m);
+                int[] rs = Sort(i, m + 1, r);
+                result = Merge(ls, m, rs);
             }
             else
             {
-                int[] la = Sort(i, r, m);
-                int[] ra = Sort(i, m + 1, l);
-                result = Merge(ra, m, la);
+                int[] ls = Sort(i, r, m);
+                int[] rs = Sort(i, m + 1, l);
+                result = Merge(rs, m, ls);
             }
             return result;
         }
