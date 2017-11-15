@@ -28,4 +28,4 @@ Here is an visual example using { 38, 27, 43, 3, 9, 82, 10 }
 2. Run `dotnet test` from inside the directory
 
 ## Notes
-- [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)
+- [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort) - try array - to list - return array
