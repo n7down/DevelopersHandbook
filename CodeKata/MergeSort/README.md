@@ -26,3 +26,6 @@ Here is an visual example using { 38, 27, 43, 3, 9, 82, 10 }
 ## Getting Started 
 1. Clone this directory
 2. Run `dotnet test` from inside the directory
+
+## Notes
+- [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)

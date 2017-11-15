@@ -22,8 +22,7 @@ namespace MergeSort.Tests
 
         [Theory]
         [InlineData(new int[] { 1 }, new int[] { 1 })]
-        [InlineData(new int[] { 2, 1, 3 }, new int[] { 1, 2, 3 })]
-        public void Given_UnsortedOddNumberElementsArray_Expect_SortedArray(int[] i, int[] e)
+        public void Given_ArrayWithOneElement_Expected_Array(int[] i, int[] e)
         {
             int[] a = MergeSort.Sort(i);
             Assert.True(Enumerable.SequenceEqual(e, a), "Actual: " + PrintArray(a));
@@ -31,7 +30,8 @@ namespace MergeSort.Tests
 
         [Theory]
         [InlineData(new int[] { 2, 1 }, new int[] { 1, 2 })]
-        public void Given_UnsortedEvenNumberElementsArray_Expect_SortedArray(int[] i, int[] e)
+        [InlineData(new int[] { 2, 1, 3 }, new int[] { 1, 2, 3 })]
+        public void Given_UnsortedArray_Expect_SortedArray(int[] i, int[] e)
         {
             int[] a = MergeSort.Sort(i);
             Assert.True(Enumerable.SequenceEqual(e, a), "Actual: " + PrintArray(a));
