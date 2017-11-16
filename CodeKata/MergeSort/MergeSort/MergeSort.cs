@@ -5,83 +5,69 @@ namespace MergeSort
 {
     public class MergeSort
     {
-        private static int[] Sort(int[] i, int l, int r)
+        private static int[] Sort(int[] i)
         {
-            int[] result;
-
-            // if m is even
-            if(i.Length % 2 == 0)
+            int len = i.Length;
+            if(len < 2)
             {
-                result = new int[] {};
+                return i;
             }
-
-            // if m is odd
-            else
+            int mid = len / 2;
+            int[] left = new int[mid];
+            int[] right = new int [len - mid];
+            for(int j = 0; j < mid; j++)
             {
-                int middleIndex = (l + r) / 2;
-                int m = i[middleIndex];
-                int[] ls = new int[] {};
-                int[] rs = new int[] {};
-                result = Merge(ls, m, rs);
+                left[j] = i[j];
             }
-            
-            // int[] result;
-            // if(i[r] > i[l])
-            // {
-            //     int[] ls = Sort(i, l, m);
-            //     int[] rs = Sort(i, m + 1, r);
-            //     result = Merge(ls, m, rs);
-            // }
-            // else
-            // {
-            //     int[] ls = Sort(i, r, m);
-            //     int[] rs = Sort(i, m + 1, l);
-            //     result = Merge(rs, m, ls);
-            // }
-            // return result;
-
-            return result;
+            for(int k = mid; k < len; k++)
+            {
+                right[k - mid] = i[k];
+            }
+            int[] leftSorted = Sort(left);
+            int[] rightSorted = Sort(right);
+            return Merge(leftSorted, rightSorted);
         }
 
-        private static int[] Merge(int[] l, int m, int[] r)
+        private static int[] Merge(int[] l, int[] r)
         {
-            List<int> result = new List<int>();
-            foreach(int a in l)
+            int[] res = new int[l.Length + r.Length];
+            int i = 0, j = 0, k = 0;
+            while(i < l.Length && j < r.Length)
             {
-                result.Add(a);
+                if(l[i] < r[j])
+                {
+                    res[k] = l[i];
+                    i++;
+                }
+                else
+                {
+                    res[k] = r[j];
+                    j++;
+                }
+                k++;
             }
-            result.Add(m);
-            foreach(int b in r)
+            while(i < l.Length)
             {
-                result.Add(b);
+                res[k] = l[i];
+                i++;
+                k++;
             }
-            return result.ToArray();
+            while(j < r.Length)
+            {
+                res[k] = r[j];
+                j++;
+                k++;
+            }
+            return res;
         }
 
-        public static int[] Sort(int[] i)
+        public static int[] Run(int[] i)
         {
             if(i == null || i.Length == 0)
             {
                 throw new ArgumentException("array is null or empty");
             }
-            if(i.Length == 1)
-            {
-                return i;
-            }
-            if(i.Length == 2)
-            {
-                int[] r;
-                if(i[0] < i[1])
-                {
-                    r = new int[] { i[0], i[1] };
-                }
-                else
-                {
-                    r = new int[] { i[1], i[0] };
-                }
-                return r;
-            }
-            return Sort(i, 0, i.Length - 1);
+            return Sort(i);
         }
     }
 }
