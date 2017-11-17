@@ -30,9 +30,12 @@ namespace QuickSort
                     pIndex++;
                 }
             }
-            tmp = i[e];
-            i[e] = i[pIndex];
-            i[pIndex] = tmp;
+            if(i[e] < i[pIndex])
+            {
+                tmp = i[e];
+                i[e] = i[pIndex];
+                i[pIndex] = tmp;
+            }
             return pIndex;
         }
 

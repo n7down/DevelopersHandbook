@@ -25,6 +25,7 @@ namespace QuickSort.Tests
         [InlineData(new int[] { 2, 1 }, new int[] { 1, 2 })]
         [InlineData(new int[] { 6, 10, 3}, new int[] { 3, 6, 10 })]
         [InlineData(new int[] { 4, 2, 7, 3 }, new int[] { 2, 3, 4, 7 })]
+        [InlineData(new int[] { 15, 72, 3, 45, 2 }, new int[] { 2, 3, 15, 45, 72 })]
         public void Given_ValidArray_Expected_SortedArray(int[] i, int[] e)
         {
             int[] a = QuickSort.Sort(i);
