@@ -124,7 +124,7 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 
 # Algorithms
 ## General Tips
-- [ ] Quicksort
+- [x] Quicksort
 - [x] Mergesort
 - [ ] Timsort
 - [ ] Heapsort
