@@ -2,7 +2,11 @@
 
 namespace MaximumProductSubarray
 {
-    public class Class1
+    public class MaximumProductSubarray
     {
+        public static int MaximumProduct(int[] i)
+        {
+            return 0;
+        }
     }
 }
