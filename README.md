@@ -145,7 +145,7 @@ Understand the substring template with the following: [template #1](https://disc
 - [x] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)
 - [x] [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/)
 - [x] [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/)
-- [ ] [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/description/)
+- [x] [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/description/)
 - [ ] [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)
 - [ ] [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)
 - [ ] [3Sum](https://leetcode.com/problems/3sum/description/)
