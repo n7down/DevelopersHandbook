@@ -1,5 +1,5 @@
-# Insertion Sort
-Insertion sort is a simple sorting algorithm that works the way we sort playing cards in our hands.
+# Bubble Sort
+Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
 
 ## Prerequisites
 - [.Net Core 2](https://www.microsoft.com/net/download/)
