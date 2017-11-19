@@ -31,6 +31,7 @@ namespace InsertionSort.Tests
         [Theory]
         [InlineData(new int[] { 1 }, new int[] { 1 })]
         [InlineData(new int[] { 2, 1 }, new int[] { 1, 2 })]
+        [InlineData(new int[] { 12, 11, 13, 5, 6 }, new int[] { 5, 6, 11, 12, 13 })]
         public void Given_UnsortedArray_Expected_SortedArray(int[] d, int[] e)
         {
             int[] a = InsertionSort.Sort(d);
