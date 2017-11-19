@@ -129,7 +129,7 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] Timsort
 - [ ] Heapsort
 - [ ] Bubble Sort
-- [ ] Insertion Sort
+- [x] Insertion Sort
 - [ ] Selection Sort
 - [ ] Tree Sort
 - [ ] Shell Sort
