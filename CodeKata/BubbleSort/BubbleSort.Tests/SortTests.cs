@@ -1,4 +1,6 @@
 using System;
+using System.Linq;
+using System.Text;
 using Xunit;
 
 namespace BubbleSort.Tests
@@ -8,8 +10,8 @@ namespace BubbleSort.Tests
         private string PrintArray(int[] d)
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("[ ")
-            for(int a in d)
+            sb.Append("[ ");
+            foreach(int a in d)
             {
                 sb.Append(a);
                 sb.Append(" ");
