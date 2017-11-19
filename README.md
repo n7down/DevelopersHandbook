@@ -157,7 +157,10 @@ Understand the substring template with the following: [template #1](https://disc
 # Source Control
 ## Git
 
-# Cracking the Code Interview
+# Books
+## Cracking the Code Interview
+## Head First Into Design Patterns
+## The Clean Coder
 
 # Pluralsight
 
