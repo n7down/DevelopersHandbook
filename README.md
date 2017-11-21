@@ -158,9 +158,9 @@ Understand the substring template with the following: [template #1](https://disc
 ## Git
 
 # Books
-## Cracking the Code Interview
-## Head First Into Design Patterns
-## The Clean Coder
+- [ ] Cracking the Code Interview
+- [ ] Head First Into Design Patterns
+- [ ] The Clean Coder
 
 # Pluralsight
 
