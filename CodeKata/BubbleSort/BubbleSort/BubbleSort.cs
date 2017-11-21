@@ -13,7 +13,25 @@ namespace BubbleSort
 
         public static int[] Sort(int[] d)
         {
-            return new int[] {};
+            if(d == null || d.Length == 0)
+            {
+                throw new ArgumentException("array is null or empty");
+            }
+            if(d.Length == 1)
+            {
+                return d;
+            }
+            bool swapping = true;
+            int i = 0;
+            while(swapping)
+            {
+                if(d[i] > d[i+1])
+                {
+                    Swap(d, i, i+1);
+                }
+                swapping = false;
+            }
+            return d;
         }
     }
 }
