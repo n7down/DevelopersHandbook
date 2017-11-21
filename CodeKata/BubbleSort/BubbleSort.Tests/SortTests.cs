@@ -31,6 +31,9 @@ namespace BubbleSort.Tests
         [Theory]
         [InlineData(new int[] { 1 }, new int[] { 1 })]
         [InlineData(new int[] { 2, 1 }, new int[] { 1, 2 })]
+        [InlineData(new int[] { 3, 2, 1 }, new int[] { 1, 2, 3 })]
+        [InlineData(new int[] { 5, 1, 4, 2, 8 }, new int[] { 1, 2, 4, 5, 8 })]
+        
         public void Given_UnsortedArray_Expect_SortedArray(int[] d, int[] e)
         {
             int[] a = BubbleSort.Sort(d);

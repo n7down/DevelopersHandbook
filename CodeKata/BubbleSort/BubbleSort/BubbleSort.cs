@@ -22,14 +22,17 @@ namespace BubbleSort
                 return d;
             }
             bool swapping = true;
-            int i = 0;
             while(swapping)
             {
-                if(d[i] > d[i+1])
-                {
-                    Swap(d, i, i+1);
-                }
                 swapping = false;
+                for(int i = 1; i < d.Length; i++)
+                {
+                    if(d[i-1] > d[i])
+                    {
+                        Swap(d, i, i-1);
+                        swapping = true;
+                    }
+                }
             }
             return d;
         }
