@@ -31,6 +31,7 @@ namespace SelectionSort.Tests
         [Theory]
         [InlineData(new int[] { 1 }, new int[] { 1 })]
         [InlineData(new int[] { 2, 1 }, new int[] { 1, 2 })]
+        [InlineData(new int[] { 64, 25, 12, 22, 11 }, new int[] { 11, 12, 22, 25, 64 })]
         public void Given_UnsortedArray_Expect_SortedArray(int[] d, int[] e)
         {
             int[] a = SelectionSort.Sort(d);
