@@ -4,6 +4,13 @@ namespace SelectionSort
 {
     public class SelectionSort
     {
+        private static void Swap(int[] d, int a, int b)
+        {
+            int tmp = d[a];
+            d[a] = d[b];
+            d[b] = tmp;
+        }
+
         public static int[] Sort(int[] d)
         {
             if(d == null || d.Length == 0)
