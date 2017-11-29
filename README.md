@@ -1,5 +1,5 @@
-# Technical Interview Review
-This repository is designed to organize all of the nessesary material and resources to prepare for a successful technical interview.
+# Robotics Developer Review
+This repository is designed to organize all of the nessesary material and resources to become a successful robotics developer.
 
 # Table of Contents
 1. [Big-O](#big-o)
@@ -153,14 +153,25 @@ Understand the substring template with the following: [template #1](https://disc
 
 # Languages
 ## C-Sharp
+## C/CPP
+
+# Vim
+- [Vim Cheat Sheet](https://vim.rtorr.com/)
+## Useful C/C++ Plugins
+
+# Robotics
+- [ROS](https://github.com/ros)
+- [betaflight](https://github.com/betaflight/betaflight)
 
 # Source Control
 ## Git
 
 # Books
+## Programming
 - [ ] Cracking the Code Interview
 - [ ] Head First Into Design Patterns
 - [ ] The Clean Coder
+## Robotics
 
 # Pluralsight
 
