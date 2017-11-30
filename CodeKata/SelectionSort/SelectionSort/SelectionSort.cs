@@ -24,12 +24,18 @@ namespace SelectionSort
             for(int i = 0; i < d.Length - 1; i++)
             {
                 int min = d[i];
+                int minIndex = i;
                 for(int j = i; j < d.Length; j++)
                 {
-                    // TODO
+                    if(min < d[j])
+                    {
+                        min = d[j];
+                        minIndex = j;
+                    }
                 }
+                Swap(d, i, minIndex);
             }
-            return new int[] {};
+            return d;
         }
     }
 }
