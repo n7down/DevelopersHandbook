@@ -154,6 +154,7 @@ Understand the substring template with the following: [template #1](https://disc
 # Languages
 ## C-Sharp
 ## C/CPP
+- [awesome-cpp](https://github.com/fffaraz/awesome-cpp#standard-libraries)
 
 # Vim
 - [Vim Cheat Sheet](https://vim.rtorr.com/)
