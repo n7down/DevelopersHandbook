@@ -33,6 +33,6 @@ if (CMAKE_VERSION VERSION_LESS 2.8.11)
 endif()
 
 # Now simply link against gtest or gtest_main as needed. Eg
-add_executable(vector_unittest vector_unittest.cc)
-target_link_libraries(vector_unittest gtest_main)
-add_test(TEST vector COMMAND vector_unittest)
+add_executable(all_tests vector_unittest.cc)
+target_link_libraries(all_tests gtest_main)
+add_test(TEST vector COMMAND all_tests)
