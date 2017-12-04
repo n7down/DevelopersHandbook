@@ -156,6 +156,7 @@ Understand the substring template with the following: [template #1](https://disc
 ## C/CPP
 - [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 - [awesome-cpp](https://github.com/fffaraz/awesome-cpp#standard-libraries)
+- [cpp-cheat-sheet](https://github.com/gibsjose/cpp-cheat-sheet)
 ### Make
 ### CMake
 
