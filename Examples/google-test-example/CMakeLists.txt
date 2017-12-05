@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.7)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
 # Download and unpack googletest at configure time
 configure_file(CMakeLists.txt.in googletest-download/CMakeLists.txt)
 execute_process(COMMAND ${CMAKE_COMMAND} -G "${CMAKE_GENERATOR}" .
@@ -35,6 +39,6 @@ if (CMAKE_VERSION VERSION_LESS 2.8.11)
 endif()
 
 # Now simply link against gtest or gtest_main as needed. Eg
-add_executable(all_tests vector_unittest.cc)
+add_executable(all_tests test/vector_unittest.cc)
 target_link_libraries(all_tests gtest_main)
 add_test(TEST vector COMMAND all_tests)
