@@ -38,26 +38,13 @@ if (CMAKE_VERSION VERSION_LESS 2.8.11)
 	include_directories("${gtest_SOURCE_DIR}/include")
 endif()
 
-# file(GLOB SOURCES
-	#	test/*.h
-	#	test/*.cpp
-	#	test/*.cc
-	#)
+include_directories(src)
 
-file(GLOB HEADERS
-	src/*.h
-)
-
-file(GLOB SOURCES
-	src/*.cpp
-)
-
-file(GLOB TESTS
-	test/*.cc
-)
+file(GLOB HEADERS src/*.h)
+file(GLOB SOURCES src/*.cpp)
+file(GLOB TESTS test/*.cc)
 
 # Now simply link against gtest or gtest_main as needed. Eg
-#add_executable(all_tests test/vector_unittest.cc)
 add_executable(all_tests ${HEADERS} ${SOURCES} ${TESTS})
 target_link_libraries(all_tests gtest_main)
 add_test(TEST all_tests COMMAND all_tests)
