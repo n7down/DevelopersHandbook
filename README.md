@@ -48,7 +48,8 @@ Radix Sort|Ω(nk)|Θ(nk)|O(nk)|O(n+k)
 Counting Sort|Ω(n+k)|Θ(n+k)|O(n+k)|O(k)
 Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 
-# Data Structures
+# Code Kata
+## Data Structures
 - [ ] Stack
 - [ ] Queue
 - [ ] Singly-Linked List
@@ -63,8 +64,8 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] AVL Tree
 - [ ] KD Tree
 
-# Design Patterns
-## Creational
+## Design Patterns
+### Creational
 - [ ] Abstract Factory
     - Creates an instance of several families of classes
 - [ ] Builder
@@ -78,7 +79,7 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] Singleton
      - A class of which only a single instance can exist
 
-## Structural
+### Structural
 - [ ] Adapter
      - Match interfaces of different classes
 - [ ] Bridge
@@ -96,7 +97,7 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] Proxy
     - An object representing another object
 
-## Behavior
+### Behavior
 - [ ] Chain of responsibility
      - A way of passing a request between a chain of objects
 - [ ] Command
@@ -121,7 +122,8 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
     - Defer the exact steps of an algorithm to a subclass
 - [ ] Visitor
     - Defines a new operation to a class without change
-
+## More Code Kata
+- [leetcode](https://leetcode.com/problemset/all/)
 # Algorithms
 ## General Tips
 - [x] Quicksort
