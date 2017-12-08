@@ -1,4 +1,10 @@
-#ifndef INSERATIONSORT_H
-#define INSERATIONSORT_H
+#ifndef INSERTIONSORT_H
+#define INSERTIONSORT_H
+
+class InsertionSort
+{
+	public:
+		static void sort();
+};
 
 #endif
