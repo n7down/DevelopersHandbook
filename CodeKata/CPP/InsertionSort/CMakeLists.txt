@@ -6,37 +6,11 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-# Download and unpack googletest at configure time
-configure_file(CMakeLists.txt.in googletest-download/CMakeLists.txt)
-execute_process(COMMAND ${CMAKE_COMMAND} -G "${CMAKE_GENERATOR}" .
-  RESULT_VARIABLE result
-  WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/googletest-download)
-if(result)
-  message(FATAL_ERROR "CMake step for googletest failed: ${result}")
-endif()
-execute_process(COMMAND ${CMAKE_COMMAND} --build .
-  RESULT_VARIABLE result
-  WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/googletest-download)
-if(result)
-  message(FATAL_ERROR "Build step for googletest failed: ${result}")
-endif()
+cmake_policy(SET CMP0048 NEW)
+project(my_gtest_pkgconfig VERSION 0.0.1 LANGUAGES CXX)
 
-# Prevent overriding the parent project's compiler/linker
-# settings on Windows
-set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
-
-# Add googletest directly to our build. This defines
-# the gtest and gtest_main targets.
-add_subdirectory(${CMAKE_BINARY_DIR}/googletest-src
-				${CMAKE_BINARY_DIR}/googletest-build
-              	EXCLUDE_FROM_ALL)
-
-# The gtest/gtest_main targets carry header search path
-# dependencies automatically when using CMake 2.8.11 or
-# later. Otherwise we have to add them here ourselves.
-if (CMAKE_VERSION VERSION_LESS 2.8.11)
-	include_directories("${gtest_SOURCE_DIR}/include")
-endif()
+find_package(PkgConfig)
+pkg_search_module(GTEST REQUIRED gtest_main)
 
 include_directories(src)
 
@@ -44,7 +18,8 @@ file(GLOB HEADERS src/*.h)
 file(GLOB SOURCES src/*.cpp)
 file(GLOB TESTS test/*.cc)
 
-# Now simply link against gtest or gtest_main as needed. Eg
 add_executable(all_tests ${HEADERS} ${SOURCES} ${TESTS})
-target_link_libraries(all_tests gtest_main)
+target_link_libraries(all_tests ${GTEST_LDFLAGS})
+target_compile_options(all_tests PUBLIC ${GTEST_CFLAGS})
+include(CTest)
 add_test(TEST all_tests COMMAND all_tests)
