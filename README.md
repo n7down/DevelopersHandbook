@@ -167,7 +167,8 @@ Understand the substring template with the following: [template #1](https://disc
 ## Useful C/C++ Plugins
 
 # Robotics
-- [ROS](https://github.com/ros)
+- [ROS](https://github.com/ros/ros)
+- [ROS2](https://github.com/ros2/ros2)
 - [betaflight](https://github.com/betaflight/betaflight)
 
 # Source Control
