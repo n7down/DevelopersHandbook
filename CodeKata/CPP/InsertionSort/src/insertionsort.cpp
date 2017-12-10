@@ -2,9 +2,9 @@
 
 #include "insertionsort.h"
 
-void InsertionSort::sort(std::vector<int> d)
+void InsertionSort::sort(int d[], int size)
 {
-	if(d.size() == 0)
+	if(size == 0)
 	{
 		throw std::invalid_argument("empty array");
 	}
