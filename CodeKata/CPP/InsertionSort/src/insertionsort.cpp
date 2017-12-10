@@ -1,7 +1,11 @@
+#include <stdexcept>
+
 #include "insertionsort.h"
 
-static void sort()
+void InsertionSort::sort(std::vector<int> d)
 {
-	int arr[3];
-	int size = *(&arr + 1) - arr;
+	if(d.size() == 0)
+	{
+		throw std::invalid_argument("empty array");
+	}
 }
