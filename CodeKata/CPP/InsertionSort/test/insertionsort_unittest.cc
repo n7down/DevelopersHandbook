@@ -5,7 +5,19 @@
 
 namespace
 {
-	TEST(InsertionSort, EmptyArray)
+	bool isEqual(int a[], int b[], int size)
+	{
+		for(int i = 0; i < size; i++)
+		{
+			if(a[i] != b[i])
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+
+	TEST(InsertionSortTest, EmptyArray)
 	{
 		try {
 			int d[] = {};
@@ -20,19 +32,19 @@ namespace
 		}
 	}
 
-	TEST(InsertionSort, ArrayWithOneElement)
+	TEST(InsertionSortTest, ArrayWithOneElement)
 	{
 		int d[] = { 1 };
 		int e[] = { 1 };
 		InsertionSort::sort(d, 1);
-		ASSERT_TRUE(d == e);
+		ASSERT_TRUE(isEqual(d, e, 1));
 	}
 
-	TEST(InsertionSort, ArrayWithTwoElements)
+	TEST(InsertionSortTest, ArrayWithTwoElements)
 	{
 		int d[] = { 2, 1 };
 		int e[] = { 1, 2 };
 		InsertionSort::sort(d, 2);
-		ASSERT_TRUE(d == e);
+		ASSERT_TRUE(isEqual(d, e, 2));
 	}
 }
