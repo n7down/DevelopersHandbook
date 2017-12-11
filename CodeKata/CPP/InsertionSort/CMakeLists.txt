@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.7)
 
-set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
@@ -24,3 +23,4 @@ target_link_libraries(all_tests ${GTEST_LDFLAGS})
 target_compile_options(all_tests PUBLIC ${GTEST_CFLAGS})
 include(CTest)
 add_test(TEST all_tests COMMAND all_tests)
+

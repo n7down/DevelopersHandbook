@@ -163,7 +163,7 @@ Understand the substring template with the following: [template #1](https://disc
 ### CMake
 
 # Vim
-- [Vim Cheat Sheet](https://vim.rtorr.com/)
+- [Vim Cheat Sheet](https://github.com/dichen001/cpp-cheat-sheet)
 ## Useful C/C++ Plugins
 
 # Robotics

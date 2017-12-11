@@ -19,7 +19,7 @@ void InsertionSort::sort(int d[], int size)
 	while(i < size)
 	{
 		int j = i;
-		while(j < 0 && d[j-1] > d[j])
+		while(j > 0 && d[j-1] > d[j])
 		{
 			swap(d, j-1, j);
 			j--;

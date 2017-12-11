@@ -7,10 +7,8 @@
 
 namespace
 {
-	bool isEqual(int a[], int b[])
+	bool isEqual(int a[], int b[], int aSize, int bSize)
 	{
-		int aSize = *(&a + 1) - a;
-		int bSize = *(&b + 1) - b;
 		if(aSize != bSize)
 		{
 			return false;
@@ -63,7 +61,9 @@ namespace
 		int d[] = { 1 };
 		int e[] = { 1 };
 		InsertionSort::sort(d, 1);
-		ASSERT_TRUE(isEqual(d, e)) << "expected: " + printArray(e, 1) + " actual: " + printArray(d, 1);
+		int dSize = sizeof(d) / sizeof(int);
+		int eSize = sizeof(e) / sizeof(int);
+		ASSERT_TRUE(isEqual(d, e, dSize, eSize)) << "expected: " + printArray(e, eSize) + " actual: " + printArray(d, dSize);
 	}
 
 	TEST(InsertionSort, ArrayWithTwoElements)
@@ -71,6 +71,8 @@ namespace
 		int d[] = { 2, 1 };
 		int e[] = { 1, 2 };
 		InsertionSort::sort(d, 2);
-		ASSERT_TRUE(isEqual(d, e)) << "expected: " + printArray(e, 2) + " actual: " + printArray(d, 2);
+		int dSize = sizeof(d) / sizeof(int);
+		int eSize = sizeof(e) / sizeof(int);
+		ASSERT_TRUE(isEqual(d, e, dSize, eSize)) << "expected: " + printArray(e, eSize) + " actual: " + printArray(d, dSize);
 	}
 }
