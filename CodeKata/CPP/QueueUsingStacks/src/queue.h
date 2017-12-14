@@ -8,13 +8,13 @@ class Queue
 	private:
 		std::stack<int> a;
 		std::stack<int> b;
+		void update();
 
 	public:
-		Queue();
-		virtual ~Queue();
+		int top();
 		void enqueue(int i);
 		int dequeue();
 		int size();
 };
 
-#endif /* QUEUE_H */
+#endif
