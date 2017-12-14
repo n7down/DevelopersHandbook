@@ -6,10 +6,10 @@
 class Threesum
 {
 	private:
-		vector<int> t;
+		std::vector<int> t;
 
 	public:
-		static vector<vector<int>> getThreeSum(vector<int>& i);
+		static std::vector<std::vector<int> > getThreeSum(std::vector<int>& i);
 };
 
 #endif
