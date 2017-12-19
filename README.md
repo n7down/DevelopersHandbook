@@ -154,6 +154,12 @@ Understand the substring template with the following: [template #1](https://disc
 - [ ] [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/)
 
 ## Binary
+- [ ] [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)
+- [ ] [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
+- [ ] [Counting Bits](https://leetcode.com/problems/counting-bits/)
+- [ ] [Missing Number](https://leetcode.com/problems/missing-number/)
+- [ ] [Reverse Bits](https://leetcode.com/problems/reverse-bits/)i
+
 Some helpful utility snippets:
 
 - Test k<sup>th</sup> bit is set: `num & (1 << k) != 0`.
@@ -161,12 +167,6 @@ Some helpful utility snippets:
 - Turn off k<sup>th</sup> bit: `num &= ~(1 << k)`.
 - Toggle the k<sup>th</sup> bit: `num ^= (1 << k)`.
 - To check if a number is a power of 2, `num & num - 1 == 0`.
-
-- [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)
-- [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
-- [Counting Bits](https://leetcode.com/problems/counting-bits/)
-- [Missing Number](https://leetcode.com/problems/missing-number/)
-- [Reverse Bits](https://leetcode.com/problems/reverse-bits/)
 
 # Languages
 ## C-Sharp
