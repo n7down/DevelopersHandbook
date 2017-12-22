@@ -191,8 +191,9 @@ class Mutable{
 		}
 		set
 		{
-			v = value
+			v = value;
 		}
+	}
 }
 
 class Immutable {
