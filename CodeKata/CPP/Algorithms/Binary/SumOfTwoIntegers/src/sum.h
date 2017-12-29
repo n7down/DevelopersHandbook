@@ -4,11 +4,10 @@
 class Sum
 {
 private:
-	
 
 public:
-	Sum();
-	virtual ~Sum();
+	static int getSum(int a, int b);
+
 };
 
 #endif
