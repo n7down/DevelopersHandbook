@@ -3,18 +3,25 @@ This repository is designed to organize all of the nessesary material and resour
 
 # Table of Contents
 1. [Big-O](#big-o)
-2. [Data-Structures](#data-structures)
-3. [Design-Patterns](#design-patterns)
-- [Creational](#creational)
-- [Structural](#structural)
-- [Behavior](#behavior)
+2. [Data Structures](#data-structures)
+3. [Design Patterns](#design-patterns)
+	- [Creational](#creational)
+	- [Structural](#structural)
+	- [Behavior](#behavior)
 4. [Algorithms](#algorithms)
- - [General](#general)
- - [Array](#array)
- - [Binary](#binary)
+ 	- [General](#general)
+ 	- [Array](#array)
+ 	- [Binary](#binary)
 5. [Languages](#languages)
-6. [Source Control](#source-control)
+	- [All](#all)
+	- [C-Sharp](#c-sharp)
+	- [C/CPP](#c-cpp)
+6. [Vim](#vim)
+7. [Robotics](#robotics)
+8. [Source Control](#source-control)
+	- [Git](#git)
 
+<a name="big-o"/>
 # Big-O
 ## Big-O Complexity Chart
 ![big-o-complexity-chart](/Images/big-o-complexity-chart.jpg?raw=true)
@@ -56,7 +63,8 @@ Radix Sort|Ω(nk)|Θ(nk)|O(nk)|O(n+k)
 Counting Sort|Ω(n+k)|Θ(n+k)|O(n+k)|O(k)
 Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 
-## Data-Structures
+<a name="data-structures"/>
+# Data Structures
 - [ ] Stack
 - [ ] Queue
 - [ ] Singly-Linked List
@@ -71,7 +79,10 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] AVL Tree
 - [ ] KD Tree
 
-# Design-Patterns
+<a name="design-patterns"/>
+# Design Patterns
+
+<a name="creational"/>
 ## Creational
 - [ ] Abstract Factory
     - Creates an instance of several families of classes
@@ -86,6 +97,7 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] Singleton
      - A class of which only a single instance can exist
 
+<a name="structural"/>
 ## Structural
 - [ ] Adapter
      - Match interfaces of different classes
@@ -104,6 +116,7 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] Proxy
     - An object representing another object
 
+<a name="behavior"/>
 ## Behavior
 - [ ] Chain of responsibility
      - A way of passing a request between a chain of objects
@@ -131,7 +144,11 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
     - Defines a new operation to a class without change
 ## More Code Kata
 - [leetcode](https://leetcode.com/problemset/all/)
+
+<a name="algorithms"/>
 # Algorithms
+
+<a name="general"/>
 ## General
 - [x] Quicksort
 - [x] Mergesort
@@ -148,6 +165,8 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] Cubesort
 ## Notes
 Understand the substring template with the following: [template #1](https://discuss.leetcode.com/topic/30941/here-is-a-10-line-template-that-can-solve-most-substring-problems/2) and [template #2](https://discuss.leetcode.com/topic/71662/sliding-window-algorithm-template-to-solve-all-the-leetcode-substring-search-problem)
+
+<a name="arrays"/>
 ## Arrays
 - [x] [Two Sum](https://leetcode.com/problems/two-sum/)
 - [ ] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
@@ -160,6 +179,7 @@ Understand the substring template with the following: [template #1](https://disc
 - [ ] [3Sum](https://leetcode.com/problems/3sum/description/)
 - [ ] [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/)
 
+<a name="binary"/>
 ## Binary
 - [x] [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)
 - [ ] [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
@@ -175,7 +195,10 @@ Some helpful utility snippets:
 - Toggle the k<sup>th</sup> bit: `num ^= (1 << k)`.
 - To check if a number is a power of 2, `num & num - 1 == 0`.
 
+<a name="languages"/>
 # Languages
+
+<a name="all"/>
 ## All
 ### Mutable and Immutable Objects
 Mutable objects have fields that can be changed, immutable objects have no fields that can be changed after the object is created.
@@ -218,7 +241,10 @@ class Immutable {
 }
 ```
 
+<a name="c-sharp"/>
 ## C-Sharp
+
+<a name="c-cpp"/>
 ## C/CPP
 - [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 - [awesome-cpp](https://github.com/fffaraz/awesome-cpp#standard-libraries)
@@ -226,16 +252,21 @@ class Immutable {
 ### Make
 ### CMake
 
+<a name="vim"/>
 # Vim
 - [Vim Cheat Sheet](https://github.com/dichen001/cpp-cheat-sheet)
 ## Useful C/C++ Plugins
 
+<a name="robotics"/>
 # Robotics
 - [ROS](https://github.com/ros/ros)
 - [ROS2](https://github.com/ros2/ros2)
 - [betaflight](https://github.com/betaflight/betaflight)
 
+<a name="source-control"/>
 # Source Control
+
+<a name="git"/>
 ## Git
 
 # Books
