@@ -4,7 +4,15 @@
 
 int Sum::getSum(int a, int b)
 {
-	std::bitset<64> bitA(a);
-	std::bitset<64> bitB(b);
-	return 0;
+	int sum = a ^ b;
+	int carry = a & b;
+	while(carry != 0)
+	{
+		carry = carry << 1;
+		a = sum;
+		b = carry;
+		sum = a ^ b;
+		carry = a & b;
+	}
+	return sum;
 }
