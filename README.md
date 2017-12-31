@@ -10,7 +10,7 @@ This repository is designed to organize all of the nessesary material and resour
 	- [Behavior](#behavior)
 4. [Algorithms](#algorithms)
  	- [General](#general)
- 	- [Array](#array)
+ 	- [Arrays](#arrays)
  	- [Binary](#binary)
 5. [Languages](#languages)
 	- [All](#all)
@@ -21,7 +21,8 @@ This repository is designed to organize all of the nessesary material and resour
 8. [Source Control](#source-control)
 	- [Git](#git)
 
-# Big-O <a name="big-o"></a>
+<a name="big-o"></a>
+# Big-O 
 ## Big-O Complexity Chart
 ![big-o-complexity-chart](/Images/big-o-complexity-chart.jpg?raw=true)
 ## Common Data Structure Operations
@@ -78,9 +79,11 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] AVL Tree
 - [ ] KD Tree
 
-# Design Patterns <a name="design-patterns"></a>
+<a name="design-patterns"></a>
+# Design Patterns 
 
-## Creational <a name="creational"></a>
+<a name="creational"></a>
+## Creational 
 - [ ] Abstract Factory
     - Creates an instance of several families of classes
 - [ ] Builder
@@ -94,7 +97,8 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] Singleton
      - A class of which only a single instance can exist
 
-##Structural <a name="structural"></a>
+ <a name="structural"></a>
+##Structural
 - [ ] Adapter
      - Match interfaces of different classes
 - [ ] Bridge
@@ -112,7 +116,8 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] Proxy
     - An object representing another object
 
-## Behavoir <a name="behavior"></a>
+<a name="behavior"></a>
+## Behavoir
 - [ ] Chain of responsibility
      - A way of passing a request between a chain of objects
 - [ ] Command
@@ -190,9 +195,11 @@ Some helpful utility snippets:
 - Toggle the k<sup>th</sup> bit: `num ^= (1 << k)`.
 - To check if a number is a power of 2, `num & num - 1 == 0`.
 
-# Languages<a name="languages"></a>
+<a name="languages"></a>
+# Languages
 
-## All<a name="all"></a>
+<a name="all"></a>
+## All
 ### Mutable and Immutable Objects
 Mutable objects have fields that can be changed, immutable objects have no fields that can be changed after the object is created.
 
@@ -200,57 +207,62 @@ A very simple immutable object is a object without any field. (For example a sim
 
 ```
 class Mutable{
-	private int v;
+private int v;
 
-	public Mutable(int value) {
-		this.v = value;
-	}
+public Mutable(int value) {
+	this.v = value;
+}
 
-	public int Value
+public int Value
+{
+	get
 	{
-		get
-		{
-			return v;
-		}
-		set
-		{
-			v = value;
-		}
+		return v;
 	}
+	set
+	{
+		v = value;
+	}
+}
 }
 
 class Immutable {
-	private final int value;
+private final int value;
 
-	public Immutable(int value) {
-		this.value = value;
-	}
+public Immutable(int value) {
+	this.value = value;
+}
 
-	public int Value 
-	{
-		get { return value; }
-		private set;
-	}
+public int Value 
+{
+	get { return value; }
+	private set;
+}
 }
 ```
 
-## C-Sharp<a name="c-sharp"></a>
+<a name="c-sharp"></a>
+## C-Sharp
 
-## C/CPP<a name="c-cpp"></a>
+<a name="c-cpp"></a>
+## C/CPP
 - [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 - [awesome-cpp](https://github.com/fffaraz/awesome-cpp#standard-libraries)
 - [cpp-cheat-sheet](https://github.com/gibsjose/cpp-cheat-sheet)
 ### Make
 ### CMake
 
-#<a name="robotics">Robotics</a>
+<a name="robotics"></a>
+# Robotics
 - [ROS](https://github.com/ros/ros)
 - [ROS2](https://github.com/ros2/ros2)
 - [betaflight](https://github.com/betaflight/betaflight)
 
-# Source Control <a name="source-control"></a>
+<a name="source-control"></a>
+# Source Control
 
-## Git <a name="git"></a>
+<a name="git"></a>
+## Git 
 
 # Books
 ## Programming
