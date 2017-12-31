@@ -21,7 +21,7 @@ This repository is designed to organize all of the nessesary material and resour
 8. [Source Control](#source-control)
 	- [Git](#git)
 
-#<a name="big-o">Big-O</a>
+# Big-O <a name="big-o"></a>
 ## Big-O Complexity Chart
 ![big-o-complexity-chart](/Images/big-o-complexity-chart.jpg?raw=true)
 ## Common Data Structure Operations
@@ -78,9 +78,9 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] AVL Tree
 - [ ] KD Tree
 
-#<a name="design-patterns">Design Patterns</a>
+# Design Patterns <a name="design-patterns"></a>
 
-##<a name="creational">Creational</a>
+## Creational <a name="creational"></a>
 - [ ] Abstract Factory
     - Creates an instance of several families of classes
 - [ ] Builder
@@ -94,7 +94,7 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] Singleton
      - A class of which only a single instance can exist
 
-##<a name="structural">Structural</a>
+##Structural <a name="structural"></a>
 - [ ] Adapter
      - Match interfaces of different classes
 - [ ] Bridge
@@ -112,7 +112,7 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] Proxy
     - An object representing another object
 
-##<a name="behavior">Behavior</a>
+## Behavoir <a name="behavior"></a>
 - [ ] Chain of responsibility
      - A way of passing a request between a chain of objects
 - [ ] Command
@@ -140,9 +140,9 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 ## More Code Kata
 - [leetcode](https://leetcode.com/problemset/all/)
 
-#<a name="algorithms">Algorithms</a>
+# Algorithms <a name="algorithms"></a>
 
-##<a name="general">General</a>
+## General <a name="general"></a>
 - [x] Quicksort
 - [x] Mergesort
 - [ ] Timsort
@@ -159,7 +159,7 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 ## Notes
 Understand the substring template with the following: [template #1](https://discuss.leetcode.com/topic/30941/here-is-a-10-line-template-that-can-solve-most-substring-problems/2) and [template #2](https://discuss.leetcode.com/topic/71662/sliding-window-algorithm-template-to-solve-all-the-leetcode-substring-search-problem)
 
-##<a name="arrays">Arrays</a>
+##Arrays <a name="arrays"></a>
 - [x] [Two Sum](https://leetcode.com/problems/two-sum/)
 - [ ] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
 - [x] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)
@@ -171,7 +171,7 @@ Understand the substring template with the following: [template #1](https://disc
 - [ ] [3Sum](https://leetcode.com/problems/3sum/description/)
 - [ ] [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/)
 
-##<a name="binary">Binary</a>
+## Binary <a name="binary"></a>
 - [x] [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)
 - [ ] [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 - [ ] [Counting Bits](https://leetcode.com/problems/counting-bits/)
@@ -186,9 +186,9 @@ Some helpful utility snippets:
 - Toggle the k<sup>th</sup> bit: `num ^= (1 << k)`.
 - To check if a number is a power of 2, `num & num - 1 == 0`.
 
-#<a name="languages">Languages</a>
+# Languages<a name="languages"></a>
 
-##<a name="all">All</a>
+## All<a name="all"></a>
 ### Mutable and Immutable Objects
 Mutable objects have fields that can be changed, immutable objects have no fields that can be changed after the object is created.
 
@@ -230,9 +230,9 @@ class Immutable {
 }
 ```
 
-##<a name="c-sharp">C-Sharp</a>
+## C-Sharp<a name="c-sharp"></a>
 
-##<a name="c-cpp">C/CPP</a>
+## C/CPP<a name="c-cpp"></a>
 - [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 - [awesome-cpp](https://github.com/fffaraz/awesome-cpp#standard-libraries)
 - [cpp-cheat-sheet](https://github.com/gibsjose/cpp-cheat-sheet)
@@ -244,9 +244,9 @@ class Immutable {
 - [ROS2](https://github.com/ros2/ros2)
 - [betaflight](https://github.com/betaflight/betaflight)
 
-#<a name="source-control">Source Control</a>
+# Source Control <a name="source-control"></a>
 
-##<a name="git">Git</a>
+## Git <a name="git"></a>
 
 # Books
 ## Programming
