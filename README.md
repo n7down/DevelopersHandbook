@@ -3,8 +3,8 @@ This repository is designed to organize all of the nessesary material and resour
 
 # Table of Contents
 1. [Big-O](#big-o)
-2. [Data Structures](#data structures)
-3. [Design Patterns](#design patterns)
+2. [Data-Structures](#data-structures)
+3. [Design-Patterns](#design-patterns)
  - [Creational](#creational)
  - [Structural](#structural)
  - [Behavior](#behavior)
@@ -56,7 +56,7 @@ Radix Sort|Ω(nk)|Θ(nk)|O(nk)|O(n+k)
 Counting Sort|Ω(n+k)|Θ(n+k)|O(n+k)|O(k)
 Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 
-## Data Structures
+## Data-Structures
 - [ ] Stack
 - [ ] Queue
 - [ ] Singly-Linked List
@@ -71,7 +71,7 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] AVL Tree
 - [ ] KD Tree
 
-# Design Patterns
+# Design-Patterns
 ## Creational
 - [ ] Abstract Factory
     - Creates an instance of several families of classes
