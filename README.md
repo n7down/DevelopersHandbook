@@ -140,9 +140,11 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 ## More Code Kata
 - [leetcode](https://leetcode.com/problemset/all/)
 
-# Algorithms <a name="algorithms"></a>
+ <a name="algorithms"></a>
+# Algorithms
 
-## General <a name="general"></a>
+<a name="general"></a>
+## General 
 - [x] Quicksort
 - [x] Mergesort
 - [ ] Timsort
@@ -159,7 +161,8 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 ## Notes
 Understand the substring template with the following: [template #1](https://discuss.leetcode.com/topic/30941/here-is-a-10-line-template-that-can-solve-most-substring-problems/2) and [template #2](https://discuss.leetcode.com/topic/71662/sliding-window-algorithm-template-to-solve-all-the-leetcode-substring-search-problem)
 
-##Arrays <a name="arrays"></a>
+<a name="arrays"></a>
+##Arrays
 - [x] [Two Sum](https://leetcode.com/problems/two-sum/)
 - [ ] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
 - [x] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)
@@ -171,7 +174,8 @@ Understand the substring template with the following: [template #1](https://disc
 - [ ] [3Sum](https://leetcode.com/problems/3sum/description/)
 - [ ] [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/)
 
-## Binary <a name="binary"></a>
+ <a name="binary"></a>
+## Binary
 - [x] [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)
 - [ ] [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 - [ ] [Counting Bits](https://leetcode.com/problems/counting-bits/)
