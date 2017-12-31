@@ -3,9 +3,17 @@ This repository is designed to organize all of the nessesary material and resour
 
 # Table of Contents
 1. [Big-O](#big-o)
-2. [Algorithms](#algorithms)
-3. [Languages](#languages)
-4. [Source Control](#source-control)
+2. [Data Structures](#data structures)
+3. [Design Patterns](#design patterns)
+ - [Creational](#creational)
+ - [Structural](#structural)
+ - [Behavior](#behavior)
+4. [Algorithms](#algorithms)
+ - [General](#general)
+ - [Array](#array)
+ - [Binary](#binary)
+5. [Languages](#languages)
+6. [Source Control](#source-control)
 
 # Big-O
 ## Big-O Complexity Chart
@@ -48,7 +56,6 @@ Radix Sort|Ω(nk)|Θ(nk)|O(nk)|O(n+k)
 Counting Sort|Ω(n+k)|Θ(n+k)|O(n+k)|O(k)
 Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 
-# Code Kata
 ## Data Structures
 - [ ] Stack
 - [ ] Queue
@@ -64,8 +71,8 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] AVL Tree
 - [ ] KD Tree
 
-## Design Patterns
-### Creational
+# Design Patterns
+## Creational
 - [ ] Abstract Factory
     - Creates an instance of several families of classes
 - [ ] Builder
@@ -79,7 +86,7 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] Singleton
      - A class of which only a single instance can exist
 
-### Structural
+## Structural
 - [ ] Adapter
      - Match interfaces of different classes
 - [ ] Bridge
@@ -97,7 +104,7 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] Proxy
     - An object representing another object
 
-### Behavior
+## Behavior
 - [ ] Chain of responsibility
      - A way of passing a request between a chain of objects
 - [ ] Command
@@ -125,7 +132,7 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 ## More Code Kata
 - [leetcode](https://leetcode.com/problemset/all/)
 # Algorithms
-## General Tips
+## General
 - [x] Quicksort
 - [x] Mergesort
 - [ ] Timsort
@@ -139,7 +146,7 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] Radix Sort
 - [ ] Counting Sort
 - [ ] Cubesort
-## Misc
+## Notes
 Understand the substring template with the following: [template #1](https://discuss.leetcode.com/topic/30941/here-is-a-10-line-template-that-can-solve-most-substring-problems/2) and [template #2](https://discuss.leetcode.com/topic/71662/sliding-window-algorithm-template-to-solve-all-the-leetcode-substring-search-problem)
 ## Arrays
 - [x] [Two Sum](https://leetcode.com/problems/two-sum/)
