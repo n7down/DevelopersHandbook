@@ -158,7 +158,7 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 ## Notes
 Understand the substring template with the following: [template #1](https://discuss.leetcode.com/topic/30941/here-is-a-10-line-template-that-can-solve-most-substring-problems/2) and [template #2](https://discuss.leetcode.com/topic/71662/sliding-window-algorithm-template-to-solve-all-the-leetcode-substring-search-problem)
 
-##Arrays <a name="arrays"></a>
+## Arrays <a name="arrays"></a>
 - [x] [Two Sum](https://leetcode.com/problems/two-sum/)
 - [ ] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
 - [x] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)
