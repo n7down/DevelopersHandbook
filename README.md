@@ -17,7 +17,7 @@ This repository is designed to organize all of the nessesary material and resour
 	- [C-Sharp](#c-sharp)
 	- [C/CPP](#c-cpp)
 6. [Robotics](#robotics)
-7. [Book](#books)
+7. [Books](#books)
 8. [Github Resources](#github-resources)
 
 <a name="big-o"></a>
