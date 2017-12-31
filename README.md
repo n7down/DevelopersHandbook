@@ -16,12 +16,12 @@ This repository is designed to organize all of the nessesary material and resour
 	- [All](#all)
 	- [C-Sharp](#c-sharp)
 	- [C/CPP](#c-cpp)
-6. [Vim](#vim)
-7. [Robotics](#robotics)
-8. [Source Control](#source-control)
-	- [Git](#git)
+6. [Robotics](#robotics)
+7. [Book](#books)
+8. [Github Resources](#github-resources)
 
-# Big-O <a name="big-o"></a>
+<a name="big-o"></a>
+# Big-O 
 ## Big-O Complexity Chart
 ![big-o-complexity-chart](/Images/big-o-complexity-chart.jpg?raw=true)
 ## Common Data Structure Operations
@@ -62,7 +62,8 @@ Radix Sort|Ω(nk)|Θ(nk)|O(nk)|O(n+k)
 Counting Sort|Ω(n+k)|Θ(n+k)|O(n+k)|O(k)
 Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 
-# Data Structures <a name="data-structures"/>
+ <a name="data-structures"/>
+# Data Structures
 - [ ] Stack
 - [ ] Queue
 - [ ] Singly-Linked List
@@ -77,9 +78,11 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] AVL Tree
 - [ ] KD Tree
 
-# Design Patterns <a name="design-patterns"></a>
+<a name="design-patterns"></a>
+# Design Patterns 
 
-## Creational <a name="creational"></a>
+<a name="creational"></a>
+## Creational 
 - [ ] Abstract Factory
     - Creates an instance of several families of classes
 - [ ] Builder
@@ -93,7 +96,8 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] Singleton
      - A class of which only a single instance can exist
 
-##Structural <a name="structural"></a>
+<a name="structural"></a>
+##Structural 
 - [ ] Adapter
      - Match interfaces of different classes
 - [ ] Bridge
@@ -111,7 +115,8 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 - [ ] Proxy
     - An object representing another object
 
-## Behavoir <a name="behavior"></a>
+<a name="behavior"></a>
+## Behavoir
 - [ ] Chain of responsibility
      - A way of passing a request between a chain of objects
 - [ ] Command
@@ -139,9 +144,11 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 ## More Code Kata
 - [leetcode](https://leetcode.com/problemset/all/)
 
-# Algorithms <a name="algorithms"></a>
+<a name="algorithms"></a>
+# Algorithms
 
-## General <a name="general"></a>
+<a name="general"></a>
+## General 
 - [x] Quicksort
 - [x] Mergesort
 - [ ] Timsort
@@ -158,7 +165,8 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 ## Notes
 Understand the substring template with the following: [template #1](https://discuss.leetcode.com/topic/30941/here-is-a-10-line-template-that-can-solve-most-substring-problems/2) and [template #2](https://discuss.leetcode.com/topic/71662/sliding-window-algorithm-template-to-solve-all-the-leetcode-substring-search-problem)
 
-## Arrays <a name="arrays"></a>
+<a name="arrays"></a>
+## Arrays 
 - [x] [Two Sum](https://leetcode.com/problems/two-sum/)
 - [ ] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
 - [x] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)
@@ -170,7 +178,8 @@ Understand the substring template with the following: [template #1](https://disc
 - [ ] [3Sum](https://leetcode.com/problems/3sum/description/)
 - [ ] [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/)
 
-## Binary <a name="binary"></a>
+<a name="binary"></a>
+## Binary 
 - [x] [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)
 - [ ] [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 - [ ] [Counting Bits](https://leetcode.com/problems/counting-bits/)
@@ -185,9 +194,11 @@ Some helpful utility snippets:
 - Toggle the k<sup>th</sup> bit: `num ^= (1 << k)`.
 - To check if a number is a power of 2, `num & num - 1 == 0`.
 
-# Languages <a name="languages"></a>
+<a name="languages"></a>
+# Languages
 
-## All <a name="all"></a>
+<a name="all"></a>
+## All
 ### Mutable and Immutable Objects
 Mutable objects have fields that can be changed, immutable objects have no fields that can be changed after the object is created.
 
@@ -229,24 +240,24 @@ class Immutable {
 }
 ```
 
-## C-Sharp <a name="c-sharp"></a>
+<a name="c-sharp"></a>
+## C-Sharp 
 
-## C/CPP <a name="c-cpp"></a>
+<a name="c-cpp"></a>
+## C/CPP
 - [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 - [awesome-cpp](https://github.com/fffaraz/awesome-cpp#standard-libraries)
 - [cpp-cheat-sheet](https://github.com/gibsjose/cpp-cheat-sheet)
 ### Make
 ### CMake
 
-# Robotics <a name="robotics"></a>
+<a name="robotics"></a>
+# Robotics 
 - [ROS](https://github.com/ros/ros)
 - [ROS2](https://github.com/ros2/ros2)
 - [betaflight](https://github.com/betaflight/betaflight)
 
-# Source Control <a name="source-control"></a>
-
-## Git <a name="git"></a>
-
+<a name="books"></a>
 # Books
 ## Programming
 - [ ] Cracking the Code Interview
@@ -254,8 +265,7 @@ class Immutable {
 - [ ] The Clean Coder
 ## Robotics
 
-# Pluralsight
-
+<a name="github-resources"></a>
 # Github Resources
 - [jwasham/coding-interview-university](https://github.com/jwasham/coding-interview-university)
 - [yangshun/tech-interview-handbook](https://github.com/yangshun/tech-interview-handbook)
