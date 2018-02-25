@@ -97,7 +97,7 @@ Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
      - A class of which only a single instance can exist
 
 <a name="structural"></a>
-##Structural 
+## Structural 
 - [ ] Adapter
      - Match interfaces of different classes
 - [ ] Bridge
