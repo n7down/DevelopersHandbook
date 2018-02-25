@@ -1,6 +1,9 @@
 # Number Of 1 Bits
-Write a function that takes an unsigned integer and returns the number of ’1' bits it has (also known as the Hamming weight).
-For example, the 32-bit integer ’11' has binary representation `00000000000000000000000000001011`, so the function should return 3.
+Given a non negative integer number num. For every numbers i in the range 0 ≤ i ≤ num calculate the number of 1's in their 
+binary representation and return them as an array.
+
+Example:
+For `num = 5` you should `return [0,1,1,2,1,2]`.
 
 ## Prerequisites
 - [cmake](https://cmake.org/)
