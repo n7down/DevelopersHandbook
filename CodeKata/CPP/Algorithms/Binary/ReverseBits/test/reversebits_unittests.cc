@@ -7,7 +7,7 @@
 
 TEST(ReverseBitsTests, reverseBits)
 {
-	uint32_t expected; // = 00111001011110000010100101000000;
-	uint32_t actual = 2; // = ReverseBits::reverseBits(00000010100101000001111010011100);
+	uint32_t expected = 43261596; 
+	uint32_t actual = ReverseBits::reverseBits(964176192);
 	ASSERT_TRUE(expected == actual) << "actual: " + std::to_string(actual);
 }
