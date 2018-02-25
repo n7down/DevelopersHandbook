@@ -62,9 +62,9 @@ Radix Sort|Ω(nk)|Θ(nk)|O(nk)|O(n+k)
 Counting Sort|Ω(n+k)|Θ(n+k)|O(n+k)|O(k)
 Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 
-
- <a name="data-structures"/>
+<a name="data-structures"/>
 # Data Structures
+
 - [ ] Stack
 - [ ] Queue
 - [ ] Singly-Linked List
