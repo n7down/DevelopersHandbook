@@ -63,7 +63,7 @@ Counting Sort|Ω(n+k)|Θ(n+k)|O(n+k)|O(k)
 Cubesort|Ω(n)|Θ(n log(n))|O(n log(n))|O(n)
 
  <a name="data-structures"/>
-# Data Structures
+## Data Structures
 - [ ] Stack
 - [ ] Queue
 - [ ] Singly-Linked List
