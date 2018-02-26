@@ -84,12 +84,6 @@ class Immutable {
 - [ROS2](https://github.com/ros2/ros2)
 - [betaflight](https://github.com/betaflight/betaflight)
 
-<a name="books"></a>
-# Books
-## Programming
-- [ ] Cracking the Code Interview
-- [ ] Head First Into Design Patterns
-- [ ] The Clean Coder
 ## Robotics
 
 <a name="github-resources"></a>
