@@ -12,7 +12,7 @@ This repository is designed to organize all of the nessesary material and resour
 	- [C-Sharp](#c-sharp)
 	- [C/CPP](#c-cpp)
 7. [Robotics](#robotics)
-8. [Books](#books)
+8. [Books](books/README.md)
 9. [Github Resources](#github-resources)
 
 ## More Code Kata
