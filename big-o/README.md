@@ -1,6 +1,6 @@
 # Big-O 
 ## Big-O Complexity Chart
-![big-o-complexity-chart](/Images/big-o-complexity-chart.jpg?raw=true)
+![big-o-complexity-chart](Images/big-o-complexity-chart.jpg?raw=true)
 ## Common Data Structure Operations
 Data Structure|Time Complexity| | | | | | | |Space Complexity
 ---|---|---|---|---|---|---|---|---|---
