@@ -5,7 +5,7 @@ This repository is designed to organize all of the nessesary material and resour
 1. [Big-O](big-o/README.md)
 2. [Data Structures](data-structures/README.md)
 3. [Design Patterns](design-patterns/README.md)
-4. [Algorithms](#algorithms)
+4. [Algorithms](algorithms/README.md)
  	- [General](#general)
  	- [Array](#array)
  	- [Binary](#binary)
@@ -23,21 +23,6 @@ This repository is designed to organize all of the nessesary material and resour
 <a name="algorithms"></a>
 # Algorithms
 
-<a name="general"></a>
-## General 
-- [x] Quicksort
-- [x] Mergesort
-- [ ] Timsort
-- [ ] Heapsort
-- [x] Bubble Sort
-- [x] Insertion Sort
-- [ ] Selection Sort
-- [ ] Tree Sort
-- [ ] Shell Sort
-- [ ] Bucket Sort
-- [ ] Radix Sort
-- [ ] Counting Sort
-- [ ] Cubesort
 ## Notes
 Understand the substring template with the following: [template #1](https://discuss.leetcode.com/topic/30941/here-is-a-10-line-template-that-can-solve-most-substring-problems/2) and [template #2](https://discuss.leetcode.com/topic/71662/sliding-window-algorithm-template-to-solve-all-the-leetcode-substring-search-problem)
 
