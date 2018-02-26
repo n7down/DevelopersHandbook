@@ -3,7 +3,7 @@ This repository is designed to organize all of the nessesary material and resour
 
 # Table of Contents
 1. [Big-O](big-o/README.md)
-2. [Data Structures](#data-structures)
+2. [Data Structures](data-structures/README.md)
 3. [Design Patterns](#design-patterns)
 	- [Creational](#creational)
 	- [Structural](#structural)
@@ -19,22 +19,6 @@ This repository is designed to organize all of the nessesary material and resour
 6. [Robotics](#robotics)
 7. [Books](#books)
 8. [Github Resources](#github-resources)
-
-<a name="data-structures"></a>
-# Data Structures
-- [ ] Stack
-- [ ] Queue
-- [ ] Singly-Linked List
-- [ ] Doubly-Linked List
-- [ ] Skip List
-- [ ] Hash Table
-- [ ] Binary Search Tree
-- [ ] Cartesian Tree
-- [ ] B-Tree
-- [ ] Red-Black Tree
-- [ ] Splay Tree
-- [ ] AVL Tree
-- [ ] KD Tree
 
 <a name="design-patterns"></a>
 # Design Patterns 
