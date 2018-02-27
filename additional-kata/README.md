@@ -1,8 +1,13 @@
 # Additional Kata
 
 ## Table Of Contents
+1. [Tip And Tricks](#tips-and-tricks)
 1. [Arrays](#arrays)
 2. [Binary](#binary)
+
+<a name="tips-and-tricks"></a>
+## Tips And Tricks
+Understand the substring template with the following: [template #1](https://discuss.leetcode.com/topic/30941/here-is-a-10-line-template-that-can-solve-most-substring-problems/2) and [template #2](https://discuss.leetcode.com/topic/71662/sliding-window-algorithm-template-to-solve-all-the-leetcode-substring-search-problem)
 
 <a name="arrays"></a>
 ## Arrays 
