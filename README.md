@@ -1,5 +1,5 @@
 # Robotics Developer Review
-This repository is designed to organize all of the nessesary material and resources to become a successful robotics developer from zero software experience.
+This repository is designed to organize all of the nessesary material and resources to become a successful robotics developer from zero software or hardware experience.
 
 # Table of Contents
 1. [Big-O](big-o/README.md)
