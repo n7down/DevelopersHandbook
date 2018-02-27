@@ -1,2 +1,2 @@
-# Code Kata
-Code kata is an exercise in programming which helps a programmer hone their skills through practice and repetition.
+# Solutions
+This contains all of the solutions to all of the problems in this project.
