@@ -1,5 +1,5 @@
 # Robotics Developer Handbook 
-This repository is designed to organize all of the nessesary material and resources to become a successful robotics developer with zero to no software or hardware experience.
+This repository is designed to organize all of the nessesary materials and resources to become a successful robotics developer with zero to no software or hardware experience.
 
 # Table of Contents
 1. [Big-O](big-o/README.md)
