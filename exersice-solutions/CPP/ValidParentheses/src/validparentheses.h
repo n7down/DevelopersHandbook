@@ -1,12 +1,14 @@
 #ifndef VALIDPARENTHESES_H
 #define VALIDPARENTHESES_H
 
+#include <string>
+
 class ValidParentheses
 {
 private:
 
 public:
-	bool isValid();
+	static bool isValid(std::string s);
 };
 
 #endif 
