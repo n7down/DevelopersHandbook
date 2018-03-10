@@ -1,7 +1,7 @@
 # Languages
 
 ## Table Of Contents
-1. [All](#all)
+1. [Language Concepts](#all)
 2. [C](#c)
 3. [CPP](#cpp)
 4. [ASM](#asm)
