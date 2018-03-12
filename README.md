@@ -13,3 +13,8 @@ This repository is designed to organize all of the nessesary materials and resou
 8. [Books](books/README.md)
 9. [Additional Github Resources](additional-github-resources/README.md)
 
+## Todo
+- [ ] Design principles section
+- [ ] Method section - xp, scrum, lean, kanban, waterfall, structured analysis, and structured design
+- [ ] Disciplines - TDD, object oriented design, structured programming, continuous intergration, and pair programming
+- [ ] Artifacts - UML, DFD's, structured charts, petri nets, state transition diagrams and tables, flow charts, and decision tables
