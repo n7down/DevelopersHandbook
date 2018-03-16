@@ -16,3 +16,9 @@ When writing solutions in software there are four things to keep in mind:
 ## Debugging
 
 ## Practice
+
+## TDD
+The Three Laws of TDD
+1. You are not allowed to write any production code until you have first written a failing unit test. 
+2. You are not allowed to write more of a unit test than is sufficient to fail—and not compiling is failing. 
+3. You are not allowed to write more production code that is sufficient
