@@ -22,6 +22,16 @@ TEST(WindowSlidingTechniqueTest, MaxSumWhereKIs2)
 	ASSERT_TRUE(a == e) << "actual: " + std::to_string(a);
 }
 
+TEST(WindowSlidingTechnique, MaxSumWhereKIs3)
+{
+	int i[] = { 100, 100, 300 };
+	int k = 3;
+	int s = 3;
+	int e = 500;
+	int a = WindowSlidingTechnique::maxSum(i, s, k);
+	ASSERT_TRUE(a == e) << "actual: " + std::to_string(a);
+}
+
 TEST(WindowSlidingTechnique, MaxSumWhereKIs4)
 {
 	int i[] = { 1, 4, 2, 10, 23, 3, 1, 0, 20 };
