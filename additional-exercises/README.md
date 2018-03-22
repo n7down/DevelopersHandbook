@@ -1,7 +1,8 @@
 # Additional Exercies
 
 ## Sequence
-- [ ] [Window Sliding Technique](https://www.geeksforgeeks.org/window-sliding-technique/)
+- [x] [Window Sliding Technique](https://www.geeksforgeeks.org/window-sliding-technique/)
+- [ ] [Find The Longest Substring With K Unique Characters In A Given String](https://www.geeksforgeeks.org/find-the-longest-substring-with-k-unique-characters-in-a-given-string/)
 
 ## Array
 - [x] [Two Sum](https://leetcode.com/problems/two-sum/)
