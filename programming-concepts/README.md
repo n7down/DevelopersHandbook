@@ -24,12 +24,12 @@ The Three Laws of TDD
 3. You are not allowed to write more production code that is sufficient
 
 ## Sequence
-- Understand the **Window Sliding Template** which can be used to solve most substring problem. Here is the algorithm:
+- Understand the **Window Sliding Template** which can be used to solve most substring problems. Here is the algorithm:
 1. Use two pointers: start and end to represent a window.
 2. Move end to find a valid window.
 3. When a valid window is found, move start to find a smaller window.
 
-For most substring problem, we are given a string and need to find a substring of it which satisfy some restrictions. A general way is to use a hashmap assisted with two pointers. The template is given below.
+For most substring problems, we are given a string and need to find a substring of it which satisfy some restrictions. A general way is to use a hashmap assisted with two pointers. 
 Here is the template:
 ```
 int findSubstring(string s){
