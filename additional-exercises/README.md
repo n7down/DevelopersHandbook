@@ -23,3 +23,5 @@
 - [x] [Missing Number](https://leetcode.com/problems/missing-number/)
 - [x] [Reverse Bits](https://leetcode.com/problems/reverse-bits/)
 
+## Backtracking
+- [ ] [Sudoku Solver](https://www.geeksforgeeks.org/backtracking-set-7-suduku/)
