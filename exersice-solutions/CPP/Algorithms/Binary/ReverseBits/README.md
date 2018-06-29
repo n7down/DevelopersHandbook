@@ -11,7 +11,8 @@ For example, given input 43261596 (represented in binary as `0000001010010100000
 1. Run `mkdir build`
 2. Run `cd build`
 3. Run `cmake -DCMAKE_BUILD_TYPE=Debug ..` to build debug symbols
-4. Run `./bin/all_test` to run test cases
+4. Run `make`
+5. Run `./bin/all_test` to run test cases
 
 ## About Solution
 If this function is called many times, you can optimize it to O(1) constant time using bit tweaks.
