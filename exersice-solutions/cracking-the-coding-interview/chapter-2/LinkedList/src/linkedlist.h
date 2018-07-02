@@ -13,10 +13,12 @@ private:
 public:
 	LinkedList();
 	~LinkedList();
+	bool empty();
 	std::string print();
-	void append(int d);
+	LinkedList& append(int d);
 	void remove(int d);
 	bool operator ==(const LinkedList &l) const;
+	bool operator !=(const LinkedList &l) const;
 };
 
 #endif 

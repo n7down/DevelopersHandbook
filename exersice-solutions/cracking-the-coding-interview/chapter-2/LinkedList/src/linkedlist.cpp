@@ -10,6 +10,15 @@ LinkedList::LinkedList()
 	this->tail = NULL;
 }
 
+bool LinkedList::empty()
+{
+	if(this->head == NULL)
+	{
+		return true;
+	}
+	return false; 
+}
+
 std::string LinkedList::print()
 {
 	std::stringstream ss;
@@ -23,16 +32,21 @@ std::string LinkedList::print()
 	ss << "]";
 }
 
-void LinkedList::append(int d)
-{
-	Node *n = new Node(d);
-}
+LinkedList& LinkedList::append(int d)
+{}
 
 void LinkedList::remove(int d)
 {}
 
 bool LinkedList::operator ==(const LinkedList &l) const
-{}
+{
+	return false;
+}
+
+bool LinkedList::operator !=(const LinkedList &l) const
+{
+	return false;
+}
 
 LinkedList::~LinkedList()
 {}
