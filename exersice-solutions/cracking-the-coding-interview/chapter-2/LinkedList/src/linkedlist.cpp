@@ -30,10 +30,13 @@ std::string LinkedList::print()
 		head = head->next;
 	}
 	ss << "]";
+	return ss.str();
 }
 
 LinkedList& LinkedList::append(int d)
-{}
+{
+	return *this;
+}
 
 void LinkedList::remove(int d)
 {}
