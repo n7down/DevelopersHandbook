@@ -15,6 +15,8 @@ public:
 	~LinkedList();
 	std::string print();
 	void append(int d);
+	void remove(int d);
+	bool operator ==(const LinkedList &l) const;
 };
 
 #endif 
