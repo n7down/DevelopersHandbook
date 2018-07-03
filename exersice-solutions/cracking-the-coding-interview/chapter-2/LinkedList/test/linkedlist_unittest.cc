@@ -98,6 +98,15 @@ TEST_F(LinkedListTest, compare_linked_lists_with_equal_operator)
 
 	EXPECT_TRUE(ll10 == ll11) << ll10.print() << " and " << ll11.print() << " should be equal";	
 	fails += ::testing::Test::HasFailure();
+
+	LinkedList ll12;
+	ll12.append(0);
+
+	LinkedList ll13;
+	ll13.append(0).append(1);
+
+	EXPECT_TRUE(ll12 == ll13) << ll12.print() << " and " << ll13.print() << " should not be equal";	
+	fails += ::testing::Test::HasFailure();
 }
 
 TEST_F(LinkedListTest, compare_linked_lists_with_not_equal_operator)
@@ -138,7 +147,7 @@ TEST_F(LinkedListTest, check_if_linked_lists_are_empty)
 	fails += ::testing::Test::HasFailure();
 }
 
-TEST_F(LinkedListTest, append_one_element_to_linked_list)
+TEST_F(LinkedListTest, append_elements_to_linked_list)
 {
 	LinkedList ll0;
 	ll0.append(0);
@@ -148,29 +157,23 @@ TEST_F(LinkedListTest, append_one_element_to_linked_list)
 
 	EXPECT_TRUE(ll0 == ll1) << ll0.print() << " and " << ll1.print() << " should be equal";	
 	fails += ::testing::Test::HasFailure();
-}
 
-TEST_F(LinkedListTest, append_two_elements_to_linked_list)
-{
-	LinkedList ll0;
-	ll0.append(0).append(1);
+	LinkedList ll2;
+	ll2.append(0).append(1);
 
-	LinkedList ll1;
-	ll1.append(0).append(1);
+	LinkedList ll3;
+	ll3.append(0).append(1);
 
-	EXPECT_TRUE(ll0 == ll1) << ll0.print() << " and " << ll1.print() << " should be equal";	
+	EXPECT_TRUE(ll2 == ll3) << ll2.print() << " and " << ll3.print() << " should be equal";	
 	fails += ::testing::Test::HasFailure();
-}
 
-TEST_F(LinkedListTest, append_three_elements_to_linked_list)
-{
-	LinkedList ll0;
-	ll0.append(0).append(1).append(2);
+	LinkedList ll4;
+	ll4.append(0).append(1).append(2);
 
-	LinkedList ll1;
-	ll1.append(0).append(1).append(2);
+	LinkedList ll5;
+	ll5.append(0).append(1).append(2);
 
-	EXPECT_TRUE(ll0 == ll1) << ll0.print() << " and " << ll1.print() << " should be equal";	
+	EXPECT_TRUE(ll4 == ll5) << ll4.print() << " and " << ll5.print() << " should be equal";	
 	fails += ::testing::Test::HasFailure();
 }
 

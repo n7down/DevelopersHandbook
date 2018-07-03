@@ -67,7 +67,40 @@ int LinkedList::count()
 
 bool LinkedList::operator ==(const LinkedList &l) const
 {
-	return false;
+	Node *ch = this->head;
+	Node *lh = l.head;
+
+	if(ch && !lh)
+	{
+		return false;
+	}
+
+	if(!ch && lh)
+	{
+		return false;
+	}
+
+	while(ch && lh)
+	{
+		if(ch->data != lh->data)
+		{
+			return false;
+		}
+		ch = ch->next;
+		lh = lh->next;
+	}
+
+	if(ch && !lh)
+	{
+		return false;
+	}
+
+	if(!ch && lh)
+	{
+		return false;
+	}
+
+	return true;
 }
 
 bool LinkedList::operator !=(const LinkedList &l) const
