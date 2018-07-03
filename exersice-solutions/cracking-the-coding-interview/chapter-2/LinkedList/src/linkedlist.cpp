@@ -33,29 +33,24 @@ std::string LinkedList::print()
 	return ss.str();
 }
 
-void LinkedList::append(int d)
+LinkedList& LinkedList::append(int d)
 {
 	Node *n = new Node(d);
 	if(c == 0)
 	{
-		n->next = NULL;
-		n->prev = NULL;
 		this->head = n;
 		this->tail = n;
 	}
 	else
 	{
-		n->next = NULL;
 		n->prev = this->tail;
 		this->tail->next = n;
 		this->tail = n;
 	}
 	c++;
-}
 
-// TODO: implement after append works
-// LinkedList& LinkedList::append(int d)
-// {}
+	return *this;
+}
 
 LinkedList& LinkedList::removeFromTail()
 {

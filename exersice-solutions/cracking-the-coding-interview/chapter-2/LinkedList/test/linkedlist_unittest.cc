@@ -41,8 +41,7 @@ TEST_F(LinkedListTest, check_count_of_nodes)
 	fails += ::testing::Test::HasFailure();
 
 	LinkedList ll2;
-	ll2.append(0);
-	ll2.append(1);
+	ll2.append(0).append(1);
 
 	EXPECT_EQ(ll2.count(), 2) << "count should be 2";
 	fails += ::testing::Test::HasFailure();
@@ -85,12 +84,10 @@ TEST_F(LinkedListTest, compare_linked_lists_with_equal_operator)
 	fails += ::testing::Test::HasFailure();
 
 	LinkedList ll8;
-	ll8.append(0);
-	ll8.append(1);
+	ll8.append(0).append(1);
 
 	LinkedList ll9;
-	ll9.append(2);
-	ll9.append(3);
+	ll9.append(2).append(3);
 
 	EXPECT_FALSE(ll8 == ll9) << ll8.print() << " and " << ll9.print() << " should not be equal";
 	fails += ::testing::Test::HasFailure();
@@ -156,12 +153,10 @@ TEST_F(LinkedListTest, append_one_element_to_linked_list)
 TEST_F(LinkedListTest, append_two_elements_to_linked_list)
 {
 	LinkedList ll0;
-	ll0.append(0);
-	ll0.append(1);
+	ll0.append(0).append(1);
 
 	LinkedList ll1;
-	ll1.append(0);
-	ll1.append(1);
+	ll1.append(0).append(1);
 
 	EXPECT_TRUE(ll0 == ll1) << ll0.print() << " and " << ll1.print() << " should be equal";	
 	fails += ::testing::Test::HasFailure();
@@ -170,14 +165,10 @@ TEST_F(LinkedListTest, append_two_elements_to_linked_list)
 TEST_F(LinkedListTest, append_three_elements_to_linked_list)
 {
 	LinkedList ll0;
-	ll0.append(0);
-	ll0.append(1);
-	ll0.append(2);
+	ll0.append(0).append(1).append(2);
 
 	LinkedList ll1;
-	ll1.append(0);
-	ll1.append(1);
-	ll1.append(2);
+	ll1.append(0).append(1).append(2);
 
 	EXPECT_TRUE(ll0 == ll1) << ll0.print() << " and " << ll1.print() << " should be equal";	
 	fails += ::testing::Test::HasFailure();

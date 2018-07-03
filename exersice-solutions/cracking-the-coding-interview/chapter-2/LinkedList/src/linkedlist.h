@@ -16,7 +16,7 @@ public:
 	~LinkedList();
 	bool empty();
 	std::string print();
-	void append(int d);
+	LinkedList& append(int d);
 	LinkedList& removeFromTail();
 	void remove(int d);
 	int count();
