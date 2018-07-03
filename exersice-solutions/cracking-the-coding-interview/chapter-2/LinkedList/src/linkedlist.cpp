@@ -38,11 +38,14 @@ void LinkedList::append(int d)
 	Node *n = new Node(d);
 	if(c == 0)
 	{
+		n->next = NULL;
+		n->prev = NULL;
 		this->head = n;
 		this->tail = n;
 	}
 	else
 	{
+		n->next = NULL;
 		n->prev = this->tail;
 		this->tail->next = n;
 		this->tail = n;
