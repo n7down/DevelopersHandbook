@@ -10,12 +10,14 @@ class LinkedList
 private:
 	Node *head;
 	Node *tail;
+	int c;
 public:
 	LinkedList();
 	~LinkedList();
 	bool empty();
 	std::string print();
-	LinkedList& append(int d);
+	void append(int d);
+	LinkedList& removeFromTail();
 	void remove(int d);
 	int count();
 	bool operator ==(const LinkedList &l) const;

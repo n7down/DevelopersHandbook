@@ -8,6 +8,7 @@ LinkedList::LinkedList()
 {
 	this->head = NULL;
 	this->tail = NULL;
+	this->c = 0;
 }
 
 bool LinkedList::empty()
@@ -22,18 +23,38 @@ bool LinkedList::empty()
 std::string LinkedList::print()
 {
 	std::stringstream ss;
-	Node *head = this->head;
 	ss << "[ ";
-	while(head != NULL)
+	while(this->head != NULL)
 	{
-		ss << std::to_string(head->data) << " "; 
-		head = head->next;
+		ss << std::to_string(this->head->data) << " "; 
+		this->head = this->head->next;
 	}
 	ss << "]";
 	return ss.str();
 }
 
-LinkedList& LinkedList::append(int d)
+void LinkedList::append(int d)
+{
+	Node *n = new Node(d);
+	if(c == 0)
+	{
+		this->head = n;
+		this->tail = n;
+	}
+	else
+	{
+		n->prev = this->tail;
+		this->tail->next = n;
+		this->tail = n;
+	}
+	c++;
+}
+
+// TODO: implement after append works
+// LinkedList& LinkedList::append(int d)
+// {}
+
+LinkedList& LinkedList::removeFromTail()
 {
 	return *this;
 }
@@ -43,7 +64,7 @@ void LinkedList::remove(int d)
 
 int LinkedList::count()
 {
-	return -1;
+	return c;
 }
 
 bool LinkedList::operator ==(const LinkedList &l) const
@@ -57,4 +78,14 @@ bool LinkedList::operator !=(const LinkedList &l) const
 }
 
 LinkedList::~LinkedList()
-{}
+{
+	Node *n = head;
+	while(n)
+	{
+		Node *d = n;
+		n = n->next;
+		delete d;
+	}
+	tail = NULL;
+	c = 0;
+}
