@@ -83,6 +83,7 @@ LinkedList::~LinkedList()
 	while(n)
 	{
 		Node *d = n;
+		n->prev = NULL;
 		n = n->next;
 		delete d;
 	}
