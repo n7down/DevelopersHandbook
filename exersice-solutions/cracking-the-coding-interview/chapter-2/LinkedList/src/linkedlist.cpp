@@ -43,7 +43,7 @@ void LinkedList::remove(int d)
 
 int LinkedList::count()
 {
-	return 0;
+	return -1;
 }
 
 bool LinkedList::operator ==(const LinkedList &l) const
