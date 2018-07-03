@@ -41,6 +41,11 @@ LinkedList& LinkedList::append(int d)
 void LinkedList::remove(int d)
 {}
 
+int LinkedList::count()
+{
+	return 0;
+}
+
 bool LinkedList::operator ==(const LinkedList &l) const
 {
 	return false;

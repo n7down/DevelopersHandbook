@@ -17,6 +17,7 @@ public:
 	std::string print();
 	LinkedList& append(int d);
 	void remove(int d);
+	int count();
 	bool operator ==(const LinkedList &l) const;
 	bool operator !=(const LinkedList &l) const;
 };
