@@ -4,17 +4,19 @@
 #include <string>
 #include <sstream>
 
-LinkedList::LinkedList()
+template <typename T>
+LinkedList<T>::LinkedList()
 {
 	this->head = NULL;
 	this->tail = NULL;
 	this->c = 0;
 }
 
-bool LinkedList::equals(const LinkedList &l) const
+template <typename T>
+bool LinkedList<T>::equals(const LinkedList<T> &l) const
 {
-	Node *ch = this->head;
-	Node *lh = l.head;
+	Node<T> *ch = this->head;
+	Node<T> *lh = l.head;
 
 	while(ch && lh)
 	{
@@ -39,7 +41,8 @@ bool LinkedList::equals(const LinkedList &l) const
 	return true;
 }
 
-bool LinkedList::empty()
+template <typename T>
+bool LinkedList<T>::empty()
 {
 	if(this->head == NULL)
 	{
@@ -48,7 +51,8 @@ bool LinkedList::empty()
 	return false; 
 }
 
-std::string LinkedList::print()
+template <typename T>
+std::string LinkedList<T>::print()
 {
 	std::stringstream ss;
 	ss << "[ ";
@@ -61,9 +65,10 @@ std::string LinkedList::print()
 	return ss.str();
 }
 
-LinkedList& LinkedList::append(int d)
+template <typename T>
+LinkedList<T>& LinkedList<T>::append(T d)
 {
-	Node *n = new Node(d);
+	Node<T> *n = new Node<T>(d);
 	if(c == 0)
 	{
 		this->head = n;
@@ -80,11 +85,12 @@ LinkedList& LinkedList::append(int d)
 	return *this;
 }
 
-LinkedList& LinkedList::removeFromTail()
+template <typename T>
+LinkedList<T>& LinkedList<T>::removeFromTail()
 {
 	if(c != 0)
 	{
-		Node *d = this->tail;
+		Node<T> *d = this->tail;
 		int v = d->data;
 		if(c == 1)
 		{
@@ -103,27 +109,31 @@ LinkedList& LinkedList::removeFromTail()
 	return *this;
 }
 
-int LinkedList::count()
+template <typename T>
+int LinkedList<T>::count()
 {
 	return c;
 }
 
-bool LinkedList::operator ==(const LinkedList &l) const
+template <typename T>
+bool LinkedList<T>::operator ==(const LinkedList<T> &l) const
 {
 	return equals(l);	
 }
 
-bool LinkedList::operator !=(const LinkedList &l) const
+template <typename T>
+bool LinkedList<T>::operator !=(const LinkedList<T> &l) const
 {
 	return !equals(l);
 }
 
-LinkedList::~LinkedList()
+template <typename T>
+LinkedList<T>::~LinkedList()
 {
-	Node *n = head;
+	Node<T> *n = head;
 	while(n)
 	{
-		Node *d = n;
+		Node<T> *d = n;
 		n->prev = NULL;
 		n = n->next;
 		delete d;

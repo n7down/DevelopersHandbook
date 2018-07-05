@@ -17,16 +17,16 @@ public:
 
 TEST_F(LinkedListTest, check_count_of_nodes)
 {
-	LinkedList ll0;
+	LinkedList<int> ll0;
 
 	EXPECT_EQ(ll0.count(), 0) << "count should be 0";
 
-	LinkedList ll1;
+	LinkedList<int> ll1;
 	ll1.append(0);
 
 	EXPECT_EQ(ll1.count(), 1) << "count should be 1";
 
-	LinkedList ll2;
+	LinkedList<int> ll2;
 	ll2.append(0).append(1);
 
 	EXPECT_EQ(ll2.count(), 2) << "count should be 2";
@@ -34,54 +34,54 @@ TEST_F(LinkedListTest, check_count_of_nodes)
 
 TEST_F(LinkedListTest, compare_linked_lists_with_equal_operator)
 {
-	LinkedList ll0;
+	LinkedList<int> ll0;
 	ll0.append(0);
 
-	LinkedList ll1;
+	LinkedList<int> ll1;
 	ll1.append(0);
 
 	EXPECT_TRUE(ll0 == ll1) << ll0.print() << " and " << ll1.print() << " should be equal";
 
-	LinkedList ll2;
+	LinkedList<int> ll2;
 	ll2.append(0);
 
-	LinkedList ll3;
+	LinkedList<int> ll3;
 	ll3.append(1);
 
 	EXPECT_FALSE(ll2 == ll3) << ll2.print() << " and " << ll3.print() << " should not be equal";
 
-	LinkedList ll4;
+	LinkedList<int> ll4;
 
-	LinkedList ll5;
+	LinkedList<int> ll5;
 	ll5.append(0);
 
 	EXPECT_FALSE(ll4 == ll5) << ll4.print() << " and " << ll5.print() << " should not be equal";
 
-	LinkedList ll6;
+	LinkedList<int> ll6;
 	ll6.append(0);
 	
-	LinkedList ll7;
+	LinkedList<int> ll7;
 
 	EXPECT_FALSE(ll6 == ll7) << ll6.print() << " and " << ll7.print() << " should not be equal";
 
-	LinkedList ll8;
+	LinkedList<int> ll8;
 	ll8.append(0).append(1);
 
-	LinkedList ll9;
+	LinkedList<int> ll9;
 	ll9.append(2).append(3);
 
 	EXPECT_FALSE(ll8 == ll9) << ll8.print() << " and " << ll9.print() << " should not be equal";
 
-	LinkedList ll10;
+	LinkedList<int> ll10;
 	
-	LinkedList ll11;
+	LinkedList<int> ll11;
 
 	EXPECT_TRUE(ll10 == ll11) << ll10.print() << " and " << ll11.print() << " should be equal";	
 
-	LinkedList ll12;
+	LinkedList<int> ll12;
 	ll12.append(0);
 
-	LinkedList ll13;
+	LinkedList<int> ll13;
 	ll13.append(0).append(1);
 
 	EXPECT_FALSE(ll12 == ll13) << ll12.print() << " and " << ll13.print() << " should not be equal";	
@@ -89,22 +89,22 @@ TEST_F(LinkedListTest, compare_linked_lists_with_equal_operator)
 
 TEST_F(LinkedListTest, compare_linked_lists_with_not_equal_operator)
 {
-	LinkedList ll0;
+	LinkedList<int> ll0;
 
-	LinkedList ll1;
+	LinkedList<int> ll1;
 
 	EXPECT_FALSE(ll0 != ll1) << ll0.print() << " and " << ll1.print() << " should be equal";
 
-	LinkedList ll2;
+	LinkedList<int> ll2;
 	ll2.append(0);
 
-	LinkedList ll3;
+	LinkedList<int> ll3;
 
 	EXPECT_TRUE(ll2 != ll3) << ll2.print() << " and " << ll3.print() << " should not be equal";
 
-	LinkedList ll4;
+	LinkedList<int> ll4;
 
-	LinkedList ll5;
+	LinkedList<int> ll5;
 	ll5.append(0);
 
 	EXPECT_TRUE(ll4 != ll5) << ll4.print() << " and " << ll5.print() << " should not be equal";	
@@ -112,36 +112,36 @@ TEST_F(LinkedListTest, compare_linked_lists_with_not_equal_operator)
 
 TEST_F(LinkedListTest, check_if_linked_lists_are_empty)
 {
-	LinkedList ll0;
+	LinkedList<int> ll0;
 	EXPECT_TRUE(ll0.empty()) << "linked list should be empty";
 
-	LinkedList ll1;
+	LinkedList<int> ll1;
 	ll1.append(0);
 	EXPECT_FALSE(ll1.empty()) << "linked list should not be empty";	
 }
 
 TEST_F(LinkedListTest, append_elements_to_linked_list)
 {
-	LinkedList ll0;
+	LinkedList<int> ll0;
 	ll0.append(0);
 	
-	LinkedList ll1;
+	LinkedList<int> ll1;
 	ll1.append(0);
 
 	EXPECT_TRUE(ll0 == ll1) << ll0.print() << " and " << ll1.print() << " should be equal";	
 
-	LinkedList ll2;
+	LinkedList<int> ll2;
 	ll2.append(0).append(1);
 
-	LinkedList ll3;
+	LinkedList<int> ll3;
 	ll3.append(0).append(1);
 
 	EXPECT_TRUE(ll2 == ll3) << ll2.print() << " and " << ll3.print() << " should be equal";	
 
-	LinkedList ll4;
+	LinkedList<int> ll4;
 	ll4.append(0).append(1).append(2);
 
-	LinkedList ll5;
+	LinkedList<int> ll5;
 	ll5.append(0).append(1).append(2);
 
 	EXPECT_TRUE(ll4 == ll5) << ll4.print() << " and " << ll5.print() << " should be equal";	
@@ -149,23 +149,19 @@ TEST_F(LinkedListTest, append_elements_to_linked_list)
 
 TEST_F(LinkedListTest, remove_from_tail)
 {
-	LinkedList ll0;
+	LinkedList<int> ll0;
 	ll0.append(0).removeFromTail();
 
-	LinkedList ll1;
+	LinkedList<int> ll1;
 
 	EXPECT_TRUE(ll0 == ll1) << ll0.print() << " and " << ll1.print() << " should be equal";
 
-	LinkedList ll2;
+	LinkedList<int> ll2;
 	ll2.append(0).append(1).removeFromTail();
 
-	LinkedList ll3;
+	LinkedList<int> ll3;
 	ll3.append(0);
 
-	EXPECT_TRUE(ll2 == ll3) << ll2.print() << " and " << ll3.print() << " shoudl be equal";
+	EXPECT_TRUE(ll2 == ll3) << ll2.print() << " and " << ll3.print() << " should be equal";
 }
 
-int main(int argc, char **argv) {
-	::testing::InitGoogleTest(&argc, argv);
-	return RUN_ALL_TESTS();
-}

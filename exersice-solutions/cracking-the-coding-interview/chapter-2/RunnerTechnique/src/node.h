@@ -1,15 +1,16 @@
 #ifndef NODE_H
 #define NODE_H
 
+template <class T>
 class Node
 {
 private:
 
 public:	
 	int data;
-	Node *next;
-	Node *prev;
-	Node(int d) 
+	Node<T> *next;
+	Node<T> *prev;
+	Node(T d) 
 	{
 		this->data = d;
 		this->next = 0;

@@ -1,5 +1,5 @@
-# Runner Techique
-The "runner" (or second pointer) techique is used in many linked list problems. The runner techique mean that you iterate through the linked list with two pointers simultaneously, with one ahead of the other. The "fast" node might be ahead by a fixed amount, or it might be hopping multiple nodes for each one node that the "slow" node iterate through.
+# Runner Technique
+The "runner" (or second pointer) techique is used in many linked list problems. The runner technique mean that you iterate through the linked list with two pointers simultaneously, with one ahead of the other. The "fast" node might be ahead by a fixed amount, or it might be hopping multiple nodes for each one node that the "slow" node iterate through.
 
 For example suppose you had a linked list `a1->a2->...->an->b1->b2->...->bn` and you wanted to rearrange it into `a1->b1->a2->b2->...->an->bn`. You do not know the length of the linked list (but you do know thta the length is an even number).
 
