@@ -4,15 +4,17 @@
 class Node
 {
 private:
-	int data;
 
-public:
+public:	
+	int data;
 	Node *next;
 	Node *prev;
-	Node(int d)
+	Node(int d) 
 	{
-		data = d;
+		this->data = d;
+		this->next = 0;
+		this->prev = 0;
 	}
 };
 
-#endif;
+#endif
