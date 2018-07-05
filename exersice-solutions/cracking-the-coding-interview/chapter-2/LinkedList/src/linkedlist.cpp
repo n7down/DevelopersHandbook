@@ -82,11 +82,26 @@ LinkedList& LinkedList::append(int d)
 
 LinkedList& LinkedList::removeFromTail()
 {
+	if(c != 0)
+	{
+		Node *d = this->tail;
+		int v = d->data;
+		if(c == 1)
+		{
+			head = NULL;
+			tail = NULL;
+		}
+		else
+		{
+			this->tail = tail->prev;
+			this->tail->next = NULL;
+		}
+		delete d;
+		c--;
+	}
+
 	return *this;
 }
-
-void LinkedList::remove(int d)
-{}
 
 int LinkedList::count()
 {
@@ -113,6 +128,6 @@ LinkedList::~LinkedList()
 		n = n->next;
 		delete d;
 	}
-	tail = NULL;
+	this->tail = NULL;
 	c = 0;
 }

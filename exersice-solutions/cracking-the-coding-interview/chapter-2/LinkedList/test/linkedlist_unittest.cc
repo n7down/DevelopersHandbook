@@ -150,12 +150,19 @@ TEST_F(LinkedListTest, append_elements_to_linked_list)
 TEST_F(LinkedListTest, remove_from_tail)
 {
 	LinkedList ll0;
-	ll0.append(0);
-	ll0.removeFromTail();
+	ll0.append(0).removeFromTail();
 
 	LinkedList ll1;
 
 	EXPECT_TRUE(ll0 == ll1) << ll0.print() << " and " << ll1.print() << " should be equal";
+
+	LinkedList ll2;
+	ll2.append(0).append(1).removeFromTail();
+
+	LinkedList ll3;
+	ll3.append(0);
+
+	EXPECT_TRUE(ll2 == ll3) << ll2.print() << " and " << ll3.print() << " shoudl be equal";
 }
 
 int main(int argc, char **argv) {
