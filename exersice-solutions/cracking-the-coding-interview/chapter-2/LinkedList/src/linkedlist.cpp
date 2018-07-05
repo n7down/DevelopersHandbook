@@ -11,6 +11,34 @@ LinkedList::LinkedList()
 	this->c = 0;
 }
 
+bool LinkedList::equals(const LinkedList &l) const
+{
+	Node *ch = this->head;
+	Node *lh = l.head;
+
+	while(ch && lh)
+	{
+		if(ch->data != lh->data)
+		{
+			return false;
+		}
+		ch = ch->next;
+		lh = lh->next;
+	}
+
+	if(ch && !lh)
+	{
+		return false;
+	}
+
+	if(!ch && lh)
+	{
+		return false;
+	}
+
+	return true;
+}
+
 bool LinkedList::empty()
 {
 	if(this->head == NULL)
@@ -67,45 +95,12 @@ int LinkedList::count()
 
 bool LinkedList::operator ==(const LinkedList &l) const
 {
-	Node *ch = this->head;
-	Node *lh = l.head;
-
-	if(ch && !lh)
-	{
-		return false;
-	}
-
-	if(!ch && lh)
-	{
-		return false;
-	}
-
-	while(ch && lh)
-	{
-		if(ch->data != lh->data)
-		{
-			return false;
-		}
-		ch = ch->next;
-		lh = lh->next;
-	}
-
-	if(ch && !lh)
-	{
-		return false;
-	}
-
-	if(!ch && lh)
-	{
-		return false;
-	}
-
-	return true;
+	return equals(l);	
 }
 
 bool LinkedList::operator !=(const LinkedList &l) const
 {
-	return false;
+	return !equals(l);
 }
 
 LinkedList::~LinkedList()

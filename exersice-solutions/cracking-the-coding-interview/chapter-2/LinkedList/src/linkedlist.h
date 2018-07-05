@@ -11,6 +11,7 @@ private:
 	Node *head;
 	Node *tail;
 	int c;
+	bool equals(const LinkedList &l) const;
 public:
 	LinkedList();
 	~LinkedList();
