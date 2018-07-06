@@ -21,7 +21,7 @@ private:
 
 		while(ch && lh)
 		{
-			if(ch->data != lh->data)
+			if(ch->data.compare(lh->data) != 0)
 			{
 				return false;
 			}
