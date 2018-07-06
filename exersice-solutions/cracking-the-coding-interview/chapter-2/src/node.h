@@ -1,6 +1,8 @@
 #ifndef NODE_H
 #define NODE_H
 
+#include <string>
+
 template <class T>
 class Node
 {

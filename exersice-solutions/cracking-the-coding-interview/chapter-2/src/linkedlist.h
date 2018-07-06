@@ -14,7 +14,7 @@ private:
 	Node<T> *tail;
 	int c;
 
-	bool equals(const LinkedList &l) const
+	bool equals(const LinkedList<std::string> &l) const
 	{
 		Node<T> *ch = this->head;
 		Node<T> *lh = l.head;
@@ -25,6 +25,7 @@ private:
 			{
 				return false;
 			}
+
 			ch = ch->next;
 			lh = lh->next;
 		}
@@ -41,6 +42,35 @@ private:
 		return true;
 	}
 
+	bool equals(const LinkedList<int> &l) const
+	{
+		Node<T> *ch = this->head;
+		Node<T> *lh = l.head;
+
+		while(ch && lh)
+		{
+			if(ch->data != lh->data)
+			{
+				return false;
+			}
+			
+			ch = ch->next;
+			lh = lh->next;
+		}
+
+		if(ch && !lh)
+		{
+			return false;
+		}
+
+		if(!ch && lh)
+		{
+			return false;
+		}
+		return true;
+	}
+
+	
 public:
 	LinkedList()
 	{
