@@ -5,12 +5,12 @@ LinkedList<int> RunnerTechnique::run(LinkedList<int> &l)
 	Node<int> *n = l.head;
 	Node<int> *runner = l.head;
 
-	while(n != NULL)
+	while(runner != NULL)
 	{
 		n = n->next;
-		runner = runner->next->next;
+		runner = runner->next;
+		runner = runner->next;
 	}
-	n = n->next;
 	runner = l.head;
 
 	LinkedList<int> r;
