@@ -9,7 +9,7 @@ class Node
 private:
 
 public:	
-	int data;
+	T data;
 	Node<T> *next;
 	Node<T> *prev;
 	Node(T d) 

@@ -12,6 +12,7 @@ Contains all exercises for chapter 2.
 4. Run `make`
 5. Run `./bin/all_test` to run test cases
 
+## Exercises
 - [ ] Implement "Runner Technique" 
 
 - The "runner" (or second pointer) techique is used in many linked list problems. The runner technique mean that you iterate through the linked list with two pointers simultaneously, with one ahead of the other. The "fast" node might be ahead by a fixed amount, or it might be hopping multiple nodes for each one node that the "slow" node iterate through.

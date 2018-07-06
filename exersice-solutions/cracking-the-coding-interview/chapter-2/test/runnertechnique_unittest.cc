@@ -19,7 +19,7 @@ public:
 TEST(RunnerTechiqueTest, rearrange_nodes_using_runner_techique)
 {
 	LinkedList<std::string> d0;
-//	d0.append("a1").append("a2").append("a3").append("a4").append("b1").append("b2").append("b3").append("b4");
+	d0.append("a1").append("a2").append("a3").append("a4").append("b1").append("b2").append("b3").append("b4");
 	EXPECT_TRUE(false);
 }
 
