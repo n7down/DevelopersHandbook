@@ -12,6 +12,7 @@ public:
 	T data;
 	Node<T> *next;
 	Node<T> *prev;
+
 	Node(T d) 
 	{
 		this->data = d;

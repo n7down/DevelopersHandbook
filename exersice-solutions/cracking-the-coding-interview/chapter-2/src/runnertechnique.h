@@ -6,7 +6,7 @@
 class RunnerTechnique
 {
 public:
-	static void run(LinkedList<std::string> l);
+	static LinkedList<int> run(LinkedList<int> &l);
 
 private:
 };

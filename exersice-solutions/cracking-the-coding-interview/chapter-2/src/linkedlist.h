@@ -10,10 +10,43 @@ template <class T>
 class LinkedList
 {
 private:
+	int c;
+	
+	std::string printData(int d)
+	{
+		return std::to_string(d);
+	}
+
+	std::string printData(std::string d)
+	{
+		return d;
+	}
+	
+public:
 	Node<T> *head;
 	Node<T> *tail;
-	int c;
+	
+	LinkedList()
+	{
+		this->head = NULL;
+		this->tail = NULL;
+		this->c = 0;
+	}
 
+	~LinkedList()
+	{
+		Node<T> *n = head;
+		while(n)
+		{
+			Node<T> *d = n;
+			n->prev = NULL;
+			n = n->next;
+			delete d;
+		}
+		this->tail = NULL;
+		c = 0;
+	}
+	
 	bool equals(const LinkedList<std::string> &l) const
 	{
 		Node<T> *ch = this->head;
@@ -21,7 +54,9 @@ private:
 
 		while(ch && lh)
 		{
-			if(ch->data.compare(lh->data) != 0)
+			std::string chData = ch->data;
+			std::string lhData = lh->data;
+			if(chData.compare(lhData) != 0)
 			{
 				return false;
 			}
@@ -70,29 +105,6 @@ private:
 		return true;
 	}
 
-	
-public:
-	LinkedList()
-	{
-		this->head = NULL;
-		this->tail = NULL;
-		this->c = 0;
-	}
-
-	~LinkedList()
-	{
-		Node<T> *n = head;
-		while(n)
-		{
-			Node<T> *d = n;
-			n->prev = NULL;
-			n = n->next;
-			delete d;
-		}
-		this->tail = NULL;
-		c = 0;
-	}
-	
 	bool empty()
 	{
 		if(this->head == NULL)
@@ -108,7 +120,7 @@ public:
 		ss << "[ ";
 		while(this->head != NULL)
 		{
-			ss << std::to_string(this->head->data) << " "; 
+			ss << printData(this->head->data) << " "; 
 			this->head = this->head->next;
 		}
 		ss << "]";
