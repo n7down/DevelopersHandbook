@@ -166,7 +166,6 @@ TEST_F(LinkedListTest, remove_from_tail)
 	EXPECT_TRUE(ll2 == ll3) << ll2.print() << " and " << ll3.print() << " should be equal";
 }
 
-// TODO: test case fails - get this to work with strings
 TEST_F(LinkedListTest, compare_linked_lists_strings)
 {
 	LinkedList<std::string> ll0;
@@ -176,17 +175,33 @@ TEST_F(LinkedListTest, compare_linked_lists_strings)
 	EXPECT_TRUE(ll0 == ll1) << ll0.print() << " and " << ll1.print() << " should be equal";
 
 	LinkedList<std::string> ll2;
-	ll2.append(0);
+	ll2.append("a1");
 
 	LinkedList<std::string> ll3;
-	ll3.append(0);
+	ll3.append("a1");
 
 	EXPECT_TRUE(ll2 == ll3) << ll2.print() << " and " << ll3.print() << " should be equal";
 
 	LinkedList<std::string> ll4;
-	ll4.append(0);
+	ll4.append("a1");
 	
 	LinkedList<std::string> ll5;
 	
 	EXPECT_FALSE(ll4 == ll5) << ll4.print() << " and " << ll5.print() << " should be equal";
+
+	LinkedList<std::string> ll6;
+	ll6.append("a1").append("a2");
+
+	LinkedList<std::string> ll7;
+	ll7.append("a1").append("a2");
+
+	EXPECT_TRUE(ll6 == ll7) << ll6.print() << " and " << ll7.print() << " should be equal";
+
+	LinkedList<std::string> ll8;
+	ll8.append("a1");
+
+	LinkedList<std::string> ll9;
+	ll9.append("a1").append("a2");
+
+	EXPECT_FALSE(ll8 == ll9) << ll8.print() << " and " << ll9.print() << " should be equal";
 }
