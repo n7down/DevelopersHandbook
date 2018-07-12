@@ -2,7 +2,6 @@
 #include "runnertechnique.h"
 
 #include <gtest/gtest.h>
-#include <iostream>
 #include <string>
 
 class RunnerTechniqueTest : public ::testing::Test
