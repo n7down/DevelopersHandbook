@@ -113,24 +113,49 @@ public:
 		return ss.str();
 	}
 
-	SinglyLinkedList& append(T data)
+	void append(T data)
 	{
-		SinglyLinkedList<T> s = new SinglyLinkedList<T>(data);
-		SinglyLinkedList current = this->head;
+		SinglyNode<T> s = new SinglyNode<T>(data);
+		SinglyNode<T> current = this->head;
 		while(current)
 		{
 			current = current->next;
 		}
 		current->next = s;
 		c++;
-
-		return *this;
 	}
 
-	SinglyLinkedList& removeFromTail()
+	T removeFromTail()
 	{
-		// TODO: implement this
-		return *this;
+		if(c == 0)
+		{
+			return;
+		}
+		else if(c == 1)
+		{
+			SinglyNode<T> *current;
+			T d = current->data;
+			delete current;
+			this->head = 0;
+			return d;
+		}
+		else
+		{
+			SinglyNode<T> *current;
+			SinglyNode<T> *currentPrev;
+			current = this->head->next;
+			currentPrev = this->head;
+			while(current)
+			{
+				current = current->next;
+				currentPrev = currentPrev->next;
+			}
+			T d = current->data;
+			delete current;
+			head = currentPrev;
+			currentPrev->next = NULL;
+			return d;
+		}
 	}
 
 	bool operator ==(const SinglyLinkedList &l) const
