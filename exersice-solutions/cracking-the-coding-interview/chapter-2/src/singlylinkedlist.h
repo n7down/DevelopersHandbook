@@ -26,19 +26,22 @@ public:
 
 	SinglyLinkedList()
 	{
-		this->head = 0;
+		this->head = NULL;
 		c = 0;
 	}
 	
 	~SinglyLinkedList()
 	{
-		SinglyLinkedList<T> *current = head;
-		while(current)
+		SinglyNode<T> *n = head;
+		while(n)
 		{
-			SinglyLinkedList<T> *t = current->next;
-			delete current;
-			current = t;
+			SinglyNode<T> *d = n;
+			n = n->next;
+			delete d;
 		}
+		this->head = NULL;
+		c = 0;
+
 	}
 	
 	bool equals(const SinglyLinkedList<std::string> &l) const
@@ -103,7 +106,7 @@ public:
 	{
 		std::stringstream ss;
 		ss << " [";
-		SinglyLinkedList *n = head;
+		SinglyNode<T> *n = head;
 		while(n != NULL)
 		{
 			ss << printData(n->data) << " ";
@@ -113,31 +116,33 @@ public:
 		return ss.str();
 	}
 
-	void append(T data)
+	void append(T d)
 	{
-		SinglyNode<T> s = new SinglyNode<T>(data);
-		SinglyNode<T> current = this->head;
-		while(current)
+		SinglyNode<T> *s = new SinglyNode<T>(d);
+		SinglyNode<T> *current = this->head;
+		if(c == 0)
 		{
-			current = current->next;
+			head = s;
 		}
-		current->next = s;
+		else
+		{
+			while(current)
+			{
+				current = current->next;
+			}
+			current->next = s;
+		}
 		c++;
 	}
 
-	T removeFromTail()
+	void removeFromTail()
 	{
-		if(c == 0)
-		{
-			return;
-		}
-		else if(c == 1)
+		if(c == 1)
 		{
 			SinglyNode<T> *current;
 			T d = current->data;
 			delete current;
-			this->head = 0;
-			return d;
+			this->head = NULL;
 		}
 		else
 		{
@@ -151,11 +156,10 @@ public:
 				currentPrev = currentPrev->next;
 			}
 			T d = current->data;
-			delete current;
-			head = currentPrev;
 			currentPrev->next = NULL;
-			return d;
+			delete current;
 		}
+		c--;
 	}
 
 	bool operator ==(const SinglyLinkedList &l) const
