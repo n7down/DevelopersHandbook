@@ -1,4 +1,4 @@
-#include "removeduplicates.h"
+#include "removeduplicateslinkedlist.h"
 
 #include <gtest/gtest.h>
 #include <iostream>
@@ -18,5 +18,13 @@ public:
 
 TEST(RemoveDuplicatesTest, remove_duplicate_nodes_from_linked_list)
 {
-	EXPECT_TRUE(false);
+	LinkedList<int> d;
+	d.append(0).append(0);
+	d.removeDuplicates();
+
+	LinkedList<int> e;
+	e.append(0);
+
+	EXPECT_TRUE(d == e) << d.print() " and " e.print() " should be equal";
+	
 }
