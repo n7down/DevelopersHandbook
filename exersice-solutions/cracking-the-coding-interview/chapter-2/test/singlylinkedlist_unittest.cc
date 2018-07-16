@@ -26,14 +26,17 @@ TEST(SinglyLinkedListTest, append_data_to_singly_linked_list)
 	EXPECT_TRUE(d == e) << d.print() << " and " << e.print() << " should be equal";
 }
 
-TEST(SinglyLinkedListTest, remove_data_from_singly_linked_list)
+TEST(SinglyLinkedListTest, remove_from_tail_data_from_singly_linked_list)
 {
-	SinglyLinkedList<int> d;
-	d.append(0);
-	d.removeFromTail();
-	
-	SinglyLinkedList<int> e;
+	EXPECT_TRUE(false);
 
-	EXPECT_TRUE(d == e) << d.print() << " and " << e.print() << " should be equal";
+	// TODO: fix this
+	// SinglyLinkedList<int> d;
+	// d.append(0);
+	// d.removeFromTail();
+	
+	// SinglyLinkedList<int> e;
+
+	// EXPECT_TRUE(d == e) << d.print() << " and " << e.print() << " should be equal";
 }
 

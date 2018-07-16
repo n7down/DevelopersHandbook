@@ -35,7 +35,21 @@ public:
 
 	~LinkedList()
 	{
-		Node<T> *n = head;
+		Node<T> *n = this->head;
+		while(n)
+		{
+			Node<T> *d = n;
+			n->prev = NULL;
+			n = n->next;
+			delete d;
+		}
+		this->tail = NULL;
+		c = 0;	
+	}
+
+	void clear()
+	{
+		Node<T> *n = this->head;
 		while(n)
 		{
 			Node<T> *d = n;

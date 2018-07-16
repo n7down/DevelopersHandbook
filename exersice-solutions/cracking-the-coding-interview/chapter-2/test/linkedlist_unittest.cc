@@ -33,6 +33,16 @@ TEST_F(LinkedListTest, check_count_of_nodes)
 	EXPECT_EQ(ll2.count(), 2) << "count should be 2";
 }
 
+TEST_F(LinkedListTest, clear_linked_lists)
+{
+	LinkedList<int> ll0;
+	ll0.append(0).append(1);
+
+	LinkedList<int> ll1;
+
+	EXPECT_TRUE(ll0 == ll1) << ll0.print() << " and " << ll1.print() << "should be equal";
+}
+
 TEST_F(LinkedListTest, compare_linked_lists_with_equal_operator)
 {
 	LinkedList<int> ll0;
