@@ -37,6 +37,7 @@ TEST_F(LinkedListTest, clear_linked_lists)
 {
 	LinkedList<int> ll0;
 	ll0.append(0).append(1);
+	ll0.clear();
 
 	LinkedList<int> ll1;
 

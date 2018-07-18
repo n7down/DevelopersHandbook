@@ -33,20 +33,6 @@ public:
 		this->c = 0;
 	}
 
-	~LinkedList()
-	{
-		Node<T> *n = this->head;
-		while(n)
-		{
-			Node<T> *d = n;
-			n->prev = NULL;
-			n = n->next;
-			delete d;
-		}
-		this->tail = NULL;
-		c = 0;	
-	}
-
 	void clear()
 	{
 		Node<T> *n = this->head;
@@ -57,6 +43,7 @@ public:
 			n = n->next;
 			delete d;
 		}
+		this->head = NULL;
 		this->tail = NULL;
 		c = 0;
 	}
@@ -195,6 +182,11 @@ public:
 	bool operator !=(const LinkedList &l) const
 	{
 		return !equals(l);
+	}
+	
+	~LinkedList()
+	{
+		clear();	
 	}
 };
 
