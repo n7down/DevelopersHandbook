@@ -16,7 +16,6 @@ public:
 		std::vector<T> d;
 		while(current)
 		{
-			current = current->next;
 			T data = current->data;
 			if(std::find(d.begin(), d.end(), data) != d.end())
 			{
@@ -26,6 +25,7 @@ public:
 			{
 				d.push_back(data);
 			}
+			current = current->next;
 		}
 	}
 
