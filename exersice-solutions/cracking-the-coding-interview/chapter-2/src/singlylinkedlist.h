@@ -140,7 +140,6 @@ public:
 		if(c == 1)
 		{
 			SinglyNode<T> *current;
-			delete current;
 			this->head = NULL;
 		}
 		else
@@ -155,7 +154,6 @@ public:
 				currentPrev = currentPrev->next;
 			}
 			currentPrev->next = NULL;
-			delete current;
 		}
 		c--;
 	}
