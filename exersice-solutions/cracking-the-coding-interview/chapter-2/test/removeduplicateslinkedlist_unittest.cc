@@ -19,12 +19,21 @@ public:
 TEST(RemoveDuplicatesTest, remove_duplicate_nodes_from_linked_list)
 {
 	// TODO: fix this
-	RemoveDuplicatesLinkedList<int> d;
-	d.append(0).append(0);
-	d.removeDuplicates();
+	RemoveDuplicatesLinkedList<int> d0;
+	d0.append(0).append(0);
+	d0.removeDuplicates();
 
-	RemoveDuplicatesLinkedList<int> e;
-	e.append(0);
+	RemoveDuplicatesLinkedList<int> e0;
+	e0.append(0);
 
-	EXPECT_TRUE(d == e) << d.print() << " and " << e.print() << " should be equal";
+	EXPECT_TRUE(d0 == e0) << d0.print() << " and " << e0.print() << " should be equal";
+
+	RemoveDuplicatesLinkedList<int> d1;
+	d1.append(0).append(0).append(0);
+	d1.removeDuplicates();
+
+	RemoveDuplicatesLinkedList<int> e1;
+	e1.append(0);
+
+	EXPECT_TRUE(d1 == e1) << d1.print() << " and " << e1.print() << " should be equal";
 }

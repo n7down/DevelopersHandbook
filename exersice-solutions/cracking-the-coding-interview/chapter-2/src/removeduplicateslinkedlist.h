@@ -14,18 +14,24 @@ public:
 	{
 		Node<T> *current = this->head;
 		std::vector<T> d;
+		int i = 0;
 		while(current)
 		{
 			T data = current->data;
 			if(std::find(d.begin(), d.end(), data) != d.end())
 			{
-				// TODO: remove the item	
+				// if the duplicate is the last element
+				if(this->count() == i + 1)
+				{
+					this->removeFromTail();
+				}
 			}
 			else
 			{
 				d.push_back(data);
 			}
 			current = current->next;
+			i++;
 		}
 	}
 
