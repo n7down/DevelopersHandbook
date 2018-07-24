@@ -18,7 +18,6 @@ public:
 
 TEST(RemoveDuplicatesTest, remove_duplicate_nodes_from_linked_list)
 {
-	// TODO: fix this
 	RemoveDuplicatesLinkedList<int> d0;
 	d0.append(0).append(0);
 	d0.removeDuplicates();
@@ -36,4 +35,22 @@ TEST(RemoveDuplicatesTest, remove_duplicate_nodes_from_linked_list)
 	e1.append(0);
 
 	EXPECT_TRUE(d1 == e1) << d1.print() << " and " << e1.print() << " should be equal";
+
+	RemoveDuplicatesLinkedList<int> d2;
+	d2.append(0).append(0).append(1).append(1).append(2).append(2);
+	d2.removeDuplicates();
+
+	RemoveDuplicatesLinkedList<int> e2;
+	e2.append(0).append(1).append(2);
+
+	EXPECT_TRUE(d2 == e2) << d2.print() << " and " << e2.print() << " should be equal";
+
+	RemoveDuplicatesLinkedList<int> d3;
+	d3.append(0).append(0).append(1);
+	d3.removeDuplicates();
+
+	RemoveDuplicatesLinkedList<int> e3;
+	e3.append(0).append(1);
+
+	EXPECT_TRUE(d3 == e3) << d3.print() << " and " << e3.print() << " should be equal";
 }

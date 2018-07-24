@@ -25,6 +25,12 @@ public:
 				{
 					this->removeFromTail();
 				}
+				else if(i < this->count() - 1)
+				{
+					current->next->prev = current->prev;
+					current->prev->next = current->next;
+					delete current;
+				}
 			}
 			else
 			{
