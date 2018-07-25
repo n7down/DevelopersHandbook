@@ -119,10 +119,11 @@ public:
 	{
 		std::stringstream ss;
 		ss << "[ ";
-		while(this->head != NULL)
+		Node<T> *current = this->head;
+		while(current != NULL)
 		{
-			ss << printData(this->head->data) << " "; 
-			this->head = this->head->next;
+			ss << printData(current->data) << " "; 
+			current = current->next;
 		}
 		ss << "]";
 		return ss.str();
