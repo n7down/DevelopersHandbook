@@ -7,12 +7,12 @@ class Node
 private:
 
 public:
-	T d;
+	T data;
 	Node<T> *next;
 
-	Node(T data)
+	Node(T d)
 	{
-		this->d = data;
+		this->data = d;
 		this->next = 0;
 	}
 };
