@@ -34,7 +34,17 @@ public:
 
 	void add(T data)
 	{
-		// TODO
+		Node<T> *n = new Node<T>(data);
+		if(c == 0)
+		{
+			this->head = n;
+			this->tail = n;
+		}
+		else 
+		{
+			n->next = head;
+			this->head = n;
+		}
 		c++;
 	}
 
@@ -47,15 +57,27 @@ public:
 		}
 		else if(c == 1)
 		{
-			Node<T> *current = this->tail;
+			Node<T> *current = this->head;
 			data = current->data;
 			this->head = 0;
 			this->tail = 0;
 			delete current;
 		}
+
+		// TODO: check if c == 2 set head and tail to the same element
+	
 		else
 		{
-			// TODO	
+			Node<T> *current = this->head->next;
+			Node<T> *currentPrev = this->head;
+			while(current != this->tail)
+			{
+				current = current->next;
+				currentPrev = currentPrev->next;
+			}
+			currentPrev->next = 0;
+			data = current->data;
+			delete current;
 		}
 		c--;
 		return data;

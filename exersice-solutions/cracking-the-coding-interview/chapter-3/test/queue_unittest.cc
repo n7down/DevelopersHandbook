@@ -38,12 +38,12 @@ TEST_F(QueueTest, check_remove_operator_removes_elements_from_a_queue)
 	int d0 = q0.remove();
 
 	Queue<int> e0;
-	e0.add(0);
+	e0.add(1);
+
+	EXPECT_TRUE(d0 == 0) << "d0: " << d0 << " should equal 0";
+	EXPECT_TRUE(q0 == e0) << q0.print() << " and " << e0.print() << " should be equal";
 
 	q0.remove();
-
-	EXPECT_TRUE(d0 == 0) << "d0 should equal 0";
-	EXPECT_TRUE(q0 == e0) << q0.print() << " " << e0.print() << " should be equal";
 
 	try
 	{
@@ -65,15 +65,15 @@ TEST_F(QueueTest, check_peek_operator_shows_first_element_in_queue)
 	Queue<int> q0;
 	q0.add(0);
 
-	EXPECT_TRUE(q0.peek() == 0) << "q0 peek should be 0";
+	EXPECT_TRUE(q0.peek() == 0) << "q0 peek: " << q0.peek() << " should be 0";
 
 	q0.add(1);
 
-	EXPECT_TRUE(q0.peek() == 0) << "q0 peek should be 0";
+	EXPECT_TRUE(q0.peek() == 0) << "q0 peek: " << q0.peek() << " should be 0";
 
 	q0.remove();
 
-	EXPECT_TRUE(q0.peek() == 1) << "q0 peek should be 1";
+	EXPECT_TRUE(q0.peek() == 1) << "q0 peek: " << q0.peek() << " should be 1";
 
 	q0.remove();
 	
