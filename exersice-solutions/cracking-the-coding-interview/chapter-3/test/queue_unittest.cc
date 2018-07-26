@@ -92,16 +92,45 @@ TEST_F(QueueTest, check_peek_operator_shows_first_element_in_queue)
 
 TEST_F(QueueTest, check_isEmpty_operator_checks_if_queue_is_empty)
 {
-	EXPECT_TRUE(false);
+	Queue<int> q0;
+	
+	EXPECT_TRUE(q0.isEmpty()) << "q0 isEmpty should be true";
+
+	q0.add(0);
+
+	EXPECT_TRUE(q0.isEmpty()) << "q0 isEmpty should not be true";
 }
 
 TEST_F(QueueTest, compare_two_queues_are_equal)
 {
-	EXPECT_TRUE(false);
+	Queue<int> q0;
+	q0.add(0);
+
+	Queue<int> e0;
+	e0.add(0);
+
+	EXPECT_TRUE(q0 == e0) << q0.print() << " " << e0.print() << " should be equal";
+
+	q0.add(0);
+
+	e0.add(0);
+
+	EXPECT_TRUE(q0 == e0) << q0.print() << " " << e0.print() << " should be equal";
 }
 
 TEST_F(QueueTest, compare_two_queues_are_not_equal)
 {
-	EXPECT_TRUE(false);
+	Queue<int> q0;
+	q0.add(0);
+
+	Queue<int> e0;
+
+	EXPECT_TRUE(q0 != e0) << q0.print() << " " << e0.print() << " should not be equal";
+
+	q0.add(1);
+
+	e0.add(0);
+
+	EXPECT_TRUE(q0 != e0) << q0.print() << " " << e0.print() << " should not be equal";
 }
 
