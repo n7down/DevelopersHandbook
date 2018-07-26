@@ -51,7 +51,7 @@ public:
 		return this->tail->data;
 	}
 
-	bool isEqual(const Queue<T> &q) const
+	bool isEquals(const Queue<T> &q) const
 	{
 		Node<T> *ch = this->head;
 		Node<T> *lh = q.head;

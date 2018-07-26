@@ -67,11 +67,12 @@ TEST_F(StackTest, push_data_into_stack)
 TEST_F(StackTest, pop_data_off_a_stack)
 {
 	Stack<int> s0;
-	try{
+	try
+	{
 		int data = s0.pop();
 		FAIL() << "expected std::length_error";
 	}
-	catch(std::exception const & err)
+	catch(std::length_error const & err)
 	{
 		EXPECT_EQ(err.what(), std::string("stack is empty"));
 	}
@@ -96,6 +97,22 @@ TEST_F(StackTest, peek_data_on_a_stack)
 	s0.push(0);
 	
 	EXPECT_TRUE(s0.peek() == 0) << "peek() should equal 0";
+
+	s0.pop();
+
+	try
+	{
+		int data = s0.peek();
+		FAIL() << "expected std::length_error";
+	}
+	catch(std::length_error const & err)
+	{
+		EXPECT_EQ(err.what(), std::string("stack is empty"));
+	}
+	catch(...) 
+	{
+		FAIL() << "expected std::length_error";
+	}
 }
 
 

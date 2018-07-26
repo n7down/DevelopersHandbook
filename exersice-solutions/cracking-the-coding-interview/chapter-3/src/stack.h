@@ -55,6 +55,10 @@ public:
 
 	T peek()
 	{
+		if(head == NULL)
+		{
+			throw std::length_error("stack is empty");
+		}
 		return head->data;
 	}
 
