@@ -34,12 +34,31 @@ public:
 
 	void add(T data)
 	{
+		// TODO
 		c++;
 	}
 
 	T remove()
 	{
+		int data;
+		if(c == 0)
+		{
+			throw std::length_error("queue is empty");
+		}
+		else if(c == 1)
+		{
+			Node<T> *current = this->tail;
+			data = current->data;
+			this->head = 0;
+			this->tail = 0;
+			delete current;
+		}
+		else
+		{
+			// TODO	
+		}
 		c--;
+		return data;
 	}
 
 	T peek()
@@ -101,6 +120,18 @@ public:
 		}
 		ss << "]";
 		return ss.str();
+	}
+
+	~Queue()
+	{
+		Node<T> *current = this->head;
+		while(current)
+		{
+			Node<T> *t = current;
+			current = current->next;
+			t->next = 0;
+			delete t;
+		}
 	}
 };
 

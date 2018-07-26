@@ -40,6 +40,8 @@ TEST_F(QueueTest, check_remove_operator_removes_elements_from_a_queue)
 	Queue<int> e0;
 	e0.add(0);
 
+	q0.remove();
+
 	EXPECT_TRUE(d0 == 0) << "d0 should equal 0";
 	EXPECT_TRUE(q0 == e0) << q0.print() << " " << e0.print() << " should be equal";
 
