@@ -20,21 +20,48 @@ TEST_F(StackTest, check_isEmpty_operator)
 	Stack<int> s0;
 
 	EXPECT_TRUE(s0.isEmpty() == true) << s0.print() << " should be empty";
+
+	s0.push(0);
+
+	EXPECT_TRUE(s0.isEmpty() != true) << s0.print() << " should not be empty";
 }
 
 TEST_F(StackTest, compare_two_stacks_with_equals_operator)
 {
-	EXPECT_TRUE(false);
+	Stack<int> s0;
+	s0.push(0);
+
+	Stack<int> e0;
+	e0.push(0);
+
+	EXPECT_TRUE(s0 == e0) << s0.print() << " " << e0.print() << " should be equal";
 }
 
 TEST_F(StackTest, compare_two_stacks_with_not_equals_operator)
 {
-	EXPECT_TRUE(false);
+	Stack<int> s0;
+	s0.push(0);
+	s0.push(1);
+
+	Stack<int> e0;
+	e0.push(0);
+
+	EXPECT_TRUE(s0 != e0) << s0.print() << " " << e0.print() << " should not be equal";
 }
 
 TEST_F(StackTest, push_data_into_stack)
 {
-	EXPECT_TRUE(false);
+	Stack<int> s0;
+	s0.push(0);
+	
+	Stack<int> e0;
+	e0.push(0);
+
+	EXPECT_TRUE(s0 == e0) << s0.print() << " " << e0.print() << " should be equal";
+
+	s0.push(1);
+
+	EXPECT_TRUE(s0 != e0) << s0.print() << " " << e0.print() << " should not be equal";
 }
 
 TEST_F(StackTest, pop_data_off_a_stack)
