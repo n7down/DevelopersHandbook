@@ -15,6 +15,13 @@ protected:
 public:
 };
 
+TEST_F(StackTest, check_isEmpty_operator)
+{
+	Stack<int> s0;
+
+	EXPECT_TRUE(s0.isEmpty() == true) << s0.print() << " should be empty";
+}
+
 TEST_F(StackTest, compare_two_stacks_with_equals_operator)
 {
 	EXPECT_TRUE(false);
