@@ -44,11 +44,11 @@ public:
 
 	T peek()
 	{
-		if(this->head == NULL)
+		if(this->tail == NULL)
 		{
 			throw std::length_error("queue is empty");
 		}
-		return this->head->data;
+		return this->tail->data;
 	}
 
 	bool isEqual(const Queue<T> &q) const
