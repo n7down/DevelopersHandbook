@@ -63,9 +63,13 @@ public:
 			this->tail = 0;
 			delete current;
 		}
-
-		// TODO: check if c == 2 set head and tail to the same element
-	
+		else if(c == 2)
+		{
+			data = this->tail->data;
+			Node<T> *current = this->tail;
+			delete current;
+			this->tail = this->head;
+		}
 		else
 		{
 			Node<T> *current = this->head->next;

@@ -100,7 +100,7 @@ TEST_F(QueueTest, check_isEmpty_operator_checks_if_queue_is_empty)
 
 	q0.add(0);
 
-	EXPECT_TRUE(q0.isEmpty()) << "q0 isEmpty should not be true";
+	EXPECT_FALSE(q0.isEmpty()) << "q0 isEmpty should not be true";
 }
 
 TEST_F(QueueTest, compare_two_queues_are_equal)
