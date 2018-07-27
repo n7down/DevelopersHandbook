@@ -13,16 +13,42 @@ Contains all exercises for chapter 4.
 5. Run `./bin/all_test` to run test cases
 
 ## Exercises
-## Todo - update for chapter-4
-- [ ] 3.1 - Three in One
- - Describe how you could use a single array to implement three stacks.
-- [ ] 3.2 - Stack Min
- - how would you design a stack which, in addition to push and pop, has a function min which returns the minimum element? Push, pop and min should all operate in O(1) time.
-- [ ] 3.3 - Stack of Plates
- - Imagine a (literal) stack of plates. If the stack gets too high, it might topple. Therefore, in real life, we would likely start a new stack when the previous stack exceeds some threshold. Implement a data structure `SetOfStacks` that mimics this. `SetOfStacks` should be composed of several stacks and should create a new stack once the previous one exceeds capacity. `SetOfStacks.push()` and `SetOfStacks.pop()` should behave identically to a single stack (that is, pop() should return the same values as it would if there were just a single stack). Follow up - Implement a function `popAt(int index)` which performs a pop operations on a specific sub-stack.
-- [ ] 3.4 - Queue via Stacks
- - Implement a `MyQueue` class which implements a queue using two stacks.
-- [ ] 3.5 - Sort Stack
- - Write a program to sort a stack such that the smallest item are ono the top. You can use an additional temporyary stack, but you may not copy the elements into any other data structure (such as an array). The stack supports the following operations: `push`, `pop`, `peek`, and `isEmpty`.
-- [ ] 3.6 - Animal Shelter
- - An animal shelter, which holds only dogs and cats, operates on a strictly "first in, first out" basis. People must adopt either the "oldest" (based on arrival time) of all animals at the shelter, or they can select whether they would perfer a dog or a cat (and will receive the oldest animal of that type). They cannot select which specific animal they would like. Create a data structures to maintain this system and implement operations such as `enqueue`, `dequeueAny`, `dequeueDog`, and `dequeueCat`. You may use the built-in `LinkedList` data structure.
+- [ ] 4.1 - Route Between Nodes
+ - Given a directed graph, design an algorithm to find out whether there is a route between two nodes.
+- [ ] 4.2 - Minimal Tree
+ - Given a sorted (increasing order) array with unique integer elements, write an algorithm to create a binary search tree with minimal height.
+- [ ] 4.3 - List of Depths
+ - Given a binary tree, design an algorithm which creates a linked list of all the nodes at each depth (e.g., if you have a tree with depth D, you'll have D linked lists).
+- [ ] 4.4 - Check Balanced
+ - Implement a function to check if a binary tree is balanced. For the purposes of this question, a balanced tree is defined to be a tree such that the heights of the two subtrees of any node never differ by more then one.
+- [ ] 4.5 - Validate BST
+ - Implement a function to check if a binary tree is a binary search tree.
+- [ ] 4.6 - Successor
+ - Write an algorithm to find the "next" node (i.e., in-order successor) of a given node in a binary search tree. You may assume that each node has a link to its parent.
+-  [ ] 4.7 - Build Order
+ - You are given a list of projects and a list of dependencies (which is a list of pairs of projects, where the second project is dependent on the first project). All of the project's dependencies must be built before the project is. Find a build order that will allow the projects to be built. If there is no valid build order, return an error.
+```
+Example
+Input:
+ projects: a, b, c, d, e, f
+ dependencies: (a, d), (f, b), (b, d), (f, a), (d, c)
+Output: f, e, a, b, d, c
+```
+- [ ] 4.8 - First Common Ancestor
+ - Design an algorithm and write code to find the first common ancestor of two nodes in a binary tree. Avoid storing additional nodes in a data structure. NOTE: This is not necessarily a binary search tree.
+- [ ] 4.9 - BST Sequences
+ - A binary search tree was created by traversing through an array from left to right and inserting each element. Given a binary search tree with distinct elements, print all possible arrays that could have led to this tree.
+```
+Example
+Input:
+             2
+		   /   \
+		  1     3
+Output: {2, 1, 3}, {2, 3, 1}
+```
+- [ ] 4.10 - Check Subtree
+ - T1 and T2 are two very large binary trees, with T1 much bigger then T2. Create an algorithm to determine if T2 is a subtree of T1. A tree T2 is a subtree of T1 if there exists a node n in T1 such that the subtree of n is identical to T2. That is, if you cut off the tree at node n, the two trees would be identical.
+- [ ] 4.11 - Random Node
+ - You are implementing a binary tree class from scratch which, in addition to `insert`, `find`, and `delete`, has a method `getRandomNode()` which returns a random node from the tree. All nodes should be equally likely to be chosen. Design and implement an algorithm for `getRandomNode`, and explain how you would implement the rest of the methods.
+- [ ] 4.12 - Paths with Sums
+ - You are given a binary tree in which each node contains an integer value (which might be positive or negative). Design an algorithm to count the number of paths that sum to a given value. The path does not need to start or end at the root or a leaf, but it must go downwards (traveling only from parent node to child nodes).
