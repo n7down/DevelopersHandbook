@@ -38,7 +38,6 @@ public:
 		if(c == 0)
 		{
 			this->head = n;
-			//this->tail = n;
 		}
 		else if(c == 1)
 		{
