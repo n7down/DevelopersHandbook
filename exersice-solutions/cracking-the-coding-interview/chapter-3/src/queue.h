@@ -38,16 +38,23 @@ public:
 		if(c == 0)
 		{
 			this->head = n;
-			this->tail = n;
+			//this->tail = n;
+		}
+		else if(c == 1)
+		{
+			this->tail = this->head;
+			n->next = this->tail;
+			this->head = n;
 		}
 		else 
 		{
-			n->next = head;
+			n->next = this->head;
 			this->head = n;
 		}
 		c++;
 	}
 
+	// FIXME: fix remove to reflect changes done to add
 	T remove()
 	{
 		int data;
@@ -68,13 +75,14 @@ public:
 			data = this->tail->data;
 			Node<T> *current = this->tail;
 			delete current;
-			this->tail = this->head;
+			this->head->next = 0;
+			this->tail = 0;
 		}
 		else
 		{
 			Node<T> *current = this->head->next;
 			Node<T> *currentPrev = this->head;
-			while(current != this->tail)
+			while(current)
 			{
 				current = current->next;
 				currentPrev = currentPrev->next;
@@ -89,9 +97,13 @@ public:
 
 	T peek()
 	{
-		if(this->tail == NULL)
+		if(this->head == NULL)
 		{
 			throw std::length_error("queue is empty");
+		}
+		else if(c == 1)
+		{
+			return this->head->data;
 		}
 		return this->tail->data;
 	}
