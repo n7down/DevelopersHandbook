@@ -54,7 +54,6 @@ public:
 		c++;
 	}
 
-	// FIXME: fix remove to reflect changes done to add
 	T remove()
 	{
 		int data;
