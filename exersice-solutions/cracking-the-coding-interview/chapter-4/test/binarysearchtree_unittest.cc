@@ -1,8 +1,8 @@
-#include "tree.h"
+#include "binarysearchtree.h"
 
 #include <gtest/gtest.h>
 
-class TreeTest : public ::testing::Test
+class BinarySearchTreeTest : public ::testing::Test
 {
 protected:
 	virtual void SetUp()
@@ -14,7 +14,7 @@ protected:
 public:
 };
 
-TEST_F(TreeTest, failing_test)
+TEST_F(BinarySearchTreeTest, failing_test)
 {
 	EXPECT_TRUE(false);
 }
