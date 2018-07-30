@@ -25,7 +25,7 @@ Contains all exercises for chapter 4.
  - Implement a function to check if a binary tree is a binary search tree.
 - [ ] 4.6 - Successor
  - Write an algorithm to find the "next" node (i.e., in-order successor) of a given node in a binary search tree. You may assume that each node has a link to its parent.
--  [ ] 4.7 - Build Order
+- [ ] 4.7 - Build Order
  - You are given a list of projects and a list of dependencies (which is a list of pairs of projects, where the second project is dependent on the first project). All of the project's dependencies must be built before the project is. Find a build order that will allow the projects to be built. If there is no valid build order, return an error.
 ```
 Example
