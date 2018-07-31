@@ -2,20 +2,30 @@
 #define BINARYSEARCHTREENODE_H 
 
 template <class T>
-class BinarySeachTreeNode 
+class BinarySearchTreeNode 
 {
 private:
 	T data;
-	BinarySeachTreeNode<T> children[];
+	BinarySearchTreeNode<T> children[];
 
 public:
-	BinarySeachTreeNode(T d)
+	BinarySearchTreeNode(T d)
 	{
 		this->data = d;
-		this->children = new BinarySeachTreeNode<T>[2];
+		this->children = new BinarySearchTreeNode<T>[2];
 	}
 
-	virtual ~BinarySeachTreeNode();
+	BinarySearchTreeNode<T> getLeftNode()
+	{
+		return children[0];
+	}
+
+	BinarySearchTreeNode<T> getRightNode()
+	{
+		return children[1];
+	}
+
+	virtual ~BinarySearchTreeNode();
 };
 
 #endif 

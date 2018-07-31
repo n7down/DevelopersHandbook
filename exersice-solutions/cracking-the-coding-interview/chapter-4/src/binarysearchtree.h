@@ -1,7 +1,7 @@
 #ifndef BINARYSEARCHTREE_H 
 #define BINARYSEARCHTREE_H 
 
-#include "binarysearchtree.h"
+#include "binarysearchtreenode.h"
 
 #include <vector>
 
@@ -18,7 +18,13 @@ public:
 	}
 
 	// TODO: create min heap tree
-	void insert(T data);
+	void insert(T data)
+	{
+		if(!this->root)
+		{
+			this->root = new BinarySeachTreeNode<T>(data);
+		}
+	}
 
 	std::vector<T> depthFirstSearch();
 
