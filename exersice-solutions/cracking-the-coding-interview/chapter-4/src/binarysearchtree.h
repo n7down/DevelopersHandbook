@@ -9,7 +9,7 @@ template <class T>
 class BinarySearchTree 
 {
 private:
-	BinarySeachTreeNode<T> root;
+	BinarySearchTreeNode<T> *root;
 	
 public:
 	BinarySearchTree()
@@ -22,7 +22,7 @@ public:
 	{
 		if(!this->root)
 		{
-			this->root = new BinarySeachTreeNode<T>(data);
+			this->root = new BinarySearchTreeNode<T>(data);
 		}
 	}
 

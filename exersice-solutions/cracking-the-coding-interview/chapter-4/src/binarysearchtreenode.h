@@ -6,23 +6,23 @@ class BinarySearchTreeNode
 {
 private:
 	T data;
-	BinarySearchTreeNode<T> children[];
+	BinarySearchTreeNode<T> *left;
+	BinarySearchTreeNode<T> *right;
 
 public:
 	BinarySearchTreeNode(T d)
 	{
 		this->data = d;
-		this->children = new BinarySearchTreeNode<T>[2];
 	}
 
-	BinarySearchTreeNode<T> getLeftNode()
+	BinarySearchTreeNode<T> *getLeftNode()
 	{
-		return children[0];
+		return this->left;
 	}
 
-	BinarySearchTreeNode<T> getRightNode()
+	BinarySearchTreeNode<T> *getRightNode()
 	{
-		return children[1];
+		return this->right;
 	}
 
 	virtual ~BinarySearchTreeNode();
