@@ -6,6 +6,7 @@
 #include <vector>
 #include <string>
 #include <sstream>
+#include <queue>
 
 template <class T>
 class BinarySearchTree 
@@ -42,7 +43,7 @@ public:
 					current = current->getRightNode();
 				}
 			}
-			current = new BinarySearchTreeNode(data);
+			current = new BinarySearchTreeNode<T>(data);
 		}
 		this->c++;
 	}
@@ -55,7 +56,10 @@ public:
 
 	std::string print();
 
-	virtual ~BinarySearchTree();
+	virtual ~BinarySearchTree()
+	{
+		// TODO: use queue for this
+	}
 };
 
 #endif
