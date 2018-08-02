@@ -59,6 +59,7 @@ public:
 	virtual ~BinarySearchTree()
 	{
 		// TODO: use queue for this
+		std::queue<T> q;
 	}
 };
 
