@@ -48,11 +48,11 @@ public:
 			{
 				if(data < current->data)
 				{
-					current = current->getLeftNode();
+					current = current->left;
 				}
 				else
 				{
-					current = current->getRightNode();
+					current = current->right;
 				}
 			}
 			current = new BinarySearchTreeNode<T>(data);
@@ -65,16 +65,16 @@ public:
 		// TODO: reset all of the nodes in the tree
 	}
 
-	std::vector<T> depthFirstSearch();
+	std::vector<T> breadthFirstSearch();
 
-	std::vector<T> breadthFirstSearch() 
+	std::vector<T> depthFirstSearch() 
 	{
 		std::vector<T> r;
 		std::stack<BinarySearchTreeNode<T> *> s;
 		BinarySearchTreeNode<T> *current = this->root;
 		r.push_back(current->data);
-		s.push_back(current);
-		current->visited();
+		s.push(current);
+		current->visit();
 		while(!s.empty())
 		{
 			BinarySearchTreeNode<T> *v = s.top();
@@ -83,14 +83,14 @@ public:
 			BinarySearchTreeNode<T> *currentRight = v->right;
 			if(currentLeft && !currentLeft->isVisited())
 			{
-				s.push_back(currentLeft);
-				currentLeft->visited();
+				s.push(currentLeft);
+				currentLeft->visit();
 				r.push_back(currentLeft->data);
 			}
 			if(currentRight && !currentRight->isVisited())
 			{
-				s.push_back(currentRight);
-				currentRight->visited();
+				s.push(currentRight);
+				currentRight->visit();
 				r.push_back(currentRight->data);
 			}
 		}
@@ -100,7 +100,7 @@ public:
 
 	T extractMin();
 
-	bool isEquals(const BinarySearchTree<T> &t) const
+	bool isEquals(BinarySearchTree<T> &t) 
 	{
 		std::vector<T> r0 = depthFirstSearch();
 		std::vector<T> r1 = t.depthFirstSearch();
