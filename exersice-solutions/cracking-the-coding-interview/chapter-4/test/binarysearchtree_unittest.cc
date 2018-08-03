@@ -14,7 +14,12 @@ protected:
 public:
 };
 
-TEST_F(BinarySearchTreeTest, failing_test)
+TEST_F(BinarySearchTreeTest, insert_data_into_tree)
+{
+	EXPECT_TRUE(false);
+}
+
+TEST_F(BinarySearchTreeTest, destroy_tree)
 {
 	EXPECT_TRUE(false);
 }

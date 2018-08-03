@@ -5,27 +5,33 @@ template <class T>
 class BinarySearchTreeNode 
 {
 private:
+	bool visited;
+
+public:	
 	T data;
 	BinarySearchTreeNode<T> *left;
 	BinarySearchTreeNode<T> *right;
 
-public:
 	BinarySearchTreeNode(T d)
 	{
 		this->data = d;
+		this->visited = false;
 	}
 
-	BinarySearchTreeNode<T> *getLeftNode()
+	bool isVisited()
 	{
-		return this->left;
+		return this->visited;
 	}
 
-	BinarySearchTreeNode<T> *getRightNode()
+	void visit()
 	{
-		return this->right;
+		this->visited = true;
 	}
 
-	virtual ~BinarySearchTreeNode();
+	void reset()
+	{
+		visited = false;
+	}
 };
 
 #endif 
