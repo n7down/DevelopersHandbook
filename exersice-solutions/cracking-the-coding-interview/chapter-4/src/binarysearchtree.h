@@ -16,18 +16,6 @@ private:
 	BinarySearchTreeNode<T> *root;
 	int c;
 	
-	void destroyTree(BinarySearchTreeNode<T> *l)
-	{
-		if(l)
-		{
-			destroyTree(l->left);
-			destroyTree(l->right);
-			l->left = 0;
-			l->right = 0;
-			delete l;
-		}
-	}
-	
 public:
 	BinarySearchTree()
 	{
@@ -119,8 +107,20 @@ public:
 	bool operator !=(const BinarySearchTree<T> &t) const
 	{
 		return !isEquals(t);
+	}	
+	
+	void destroyTree(BinarySearchTreeNode<T> *l)
+	{
+		if(l)
+		{
+			destroyTree(l->left);
+			destroyTree(l->right);
+			l->left = 0;
+			l->right = 0;
+			delete l;
+		}
 	}
-
+	
 	std::string print();
 
 	virtual ~BinarySearchTree()
