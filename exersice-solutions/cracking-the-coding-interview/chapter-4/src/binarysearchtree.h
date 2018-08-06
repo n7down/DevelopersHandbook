@@ -15,36 +15,33 @@ class BinarySearchTree
 private:
 	BinarySearchTreeNode<T> *root;
 	int c;
+
+	void insert(BinarySearchTreeNode<T> *n, T data)
+	{
+		if(n == NULL)
+		{
+			n = new BinarySearchTreeNode<T>(data);
+		}
+		if(data < n->data)
+		{
+			insert(n->left, data);
+		}
+		else
+		{
+			insert(n->right, data);
+		}
+	}
 	
 public:
 	BinarySearchTree()
 	{
-		this->root = 0;
+		this->root = NULL;
 		this->c = 0;
 	}
 
 	void insert(T data)
 	{
-		if(!this->root)
-		{
-			this->root = new BinarySearchTreeNode<T>(data);
-		}
-		else
-		{
-			BinarySearchTreeNode<T> *current = this->root;
-			while(current)
-			{
-				if(data < current->data)
-				{
-					current = current->left;
-				}
-				else
-				{
-					current = current->right;
-				}
-			}
-			current = new BinarySearchTreeNode<T>(data);
-		}
+		insert(this->root, data);
 		this->c++;
 	}
 
