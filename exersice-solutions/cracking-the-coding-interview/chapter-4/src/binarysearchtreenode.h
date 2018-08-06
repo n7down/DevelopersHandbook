@@ -1,5 +1,7 @@
 #ifndef BINARYSEARCHTREENODE_H 
-#define BINARYSEARCHTREENODE_H 
+#define BINARYSEARCHTREENODE_H
+
+#include <cstddef>
 
 template <class T>
 class BinarySearchTreeNode 
@@ -14,8 +16,36 @@ public:
 
 	BinarySearchTreeNode(T d)
 	{
+		this->left = NULL;
+		this->right = NULL;
 		this->data = d;
 		this->visited = false;
+	}
+
+	void insert(int d)
+	{
+		if(d < this->data)
+		{
+			if(this->left == NULL)
+			{
+				this->left = new BinarySearchTreeNode<T>(d);
+			}
+			else
+			{
+				this->left->insert(d);	
+			}
+		}
+		else
+		{
+			if(this->right == NULL)
+			{
+				this->right = new BinarySearchTreeNode<T>(d);
+			}
+			else
+			{
+				this->right->insert(d);
+			}
+		}
 	}
 
 	bool isVisited()

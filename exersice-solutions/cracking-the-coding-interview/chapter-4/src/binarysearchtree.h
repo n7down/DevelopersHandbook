@@ -1,37 +1,31 @@
-#ifndef BINARYSEARCHTREE_H 
-#define BINARYSEARCHTREE_H 
+#ifndef BINARYSEARCHTREE_H
+#define BINARYSEARCHTREE_H
 
 #include "binarysearchtreenode.h"
 
 #include <vector>
-#include <string>
-#include <sstream>
 #include <queue>
 #include <stack>
 
 template <class T>
-class BinarySearchTree 
+class BinarySearchTree
 {
 private:
 	BinarySearchTreeNode<T> *root;
 	int c;
 
-	void insert(BinarySearchTreeNode<T> *n, T data)
+	void destroyTree(BinarySearchTreeNode<T> *l)
 	{
-		if(n == NULL)
+		if(l)
 		{
-			n = new BinarySearchTreeNode<T>(data);
-		}
-		if(data < n->data)
-		{
-			insert(n->left, data);
-		}
-		else
-		{
-			insert(n->right, data);
+			destroyTree(l->left);
+			destroyTree(l->right);
+			l->left = NULL;
+			l->right = NULL;
+			delete l;
 		}
 	}
-	
+
 public:
 	BinarySearchTree()
 	{
@@ -41,7 +35,14 @@ public:
 
 	void insert(T data)
 	{
-		insert(this->root, data);
+		if(this->root == NULL)
+		{
+			this->root = new BinarySearchTreeNode<T>(data);
+		}
+		else
+		{
+			this->root->insert(data);
+		}
 		this->c++;
 	}
 
@@ -50,9 +51,10 @@ public:
 		// TODO: reset all of the nodes in the tree
 	}
 
-	std::vector<T> breadthFirstSearch();
+	std::vector<T> breadthFirstSearch()
+	{}
 
-	std::vector<T> depthFirstSearch() 
+	std::vector<T> depthFirstSearch()
 	{
 		std::vector<T> r;
 		std::stack<BinarySearchTreeNode<T> *> s;
@@ -83,9 +85,10 @@ public:
 		return r;
 	}
 
-	T extractMin();
+	T extractMin()
+	{}
 
-	bool isEquals(BinarySearchTree<T> &t) 
+	bool isEquals(BinarySearchTree<T> &t)
 	{
 		std::vector<T> r0 = depthFirstSearch();
 		std::vector<T> r1 = t.depthFirstSearch();
@@ -104,21 +107,7 @@ public:
 	bool operator !=(const BinarySearchTree<T> &t) const
 	{
 		return !isEquals(t);
-	}	
-	
-	void destroyTree(BinarySearchTreeNode<T> *l)
-	{
-		if(l)
-		{
-			destroyTree(l->left);
-			destroyTree(l->right);
-			l->left = 0;
-			l->right = 0;
-			delete l;
-		}
 	}
-	
-	std::string print();
 
 	virtual ~BinarySearchTree()
 	{
