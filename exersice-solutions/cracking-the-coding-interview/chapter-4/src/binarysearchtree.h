@@ -52,7 +52,33 @@ public:
 	}
 
 	std::vector<T> breadthFirstSearch()
-	{}
+	{
+		std::vector<T> r;
+		std::queue<BinarySearchTreeNode<T> *> q;
+		BinarySearchTreeNode<T> *treeRoot = this->root;
+		treeRoot->visit();
+		q.push(treeRoot);
+		while(!q.empty())
+		{
+			BinarySearchTreeNode<T> *current = q.pop();
+			BinarySearchTreeNode<T> *currentLeft = current->left;
+			BinarySearchTreeNode<T> *currentRight = current->right;
+			if(currentLeft && !currentLeft->isVisited)
+			{
+				q.push(currentLeft);
+				currentLeft->visit();
+				r.push_back(currentLeft->data);
+			}
+			if(currentRight && !currentRight->isVisited)
+			{
+				q.push(currentRight);
+				currentRight->visit();
+				r.push_back(currentRight->data);
+			}
+		}
+		resetAll();
+		return r;
+	}
 
 	std::vector<T> depthFirstSearch()
 	{
