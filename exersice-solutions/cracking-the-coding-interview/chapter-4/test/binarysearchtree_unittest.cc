@@ -50,3 +50,22 @@ TEST_F(BinarySearchTreeTest, insert_data_into_tree)
 	EXPECT_TRUE(d == e) << BinarySearchTreeTestUtils::printVector(d) << " and " << BinarySearchTreeTestUtils::printVector(e) << " should be equal";
 }
 
+TEST_F(BinarySearchTreeTest, check_breadth_first_search)
+{
+	EXPECT_TRUE(false);
+}
+
+TEST_F(BinarySearchTreeTest, check_depth_first_search)
+{
+	EXPECT_TRUE(false);
+}
+
+TEST_F(BinarySearchTreeTest, check_reset_all)
+{
+	EXPECT_TRUE(false);
+}
+
+TEST_F(BinarySearchTreeTest, check_size_of_tree)
+{
+	EXPECT_TRUE(false);
+}

@@ -48,7 +48,28 @@ public:
 
 	void resetAll()
 	{
-		// TODO: reset all of the nodes in the tree
+		// TODO: make sure this works
+		std::stack<BinarySearchTreeNode<T> *> s;
+		BinarySearchTreeNode<T> *current = this->root;
+		s.push(current);
+		current->reset();
+		while(!s.empty())
+		{
+			BinarySearchTreeNode<T> *v = s.top();
+			s.pop();
+			BinarySearchTreeNode<T> *currentLeft = v->left;
+			BinarySearchTreeNode<T> *currentRight = v->right;
+			if(currentLeft)
+			{
+				s.push(currentLeft);
+				currentLeft->reset();
+			}
+			if(currentRight)
+			{
+				s.push(currentRight);
+				currentRight->reset();
+			}
+		}
 	}
 
 	std::vector<T> breadthFirstSearch()
@@ -133,6 +154,11 @@ public:
 	bool operator !=(const BinarySearchTree<T> &t) const
 	{
 		return !isEquals(t);
+	}
+
+	int size()
+	{
+		return this->c;
 	}
 
 	virtual ~BinarySearchTree()
