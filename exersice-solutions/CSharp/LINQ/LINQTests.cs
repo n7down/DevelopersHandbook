@@ -253,5 +253,171 @@ namespace LINQ
             int[] expected = { 200, 740, 230, 482, 95 };
             Assert.True(actual.SequenceEqual(expected));
         }
+
+        [Fact]
+        public void Given_A_List_Of_Numbers_Get_The_Top_Three_Numbers()
+        {
+            int[] numbers = { 5, 7, 13, 24, 6, 9, 8, 7 };
+            int[] actual = numbers.OrderByDescending(n => n).Select(n => n).Take(3).ToArray();
+            int[] expected = { 24, 13, 9 };
+            Assert.True(actual.SequenceEqual(expected));
+        }
+
+        [Fact]
+        public void Given_A_List_Of_Words_Find_The_Words_That_Are_Upper_Case()
+        {
+            string s = "this IS a STRING";
+            string[] actual = s.Split(" ").Where(c => c.All(char.IsUpper)).ToArray();
+            string[] expected = { "IS", "STRING" };
+            Assert.True(actual.SequenceEqual(expected));
+        }
+
+        [Fact]
+        public void Given_Array_Of_Strings_Output_An_Concated_String_Of_The_Array()
+        {
+            string[] input = { "cat", "dog", "rat" };
+            string actual = String.Join(", ", input.Select(s => s.ToString()).ToArray());
+            string expected = "cat, dog, rat";
+            var isEquals = actual.Equals(expected);
+            Assert.True(isEquals);
+        }
+
+        [Fact]
+        public void Given_A_List_Of_Strings_Order_Lengths_In_Assending_Order()
+        {
+            string[] input = {                
+                "CALIFORNIA",
+                "NAIROBI", 
+                "PARIS", 
+                "LONDON", 
+                "ZURICH", 
+                "ABU DHABI", 
+                "AMSTERDAM", 
+                "NEW DELHI", 
+                "ROME"
+            };
+
+            string[] actual = input.OrderBy(s => s.Length).Select(s => s).ToArray();
+
+            string[] expected = {
+                "ROME", 
+                "PARIS", 
+                "LONDON", 
+                "ZURICH", 
+                "NAIROBI", 
+                "ABU DHABI", 
+                "AMSTERDAM", 
+                "NEW DELHI", 
+                "CALIFORNIA"
+            };
+
+            Assert.True(actual.SequenceEqual(expected));
+        }
+
+        private class IdAndItem
+        {
+            public IdAndItem(int id, string n)
+            {
+                Id = id;
+                Name = n;
+            }
+
+            public int Id { get; private set; }
+            public string Name { get; private set; }
+        }
+        
+        private class IdAndQuantity
+        {
+            public IdAndQuantity(int id, int q)
+            {
+                Id = id;
+                Quantity = q;
+            }
+
+            public int Id { get; private set; }
+            public int Quantity { get; private set; }
+        }
+        private class IdItemAndQuantity
+        {
+            public IdItemAndQuantity(int id, string item, int q)
+            {
+                Id = id;
+                Item = item;
+                Quantity = q;
+            }
+
+            public int Id { get; private set; }
+            public string Item { get; private set; }
+            public int Quantity { get; private set; }
+
+            public static bool Equals(List<IdItemAndQuantity> i0, List<IdItemAndQuantity> i1)
+            {
+                if(i0.Count != i1.Count())
+                {
+                    return false;
+                }
+                for(int i = 0; i < i0.Count(); i++)
+                {
+                    if(i0[i].Id != i1[i].Id)
+                    {
+                        return false;
+                    }
+                    if(i0[i].Item != i1[i].Item)
+                    {
+                        return false;
+                    }
+                    if(i0[i].Quantity != i1[i].Quantity)
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
+        }
+
+        [Fact]
+        public void Given_Two_Lists_Join_Into_One_List()
+        {
+            List<IdAndItem> idAndItem = new List<IdAndItem> {
+                new IdAndItem(1, "Biscuit"),
+                new IdAndItem(2, "Chocolate"),
+                new IdAndItem(3, "Butter"),
+                new IdAndItem(4, "Brade")
+            };
+
+            List<IdAndQuantity> idAndQuantity = new List<IdAndQuantity> {
+                new IdAndQuantity(1, 458),
+                new IdAndQuantity(2, 650),
+                new IdAndQuantity(3, 800),
+                new IdAndQuantity(3, 900),
+                new IdAndQuantity(3, 900),
+                new IdAndQuantity(4, 700),
+                new IdAndQuantity(4, 650)
+            };
+
+            List<IdItemAndQuantity> actual = new List<IdItemAndQuantity> {
+                new IdItemAndQuantity(1, "Biscuit", 458),
+                new IdItemAndQuantity(2, "Chocolate", 650),
+                new IdItemAndQuantity(3, "Butter", 800),
+                new IdItemAndQuantity(3, "Butter", 900),
+                new IdItemAndQuantity(3, "Butter", 900),
+                new IdItemAndQuantity(4, "Brade", 700),
+                new IdItemAndQuantity(4, "Brade", 650)
+            };
+
+            List<IdItemAndQuantity> expected = new List<IdItemAndQuantity> {
+                new IdItemAndQuantity(1, "Biscuit", 458),
+                new IdItemAndQuantity(2, "Chocolate", 650),
+                new IdItemAndQuantity(3, "Butter", 800),
+                new IdItemAndQuantity(3, "Butter", 900),
+                new IdItemAndQuantity(3, "Butter", 900),
+                new IdItemAndQuantity(4, "Brade", 700),
+                new IdItemAndQuantity(4, "Brade", 650)
+            };
+
+            // TODO: implement sequence equals 
+            // http://www.tutorialsteacher.com/linq/linq-equality-operator
+            Assert.True(actual.SequenceEqual(expected));
+        }
     }
 }
