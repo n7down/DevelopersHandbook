@@ -57,22 +57,59 @@ namespace LINQ
 
         private bool Compare(List<NumberAndSquare> l0, List<NumberAndSquare> l1)
         {
-            if(l0.Count != l1.Count)
+            if (l0.Count != l1.Count)
             {
                 return false;
             }
-            for(int i = 0; i < l0.Count; i++)
+            for (int i = 0; i < l0.Count; i++)
             {
-                if(l0[i].Number != l0[i].Number)
+                if (l0[i].Number != l1[i].Number)
                 {
                     return false;
                 }
-                if(l1[i].Square != l1[i].Square)
+                if (l0[i].Square != l1[i].Square)
                 {
                     return false;
                 }
             }
             return true;
+        }
+
+        public class NumberMultiplicationFrequency
+        {
+            public NumberMultiplicationFrequency(int n, int m, int f)
+            {
+                Number = n;
+                Muliplication = m;
+                Frequency = f;
+            }
+            public int Number { get; private set; }
+            public int Muliplication { get; private set; }
+            public int Frequency { get; private set; }
+
+            public static bool Equals(List<NumberMultiplicationFrequency> n0, List<NumberMultiplicationFrequency> n1)
+            {
+                if (n0.Count != n1.Count)
+                {
+                    return false;
+                }
+                for (int i = 0; i < n0.Count; i++)
+                {
+                    if (n0[i].Number != n1[i].Number)
+                    {
+                        return false;
+                    }
+                    if (n0[i].Muliplication != n1[i].Muliplication)
+                    {
+                        return false;
+                    }
+                    if (n0[i].Frequency != n1[i].Frequency)
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
         }
 
         [Fact]
@@ -166,48 +203,55 @@ namespace LINQ
             }
         }
 
-        public class NumberMultiplicationFrequency
-        {
-            public NumberMultiplicationFrequency(int n, int m, int f)
-            {
-                Number = n;
-                Muliplication = m;
-                Frequency = f;
-            }
-            public int Number { get; private set; }
-            public int Muliplication { get; private set; }
-            public int Frequency { get; private set; }
-
-            public bool Equals(NumberMultiplicationFrequency n)
-            {
-                if(Number != n.Number)
-                {
-                    return false;
-                }
-                if(Muliplication != n.Muliplication)
-                {
-                    return false;
-                }
-                if(Frequency != n.Frequency)
-                {
-                    return false;
-                }
-                return true;
-            }
-        }
-
         [Fact]
         public void Given_List_Of_Numbers_Display_Numbers_Multiplication_Of_Numbers_With_Frequency_Of_A_Number()
         {
-            int[] numbers = new int[] { 5, 1, 9, 2, 3, 7, 4, 5, 6, 8, 7, 6, 3, 4, 5, 2 };            
+            int[] numbers = { 5, 1, 9, 2, 3, 7, 4, 5, 6, 8, 7, 6, 3, 4, 5, 2 };            
             List<NumberMultiplicationFrequency> actual = numbers.GroupBy(n => n).Select(n => new NumberMultiplicationFrequency(n.Key, n.Key * n.Count(), n.Count())).ToList();
 
             List<NumberMultiplicationFrequency> expected = new List<NumberMultiplicationFrequency> {
                 { new NumberMultiplicationFrequency(5, 15, 3) },
                 { new NumberMultiplicationFrequency(1, 1, 1) },
                 { new NumberMultiplicationFrequency(9, 9, 1) },
-                { new NumberMultiplicationFrequency(2, 4, 2) }
+                { new NumberMultiplicationFrequency(2, 4, 2) },
+                { new NumberMultiplicationFrequency(3, 6, 2) }, 
+                { new NumberMultiplicationFrequency(7, 14, 2) },
+                { new NumberMultiplicationFrequency(4, 8, 2) },
+                { new NumberMultiplicationFrequency(6, 12, 2) },
+                { new NumberMultiplicationFrequency(8, 8, 1) }
             };
+
+            Assert.True(NumberMultiplicationFrequency.Equals(actual, expected));
+        }
+
+        [Fact]
+        public void Given_An_Array_Of_Strings_Find_The_Strings_That_Start_And_End_With_A_Specific_Character()
+        {
+            List<string> input = new List<string> {
+                "ROME",
+                "LONDON",
+                "NAIROBI",
+                "CALIFORNIA",
+                "ZURICH",
+                "NEW DELHI",
+                "AMSTERDAM",
+                "ABU DHABI",
+                "PARIS"
+            };
+
+            List<string> actual = input.Where(s => s.StartsWith("A", StringComparison.Ordinal)).Where(s => s.EndsWith("M", StringComparison.Ordinal)).Select(s => s).ToList();
+            string expected = "AMSTERDAM";
+            var isEquivalent = actual[0].Equals(expected);
+            Assert.True(isEquivalent);
+        }
+
+        [Fact]
+        public void Given_List_Display_Numbers_Greater_Then_80()
+        {
+            int[] input = { 55, 200, 740, 76, 230, 482, 95 };
+            var actual = input.Where(n => n > 80).Select(n => n).ToArray();
+            int[] expected = { 200, 740, 230, 482, 95 };
+            Assert.True(actual.SequenceEqual(expected));
         }
     }
 }
