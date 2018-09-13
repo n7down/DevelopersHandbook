@@ -112,6 +112,76 @@ namespace LINQ
             }
         }
 
+        private class IdAndItem
+        {
+            public IdAndItem(int id, string i)
+            {
+                Id = id;
+                Item = i;
+            }
+
+            public int Id { get; private set; }
+            public string Item { get; private set; }
+        }
+
+        private class IdAndQuantity
+        {
+            public IdAndQuantity(int id, int q)
+            {
+                Id = id;
+                Quantity = q;
+            }
+
+            public int Id { get; private set; }
+            public int Quantity { get; private set; }
+        }
+
+        private class IdItemAndQuantity
+        {
+            public IdItemAndQuantity(int id, string item, int q)
+            {
+                Id = id;
+                Item = item;
+                Quantity = q;
+            }
+
+            public IdItemAndQuantity(int id, string item)
+            {
+                Id = id;
+                Item = item;
+                Quantity = 0;
+            }
+
+            public int Id { get; private set; }
+            public string Item { get; private set; }
+            public int? Quantity { get; private set; }
+        }
+
+        private class IdItemAndQuantityComparer : IEqualityComparer<IdItemAndQuantity>
+        {
+            public bool Equals(IdItemAndQuantity i0, IdItemAndQuantity i1)
+            {
+                if (i0.Id != i1.Id)
+                {
+                    return false;
+                }
+                if (i0.Item != i1.Item)
+                {
+                    return false;
+                }
+                if (i0.Quantity != i1.Quantity)
+                {
+                    return false;
+                }
+                return true;
+            }
+
+            public int GetHashCode(IdItemAndQuantity obj)
+            {
+                return obj.GetHashCode();
+            }
+        }
+
         [Fact]
         public void Output_Numbers_Where_Numbers_Are_Even()
         {
@@ -314,67 +384,6 @@ namespace LINQ
             Assert.True(actual.SequenceEqual(expected));
         }
 
-        private class IdAndItem
-        {
-            public IdAndItem(int id, string n)
-            {
-                Id = id;
-                Name = n;
-            }
-
-            public int Id { get; private set; }
-            public string Name { get; private set; }
-        }
-        
-        private class IdAndQuantity
-        {
-            public IdAndQuantity(int id, int q)
-            {
-                Id = id;
-                Quantity = q;
-            }
-
-            public int Id { get; private set; }
-            public int Quantity { get; private set; }
-        }
-        private class IdItemAndQuantity
-        {
-            public IdItemAndQuantity(int id, string item, int q)
-            {
-                Id = id;
-                Item = item;
-                Quantity = q;
-            }
-
-            public int Id { get; private set; }
-            public string Item { get; private set; }
-            public int Quantity { get; private set; }
-
-            public static bool Equals(List<IdItemAndQuantity> i0, List<IdItemAndQuantity> i1)
-            {
-                if(i0.Count != i1.Count())
-                {
-                    return false;
-                }
-                for(int i = 0; i < i0.Count(); i++)
-                {
-                    if(i0[i].Id != i1[i].Id)
-                    {
-                        return false;
-                    }
-                    if(i0[i].Item != i1[i].Item)
-                    {
-                        return false;
-                    }
-                    if(i0[i].Quantity != i1[i].Quantity)
-                    {
-                        return false;
-                    }
-                }
-                return true;
-            }
-        }
-
         [Fact]
         public void Given_Two_Lists_Join_Into_One_List()
         {
@@ -395,15 +404,7 @@ namespace LINQ
                 new IdAndQuantity(4, 650)
             };
 
-            List<IdItemAndQuantity> actual = new List<IdItemAndQuantity> {
-                new IdItemAndQuantity(1, "Biscuit", 458),
-                new IdItemAndQuantity(2, "Chocolate", 650),
-                new IdItemAndQuantity(3, "Butter", 800),
-                new IdItemAndQuantity(3, "Butter", 900),
-                new IdItemAndQuantity(3, "Butter", 900),
-                new IdItemAndQuantity(4, "Brade", 700),
-                new IdItemAndQuantity(4, "Brade", 650)
-            };
+            List<IdItemAndQuantity> actual = idAndItem.Join(idAndQuantity, i => i.Id, j => j.Id, (i, j) => new IdItemAndQuantity(i.Id, i.Item, j.Quantity)).ToList();
 
             List<IdItemAndQuantity> expected = new List<IdItemAndQuantity> {
                 new IdItemAndQuantity(1, "Biscuit", 458),
@@ -414,10 +415,76 @@ namespace LINQ
                 new IdItemAndQuantity(4, "Brade", 700),
                 new IdItemAndQuantity(4, "Brade", 650)
             };
+            var isEqual = actual.SequenceEqual(expected, new IdItemAndQuantityComparer());
+            Assert.True(isEqual);
+        }
 
-            // TODO: implement sequence equals 
-            // http://www.tutorialsteacher.com/linq/linq-equality-operator
-            Assert.True(actual.SequenceEqual(expected));
+        [Fact]
+        public void Given_Two_List_Left_Join_Into_One_List()
+        {
+            List<IdAndItem> idAndItem = new List<IdAndItem> {
+                new IdAndItem(1, "Biscuit"),
+                new IdAndItem(2, "Chocolate"),
+                new IdAndItem(3, "Butter"),
+                new IdAndItem(4, "Brade"),
+                new IdAndItem(5, "Honey")
+            };
+
+            List<IdAndQuantity> idAndQuantity = new List<IdAndQuantity> {
+                new IdAndQuantity(1, 458),
+                new IdAndQuantity(2, 650),
+                new IdAndQuantity(3, 800),
+                new IdAndQuantity(3, 900),
+                new IdAndQuantity(3, 900),
+                new IdAndQuantity(4, 700),
+                new IdAndQuantity(4, 650)
+            };
+
+            List<IdItemAndQuantity> expected = new List<IdItemAndQuantity> {
+                new IdItemAndQuantity(1, "Biscuit", 458),
+                new IdItemAndQuantity(2, "Chocolate", 650),
+                new IdItemAndQuantity(3, "Butter", 800),
+                new IdItemAndQuantity(3, "Butter", 900),
+                new IdItemAndQuantity(3, "Butter", 900),
+                new IdItemAndQuantity(4, "Brade", 700),
+                new IdItemAndQuantity(4, "Brade", 650),
+                new IdItemAndQuantity(5, "Honey", 0)
+            };
+
+            var actual = idAndItem.GroupJoin(idAndQuantity, i => i.Id, j => j.Id, (ii, jj) => new { ii, jj = jj.DefaultIfEmpty() }).SelectMany(z => z.jj.Select(m => new { Id = z.ii.Id, Item = z.ii.Item, Quantity = m.Quantity }));
+            List<IdItemAndQuantity> actualList = new List<IdItemAndQuantity>();
+            // TODO: i am not sure how to do this
+            //foreach(var a in actual)
+            //{
+            //    actualList.Add(new IdItemAndQuantity(a.Id, a.Item, a.Quantity));
+            //}
+            var isEqual = expected.SequenceEqual(actualList, new IdItemAndQuantityComparer());
+            Assert.True(isEqual);
+        }
+
+        [Fact]
+        public void Aggregate_Data()
+        {
+            List<IdAndQuantity> idAndQuantity = new List<IdAndQuantity> {
+                new IdAndQuantity(1, 458),
+                new IdAndQuantity(2, 650),
+                new IdAndQuantity(3, 800),
+                new IdAndQuantity(3, 900),
+                new IdAndQuantity(3, 900),
+                new IdAndQuantity(4, 700),
+                new IdAndQuantity(4, 650)
+            };
+
+            var actual = from i in idAndQuantity
+                        group i by i.Id into gr
+                        select new
+                        {
+                            Id = gr.Key,
+                            Max = gr.Max(g => g.Id),
+                            Min = gr.Min(g => g.Id)
+                        };
+            // TODO: i dont know how to test this
+            Assert.True(false);
         }
     }
 }
