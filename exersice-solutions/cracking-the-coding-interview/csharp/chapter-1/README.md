@@ -2,22 +2,18 @@
 Contains all exercises in chapter-1
 
 ## Prerequisites
-- [cmake](https://cmake.org/)
-- [googletest](https://github.com/google/googletest)
+- [.NET Core](https://www.microsoft.com/net/download)
 
 ## Getting Started
-1. Run `mkdir build`
-2. Run `cd build`
-3. Run `cmake -DCMAKE_BUILD_TYPE=Debug ..` to build debug symbols
-4. Run `make`
-5. Run `./bin/all_test` to run test cases
+1. Run `dotnet restore`
+2. Run `dotnet test` to run all tests
 
 ## Exercises
 - [ ] 1.1 - Is Unique 
  - Implememnt an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures
 - [ ] 1.2 - Check Permutation
  - Given two strings, write a method to decide if one is a permutation of the other.
-- [ ] 1.3 - URLify
+- [x] 1.3 - URLify
  - Write a method to replace all spaces in a string with '%20'. You may assume that the string has sufficient space at the end to hold the additional characters, and that you are given the "true" length of the string. (Note: If implement in Java, please use a character array so that you can perform this operation in place.)
 
 ```
