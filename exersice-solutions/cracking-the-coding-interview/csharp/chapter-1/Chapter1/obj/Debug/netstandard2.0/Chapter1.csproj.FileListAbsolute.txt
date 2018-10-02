@@ -1,9 +1,0 @@
-/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1/bin/Debug/netstandard2.0/Chapter1.deps.json
-/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1/bin/Debug/netstandard2.0/Chapter1.dll
-/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1/bin/Debug/netstandard2.0/Chapter1.pdb
-/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1/obj/Debug/netstandard2.0/Chapter1.csprojAssemblyReference.cache
-/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1/obj/Debug/netstandard2.0/Chapter1.csproj.CoreCompileInputs.cache
-/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1/obj/Debug/netstandard2.0/Chapter1.AssemblyInfoInputs.cache
-/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1/obj/Debug/netstandard2.0/Chapter1.AssemblyInfo.cs
-/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1/obj/Debug/netstandard2.0/Chapter1.dll
-/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1/obj/Debug/netstandard2.0/Chapter1.pdb
