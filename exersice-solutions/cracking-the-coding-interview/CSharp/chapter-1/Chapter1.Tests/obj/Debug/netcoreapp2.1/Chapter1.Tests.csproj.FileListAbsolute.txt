@@ -1,0 +1,17 @@
+/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1.Tests/bin/Debug/netcoreapp2.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1.Tests/bin/Debug/netcoreapp2.1/xunit.runner.reporters.netcoreapp10.dll
+/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1.Tests/bin/Debug/netcoreapp2.1/xunit.runner.utility.netcoreapp10.dll
+/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1.Tests/bin/Debug/netcoreapp2.1/Chapter1.Tests.deps.json
+/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1.Tests/bin/Debug/netcoreapp2.1/Chapter1.Tests.runtimeconfig.json
+/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1.Tests/bin/Debug/netcoreapp2.1/Chapter1.Tests.runtimeconfig.dev.json
+/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1.Tests/bin/Debug/netcoreapp2.1/Chapter1.Tests.dll
+/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1.Tests/bin/Debug/netcoreapp2.1/Chapter1.Tests.pdb
+/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1.Tests/bin/Debug/netcoreapp2.1/Chapter1.dll
+/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1.Tests/bin/Debug/netcoreapp2.1/Chapter1.pdb
+/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1.Tests/obj/Debug/netcoreapp2.1/Chapter1.Tests.csprojAssemblyReference.cache
+/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1.Tests/obj/Debug/netcoreapp2.1/Chapter1.Tests.csproj.CoreCompileInputs.cache
+/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1.Tests/obj/Debug/netcoreapp2.1/Chapter1.Tests.AssemblyInfoInputs.cache
+/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1.Tests/obj/Debug/netcoreapp2.1/Chapter1.Tests.AssemblyInfo.cs
+/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1.Tests/obj/Debug/netcoreapp2.1/Chapter1.Tests.csproj.CopyComplete
+/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1.Tests/obj/Debug/netcoreapp2.1/Chapter1.Tests.dll
+/home/n7down/Source/DevelopersReview/exersice-solutions/cracking-the-coding-interview/csharp/chapter-1/Chapter1.Tests/obj/Debug/netcoreapp2.1/Chapter1.Tests.pdb

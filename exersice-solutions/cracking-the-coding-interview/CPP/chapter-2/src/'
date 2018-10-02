@@ -1,0 +1,14 @@
+#ifndef SINGLYNODE_H
+#define SINGLYNODE_H
+
+class SinglyNode 
+{
+private:
+	
+
+public:
+	SinglyNode(T d)
+};
+
+#endif 
+
