@@ -7,6 +7,7 @@ namespace Chapter1
     {
         public static string URLifyString(string s, int length)
         {
+            s = s.Substring(0, length);
             s = s.Trim();
             s = Regex.Replace(s, @" ", "%20");
             return s;
