@@ -9,6 +9,7 @@ namespace Chapter1.Tests
         [InlineData("")]
         [InlineData("a")]
         [InlineData("aba")]
+        [InlineData("abba")]
         [InlineData("abcba")]
         public void Given_A_String_That_Is_A_Palindrome_Return_IsPalindrome_True(string s)
         {

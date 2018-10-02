@@ -39,13 +39,9 @@ namespace Chapter1
                     stack.Push(c);
                 }
 
-                if(queue.Count > 0)
+                if(s.Length % 2 != 0)
                 {
                     queue.Dequeue();
-                }
-                else
-                {
-                    return false;
                 }
 
                 for(int i = 0; i < queue.Count;)
@@ -61,7 +57,6 @@ namespace Chapter1
                         return false;
                     }
                 }
-
                 return false;
             }
         }
