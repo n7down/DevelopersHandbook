@@ -24,15 +24,44 @@ namespace Chapter1
             }
             else 
             {
-                Stack<char> stack = new Stack<char>();
+                Queue<char> queue = new Queue<char>();
                 for(int i = 0; i < s.Length; i++)
                 {
                     char c = s[i];
+                    queue.Enqueue(c);
+                }
+
+                Stack<char> stack = new Stack<char>();
+                int middle = s.Length / 2;
+                for(int i = 0; i < middle; i++)
+                {
+                    char c = queue.Dequeue();
                     stack.Push(c);
                 }
 
-                int middle = s.Length / 2;
-                
+                if(queue.Count > 0)
+                {
+                    queue.Dequeue();
+                }
+                else
+                {
+                    return false;
+                }
+
+                for(int i = 0; i < queue.Count;)
+                {
+                    char c0 = stack.Pop();
+                    char c1 = queue.Dequeue();
+                    if(c0.Equals(c1))
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+
                 return false;
             }
         }

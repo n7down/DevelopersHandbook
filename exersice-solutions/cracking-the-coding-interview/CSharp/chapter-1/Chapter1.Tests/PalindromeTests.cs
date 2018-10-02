@@ -6,10 +6,10 @@ namespace Chapter1.Tests
     public class PalindromeTests
     {
         [Theory]
-        [InlineData("Tact Coa")]
         [InlineData("")]
         [InlineData("a")]
         [InlineData("aba")]
+        [InlineData("abcba")]
         public void Given_A_String_That_Is_A_Palindrome_Return_IsPalindrome_True(string s)
         {
             bool actual = Palindrome.IsPalindrome(s);
