@@ -4,7 +4,7 @@ namespace Chapter1
     {
         public static bool IsPermutation(string s, string ss)
         {
-            return false;
+            return s.Contains(ss);
         }
     }
 }
