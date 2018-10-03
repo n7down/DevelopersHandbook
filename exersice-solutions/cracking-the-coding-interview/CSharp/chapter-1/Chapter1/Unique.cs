@@ -10,11 +10,7 @@ namespace Chapter1
             var results = s.GroupBy(t => t).ToDictionary(t => t.Key, t => t.Count());
             foreach(char c in s)
             {
-                if(!results.ContainsKey(c))
-                {
-                    return false;
-                }
-                else if(results.ContainsKey(c) && results[c] > 1)
+                if(results.ContainsKey(c) && results[c] > 1)
                 {
                     return false;
                 }
