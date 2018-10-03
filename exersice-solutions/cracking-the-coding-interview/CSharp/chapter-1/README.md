@@ -9,7 +9,7 @@ Contains all exercises in chapter-1
 2. Run `dotnet test` to run all tests
 
 ## Exercises
-- [ ] 1.1 - Is Unique 
+- [x] 1.1 - Is Unique 
  - Implememnt an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures
 - [ ] 1.2 - Check Permutation
  - Given two strings, write a method to decide if one is a permutation of the other.
