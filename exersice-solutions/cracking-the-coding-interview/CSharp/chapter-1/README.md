@@ -28,7 +28,7 @@ EXAMPLE
 Input: Tact Coa
 Output: True (permutation: "taco cat", "atco cta", etc.)
 ```
-- [ ] 1.5 - One Away
+- [x] 1.5 - One Away
  - There are three types of edits that that can be performed on strings: insert a character, remove a character, or replace a character. Given two strings, write a function to check if they are one edit (or zero edit) away.
 ```
 EXAMPLE
@@ -37,7 +37,7 @@ pales, pale -> true
 pale, bale -> true
 pale, bake -> false
 ```
-- [ ] 1.6 - String Compression
+- [x] 1.6 - String Compression
  - Implement a method to perform basic string compression using the counts of repeated characters. For example, the string aabcccccaaa would be a2b1c5a3. If the "compressed" string would not become smaller then the original string, your method should return the original string. You can assume the string has only uppercase and lowercase letters (a-z).
 - [ ] 1.7 - Rotate Matrix
  - Given an image represented by an NxN matrix, where each pixel in the image is 4 bytes, write a method to rotate the image by 90 degreees. Can you do this in place?
