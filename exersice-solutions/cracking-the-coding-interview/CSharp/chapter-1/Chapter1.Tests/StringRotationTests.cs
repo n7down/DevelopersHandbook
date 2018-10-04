@@ -11,7 +11,7 @@ public class StringRotationTests
     }
 
     [Theory]
-    [InlineData("waterbottle", "erbottlewat")]
+    [InlineData("waterbottle", "erbottleat")]
     public void Given_A_String_And_Another_String_That_Is_Not_Rotated_IsSubstring_Returns_False(string s, string ss)
     {
         var actual = StringRotation.IsSubstring(s, ss);
