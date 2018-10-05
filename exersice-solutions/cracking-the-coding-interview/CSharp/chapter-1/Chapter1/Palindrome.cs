@@ -8,57 +8,22 @@ namespace Chapter1
     {
         public static bool IsPalindrome(string s)
         {
-            s = s.ToLower();
-            s = Regex.Replace(s, @"\s+", "");
-            if(s.Length == 0)
+            bool isPalindrome = false;
+            if(s.Length == 0 || s.Length == 1)
             {
-                return true;
+                isPalindrome = true;
             }
-            else if(s.Length == 1)
+            else
             {
-                return true;
-            }
-            else if(s.Length == 2)
-            {
-                return false;
-            }
-            else 
-            {
-                Queue<char> queue = new Queue<char>();
-                for(int i = 0; i < s.Length; i++)
-                {
-                    char c = s[i];
-                    queue.Enqueue(c);
-                }
+                string first = s.Substring(0, s.Length / 2);
+                char[] a = s.ToCharArray();
+                Array.Reverse(a);
+                string second = new string(a);
+                second = second.Substring(0, second.Length / 2);
 
-                Stack<char> stack = new Stack<char>();
-                int middle = s.Length / 2;
-                for(int i = 0; i < middle; i++)
-                {
-                    char c = queue.Dequeue();
-                    stack.Push(c);
-                }
-
-                if(s.Length % 2 != 0)
-                {
-                    queue.Dequeue();
-                }
-
-                for(int i = 0; i < queue.Count;)
-                {
-                    char c0 = stack.Pop();
-                    char c1 = queue.Dequeue();
-                    if(c0.Equals(c1))
-                    {
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
-                return false;
+                isPalindrome = first.Equals(second);
             }
+            return isPalindrome;
         }
     }
 }
