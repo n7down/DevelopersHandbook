@@ -7,7 +7,7 @@ public static class PalindromePermutation
     public static bool CheckPalindromePermutation(string s, string p)
     {
         var isPalindrome = false;
-        var isPermutation = true;
+        var isPermutation = false;
         var ps = Regex.Replace(p, @"\s+", "");
         if(s.Length == 0 || s.Length == 1)
         {

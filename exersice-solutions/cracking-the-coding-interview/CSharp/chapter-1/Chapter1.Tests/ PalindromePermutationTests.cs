@@ -12,8 +12,9 @@ namespace Chapter1.Tests
             Assert.True(actual);
         }
 
-
-        public void Given_A_Palindrome_And_Permutation_CheckPalindromePermutation_Returns_False(string s)
+        [Theory]
+        [InlineData("", "")]
+        public void Given_A_Palindrome_And_Permutation_CheckPalindromePermutation_Returns_False(string s, string p)
         {
             Assert.True(false);
         }
