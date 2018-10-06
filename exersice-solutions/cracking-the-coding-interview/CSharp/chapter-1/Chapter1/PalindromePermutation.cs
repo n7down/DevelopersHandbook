@@ -6,13 +6,15 @@ using System.Text.RegularExpressions;
 
 public static class PalindromePermutation
 {
-    public static IEnumerable<IEnumerable<T>> Permuatations<T>(this IEnumerable<T> source)
+    private static IEnumerable<string> Permutate(string source)
     {
-        var list = source.ToList();//becase we iterate it multiple times
-        return list.SelectMany((item, i) => list.Where((_, index) => index != i)
-                .Permuatations()
-                .Select(subsequence => new[] { item }.Concat(subsequence)))
-            .DefaultIfEmpty(Enumerable.Empty<T>());
+        if (source.Length == 1) return new List<string> { source };
+
+        var permutations = from c in source
+                            from p in Permutate(new String(source.Where(x => x != c).ToArray()))
+                            select c + p;
+
+        return permutations;
     }
 
     public static bool CheckPalindromePermutation(string s, string p)
@@ -42,7 +44,7 @@ public static class PalindromePermutation
         }
         for(int i = 0; i < ss.Length; i++)
         {
-            IEnumerable<string> perm = GetPermutations(ss[i]);
+            var perm = Permutate(ss[i]);
             if(perm.Contains(pp[i]))
             {
                 isPermutation = true;
