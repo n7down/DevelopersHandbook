@@ -6,6 +6,8 @@ using System.Text.RegularExpressions;
 
 public static class PalindromePermutation
 {
+    // http://loekvandenouweland.com/content/Permutations-with-C-sharp-and-LINQ.html
+    // https://stackoverflow.com/questions/756055/listing-all-permutations-of-a-string-integer
     private static IEnumerable<string> Permutate(string source)
     {
         if (source.Length == 1) return new List<string> { source };
