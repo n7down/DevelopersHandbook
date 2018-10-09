@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Chapter1
 {
@@ -12,15 +13,19 @@ namespace Chapter1
             {
                 return data;
             }
-            Dictionary<int, string> t = new Dictionary<int, string>();
-            for(int i = 0; i < rowLength; i++)
+            int[,] r = new int[columnLength, rowLength];
+            int column, row = 0;
+            for(int oldColumn = columnLength - 1; oldColumn >= 0; oldColumn--)
             {
-                for(int j = 0; j < columnLength; j++)
+                column = 0;
+                for(int oldRow = 0; oldRow < rowLength; oldRow++)
                 {
-                    var d = data[i, j];
+                    r[row, column] = data[oldRow, oldColumn];
+                    column++;
                 }
+                row++;
             }
-            return new int[,] {};
+            return r;
         }
     }
 }
