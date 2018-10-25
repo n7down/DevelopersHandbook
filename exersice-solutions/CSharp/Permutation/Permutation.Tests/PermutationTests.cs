@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Xunit;
 
@@ -50,12 +51,38 @@ namespace Permutation.Tests
             return true;
         }
 
+        private bool CheckPermentations(List<string> s0, List<string> s1)
+        {
+            var zeroExceptOne = s0.Except(s1).ToList();
+            var oneExceptZero = s1.Except(s0).ToList();
+            return !zeroExceptOne.Any() && !oneExceptZero.Any();
+        }
+
         [Fact]
         public void Test_Two_Permentations()
         {
             int[] c = new int[] {2, 1};
             int[,] expectedPermentations = new int[,] {{1, 2}, {2, 1}};
             int[,] permentations = Permutation.GetPermutations(c);
+            Assert.True(CheckPermentations(permentations, expectedPermentations));
+        }
+
+        [Fact]
+        public void Test_Two_String_Permentations()
+        {
+            string s = "ab";
+            List<string> expectedPermentations = new List<string> { "ab", "ba" };
+            List<string> permentations = Permutation.GetPermutations(s);
+            Assert.True(CheckPermentations(permentations, expectedPermentations));
+        }
+
+        
+        [Fact]
+        public void Test_Three_String_Permentations()
+        {
+            string s = "abc";
+            List<string> expectedPermentations = new List<string> { "abc", "acb", "bac", "bca", "cba", "cab" };
+            List<string> permentations = Permutation.GetPermutations(s);
             Assert.True(CheckPermentations(permentations, expectedPermentations));
         }
     }
